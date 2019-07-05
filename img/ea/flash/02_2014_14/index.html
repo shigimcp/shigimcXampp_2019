@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>CR-9921 - TAYLOR by TAYLOR SWIFT - Yahoo Brand Wrap - SINGAPORE - animated site comp - 01 MAY 14</title>
+
+	<script type="text/javascript" src="scripts/swfobject.js"></script>
+	<script type="text/javascript">
+		//Support function: checks to see if target element is an object or embed element
+		function isObject(targetID){
+			var isFound = false;
+			var el = document.getElementById(targetID);
+			if(el && (el.nodeName === "OBJECT" || el.nodeName === "EMBED")){
+				isFound = true;
+			}
+			return isFound;
+		}
+
+		//Support function: creates an empty element to replace embedded SWF object
+		function replaceSwfWithEmptyDiv(targetID){
+			var el = document.getElementById(targetID);
+			if(el){
+				var div = document.createElement("div");
+				el.parentNode.insertBefore(div, el);
+
+				//Remove the SWF
+				swfobject.removeSWF(targetID);
+
+				//Give the new DIV the old element's ID
+				div.setAttribute("id", targetID);
+			}
+		}
+
+		function loadSWF(url, targetID, SWFwidth, SWFheight, dim){
+			//Check for existing SWF
+			if(isObject(targetID)){
+				//replace object/element with a new div
+				replaceSwfWithEmptyDiv(targetID);
+			}
+
+			//Embed SWF
+			if (swfobject.hasFlashPlayerVersion("7")) {
+				var attributes = { data: url, width:SWFwidth, height:SWFheight };
+				var params = {};
+				var obj = swfobject.createSWF(attributes, params, targetID);
+				document.getElementById('dimensions').innerHTML = dim; 
+				//document.getElementById('dimensions2').innerHTML = dim; 
+			}
+		}
+
+		function load1stSWF(url){
+//			<!--swfobject.embedSWF("img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_02.jpg", "flashcontent", "1540", "1024", "7");-->
+//			<!--swfobject.embedSWF("img/CR_13_0317_JC_MALIBU_SPRING_2014_300x250.jpg", "flashcontent", "300", "250", "7");-->
+			swfobject.embedSWF("img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_100x240.swf", "flashcontent", "100", "240", "7");
+//			<!--swfobject.embedSWF("img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage.swf", "flashcontent2", "1020", "500", "7");-->
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="scripts/comp.css">
+
+
+</head>
+
+
+<!--<body onload="load1stSWF()">-->
+<body>
+
+	<div id="bg">
+
+		<div id="flashcontent2">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1020" height="500" id="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage" align="middle">
+				<param name="movie" value="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage.swf" width="1020" height="500">
+					<param name="movie" value="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+
+			<!--<div id="flashcontent"></div>-->
+			<div id="flashcontent" onClick="loadSWF('img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_1020x500_stage.swf', 'flashcontent2', 1020, 500, ''); return false;">
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100" height="240" id="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_100x240" align="middle">
+					<param name="movie" value="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_100x240.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<!--[if !IE]>-->
+					<object type="application/x-shockwave-flash" data="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_100x240.swf" width="100" height="240">
+						<param name="movie" value="img/CR_9921_TbTS_Yahoo_Brand_Wrap_SINGAPORE_100x240.swf" />
+						<param name="quality" value="high" />
+						<param name="bgcolor" value="#ffffff" />
+						<param name="play" value="true" />
+						<param name="loop" value="true" />
+						<param name="wmode" value="transparent" />
+						<param name="scale" value="showall" />
+						<param name="menu" value="true" />
+						<param name="devicefont" value="false" />
+						<param name="salign" value="" />
+						<param name="allowScriptAccess" value="sameDomain" />
+					<!--<![endif]-->
+						<a href="http://www.adobe.com/go/getflash">
+							<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+						</a>
+					<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+				</object>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

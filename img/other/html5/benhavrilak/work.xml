@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery>
+
+	<album 
+		id="schon" 
+		employer="Sch&#246;n" 
+		mytitle="Art Director w/ Rayan Ayash" 
+		slpath="img/work/2013/schon/sl/" 
+		thpath="img/work/2013/schon/th/" 
+		flpath="#"
+		dates="Fall 2013"
+		descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis nec quam nec ultrices. Donec orci dui, sollicitudin ac laoreet non, fringilla eget augue. Vestibulum in convallis metus. Sed non lacus quis tellus commodo accumsan. Donec non diam purus.">
+
+		<image src="00.jpg" link="#" />
+		<!--<image src="01.jpg" link="#" />-->
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+		<image src="04.jpg" link="#" />
+		<image src="05.jpg" link="#" />
+	</album>
+
+	<album 
+		id="rayan_ashan" 
+		employer="Rayan Ayash" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/rayan_ashan/sl/" 
+		thpath="img/work/2013/rayan_ashan/th/" 
+		flpath="#"
+		dates="Fall 2013"
+		descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis nec quam nec ultrices. Donec orci dui, sollicitudin ac laoreet non, fringilla eget augue. Vestibulum in convallis metus. Sed non lacus quis tellus commodo accumsan. Donec non diam purus.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+	</album>
+
+	<album 
+		id="vogue" 
+		employer="Vogue Mexico" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/vogue_mexico/sl/" 
+		thpath="img/work/2013/vogue_mexico/th/" 
+		flpath="#"
+		dates="Fall 2013"
+		descr="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis nec quam nec ultrices. Donec orci dui, sollicitudin ac laoreet non, fringilla eget augue. Vestibulum in convallis metus. Sed non lacus quis tellus commodo accumsan. Donec non diam purus.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+		<image src="04.jpg" link="#" />
+	</album>
+
+	<album 
+		id="nymodels" 
+		employer="Personal Work" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/nymodels/sl/" 
+		thpath="img/work/2013/nymodels/th/" 
+		flpath="#"
+		dates="Fall 2013"
+		descr="Duis in consectetur justo. Cras venenatis magna ut interdum congue. Ut congue consequat scelerisque. Sed nec ipsum auctor nisl pharetra faucibus eu et orci.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+	</album>
+
+	<album 
+		id="untitled" 
+		employer="Personal Work" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/untitled/sl/" 
+		thpath="img/work/2013/untitled/th/" 
+		flpath="#"
+		dates="Summer 2013"
+		descr="Quisque et augue sodales turpis egestas condimentum. Phasellus ac tortor vel leo pulvinar mattis at non nulla. Ut in ligula volutpat, convallis ligula eu.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+	</album>
+
+	<album 
+		id="vman" 
+		employer="VMan" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/vman/sl/" 
+		thpath="img/work/2013/vman/th/" 
+		flpath="#"
+		dates="2013"
+		descr="Donec sit amet risus diam. Curabitur id tellus vitae risus commodo venenatis. Vestibulum quis ultricies lectus, non euismod velit. Vivamus euismod nibh nec tortor aliquet.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+		<image src="04.jpg" link="#" />
+		<image src="05.jpg" link="#" />
+		<image src="06.jpg" link="#" />
+	</album>
+
+	<album 
+		id="ax_2013" 
+		employer="Armani Exchange" 
+		mytitle="Art Director" 
+		slpath="img/work/2013/ax/sl/" 
+		thpath="img/work/2013/ax/th/" 
+		flpath="#"
+		dates="Summer 2013"
+		descr="Donec feugiat a nulla ac ornare. Nulla venenatis hendrerit lacus, at dapibus neque commodo non. Nullam ut posuere erat. Duis dignissim magna ut velit accumsan pretium.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+	</album>
+
+	<album 
+		id="ax_2012" 
+		employer="Armani Exchange" 
+		mytitle="Art Director" 
+		slpath="img/work/2012/ax/sl/" 
+		thpath="img/work/2012/ax/th/" 
+		flpath="#"
+		dates="Spring/Summer/Holiday 2012"
+		descr="Maecenas laoreet fermentum dui quis elementum. Quisque et augue sodales turpis egestas condimentum. Phasellus ac tortor vel leo pulvinar mattis at non nulla. Ut in ligula volutpat, convallis ligula eu, sodales libero. Cras ut dolor erat. Sed ac facilisis leo, at blandit tortor. Integer sed iaculis est.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+		<image src="04.jpg" link="#" />
+		<image src="05.jpg" link="#" />
+		<image src="06.jpg" link="#" />
+		<image src="07.jpg" link="#" />
+		<image src="08.jpg" link="#" />
+	</album>
+
+	<album 
+		id="ax_2010" 
+		employer="Armani Exchange" 
+		mytitle="Art Director" 
+		slpath="img/work/2010/ax/sl/" 
+		thpath="img/work/2010/ax/th/" 
+		flpath="#"
+		dates="Summer/Fall 2010"
+		descr="Donec sit amet risus diam. Curabitur id tellus vitae risus commodo venenatis. Vestibulum quis ultricies lectus, non euismod velit. Vivamus euismod nibh nec tortor aliquet.">
+
+		<image src="00.jpg" link="#" />
+		<image src="01.jpg" link="#" />
+		<image src="02.jpg" link="#" />
+		<image src="03.jpg" link="#" />
+		<image src="04.jpg" link="#" />
+	</album>
+
+</gallery>

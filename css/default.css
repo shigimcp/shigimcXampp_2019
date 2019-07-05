@@ -1,0 +1,1947 @@
+/* ========== COLORS ========== */
+/*
+grey: #999999
+gold: #90805D
+*/
+/* ========== REF: MICRO-CLEARFIX (ref: http://themergency.com/css-clearfix-demystified/) ========== */
+.clearFix:before, .clearFix:after {
+  content: "";
+  display: table;
+}
+
+.clearFix:after {
+  clear: both;
+}
+
+.clearFix {
+  zoom: 1;
+}
+
+/* ========== FONTS ========== */
+@font-face {
+  font-family: 'ChaleParNinSix';
+  src: url("../fonts/ChaleParNinSix.otf") format("opentype");
+  src: url("../fonts/ChaleParNinSix.eot");
+  src: url("../fonts/ChaleParNinSix.woff") format("woff"), url("../fonts/ChaleParNinSix.svg#-GothaBoo") format("svg");
+}
+
+@font-face {
+  font-family: 'AnimeAceItalic';
+  src: url("../fonts/AnimeAceItalic.otf") format("opentype");
+  src: url("../fonts/AnimeAceItalic.eot");
+  src: url("../fonts/AnimeAceItalic.woff") format("woff"), url("../fonts/AnimeAceItalic.svg#-Italic") format("svg");
+}
+
+/* ====================================== */
+/* ========== GLOBAL / GENERIC ========== */
+/* ====================================== */
+html, body {
+  /*	border: 02px solid inset #FF0000 !important;*/
+  /*	background: #FF00FF;*/
+  color: #000000;
+  font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  /*font-weight: lighter;*/
+  line-height: 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body * {
+  /* border: 02px solid #FF0000 !important; */
+  /* width: 1366px; */
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.bg {
+  /*	border: 02px solid #FF0000;*/
+  /*	background: #FFFFFF;*/
+  width: 100%;
+  /*	height: 100%;*/
+  height: auto;
+  /*	clip-path: polygon(0% 0, 100% 0, 100% 600px, 0% 600px);*/
+  /*	-webkit-clip-path: polygon(-100% 60px, 200% 60px, 200% 100%, 0 100%);*/
+  /*	clip-path: polygon(-100% 60px, 200% 60px, 200% 100%, 0 100%);*/
+  /*	-webkit-clip-path: url(#bg_mask);*/
+  /*	clip-path: url(#bg_mask);*/
+  position: absolute;
+  top: 60;
+  z-index: 0;
+  overflow: visible;
+}
+
+/*#bg_mask, #bg_mask_rect {*/
+/*	border: 02px solid #0000FF;*/
+/*}*/
+.bodyContent {
+  /* border: 02px solid #0000FF; */
+  /* background-color: aquamarine; */
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_SPLASH_00.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_SPLASH_01.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_SPLASH_02.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_WORK.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_WORK_EA.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_ME.jpg");*/
+  /*	background-image: url("../img/Xscreens/shigimcp_2018_LOGOs.jpg");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  /*	z-index: 10;*/
+}
+
+/* -------------------- HED -------------------- */
+.header {
+  /*	border: 02px solid #FF0000;*/
+  background: #000000;
+  /*	background: none;*/
+  /*	opacity: 0;*/
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  /*	z-index: 0;*/
+  z-index: 1;
+}
+
+.hed {
+  /*	border: 02px solid #FF0000;*/
+  color: #FFFFFF;
+  line-height: 55px;
+  text-align: left;
+  /*	letter-spacing: .00375em;*/
+  width: 100%;
+  max-width: 1366px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  /*	top: 50;*/
+  /*	left: 0;*/
+  display: block;
+  /*	float: none;*/
+}
+
+.hed01 {
+  /*	border: 02px solid #00FF00;*/
+  /*	color: #00FF00;*/
+  font-size: 30px;
+  width: auto;
+  height: inherit;
+  margin: 0;
+  padding: inherit;
+  position: inherit;
+  top: 10px;
+  left: 125px;
+  display: table-cell;
+}
+
+.hed02 {
+  /*	border: 02px solid #0000FF;*/
+  /*	color: #00FF00;*/
+  font-size: 20px;
+  /*	font-size: 18px;*/
+  width: auto;
+  height: inherit;
+  margin: 0;
+  padding: inherit;
+  position: inherit;
+  /*	top: 10px;*/
+  /*	left: 137.5px;*/
+  top: 9.5px;
+  left: 142.5px;
+  display: table-cell;
+}
+
+.contact {
+  /*	border: 02px solid #FFFF00;*/
+  font-size: 18px;
+  letter-spacing: .025em;
+  position: inherit;
+  /*	top: 10px;*/
+  /*	left: 160px;*/
+  top: 9.5px;
+  left: 159px;
+  /*	right: 5%;*/
+  margin: 0;
+  padding: inherit;
+  display: table-cell;
+}
+
+.contact a, .contact a:visited {
+  color: #FFFFFF;
+}
+
+/* -------------------- NAV -------------------- */
+.nav {
+  /* border: 02px solid #FF0000; */
+  /* background-color: aqua; */
+  /*	color: #FF0000;*/
+  color: #FFFFFF;
+  font-size: 23.75px;
+  /*	line-height: 79.5px;*/
+  text-align: center;
+  width: auto;
+  /* height: inherit; */
+  height: auto;
+  position: inherit;
+  top: -63px;
+  /*	left: -100px;*/
+  z-index: 999;
+  margin: 0 auto;
+  padding: 0;
+  float: right;
+}
+
+.nav ul {
+  /*	border: 02px solid #00FF00;*/
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+.nav li {
+  /*	border: 02px solid #0000FF;*/
+  list-style-type: none;
+  vertical-align: bottom;
+  /* vertical-align: middle; */
+  line-height: 0px;
+  cursor: pointer;
+  width: inherit;
+  height: 20px;
+  margin: inherit;
+  padding: 20px 15px;
+  display: table-cell;
+}
+
+.nav ul a, .nav ul a:visited {
+  text-decoration: none;
+}
+
+/*
+.nav ul a:hover, .nav ul a:active, .nav ul a:focus {
+}
+*/
+.nav #btn_navWork {
+  /*	Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000088+0,000088+100&0+0,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 136, 0)), to(#000088));
+  background: linear-gradient(to bottom, rgba(0, 0, 136, 0) 0%, #000088 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000088', endColorstr='#000088',GradientType=0 );
+  /* IE6-9 */
+}
+
+.nav #btn_navAbout {
+  /*	Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c00000+0,c00000+100&0+0,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(192, 0, 0, 0)), to(#c00000));
+  background: linear-gradient(to bottom, rgba(192, 0, 0, 0) 0%, #c00000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c00000', endColorstr='#c00000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.aboutSubNav {
+  /* border: 02px solid #00FF00; */
+  background-color: #EEEEEE;
+  color: #000000;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 140px;
+  height: 30px;
+  display: table-cell;
+  margin: 0;
+  padding: 0 15px;
+  position: absolute;
+  top: 65px;
+  /* top: 165px; */
+}
+
+.btn_resumeV {
+  /*	border: 02px solid #00FF00;*/
+  /*	text-align: right;*/
+  right: 0;
+}
+
+/*
+.btn_resumeD1, .btn_resumeD2 {
+	border: 02px solid #00FF00;
+
+	opacity: 0;
+}
+*/
+.btn_resumeD1 {
+  /*	text-align: right;*/
+  font-size: 12.5px;
+  top: 100px;
+  right: 0;
+}
+
+.btn_resumeD2 {
+  /*	text-align: right;*/
+  font-size: 12px;
+  top: 135px;
+  right: 0;
+}
+
+/* ========================== */
+/* ========== LOGO ========== */
+/* ========================== */
+#logoIcon {
+  /*	border: 02px solid #FF0000;*/
+  /*	text-align: left;*/
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5px;
+  left: -35px;
+  z-index: 99;
+  display: block;
+  overflow: visible;
+  cursor: pointer;
+}
+
+#logo {
+  /*	border: 02px solid #FF0000;*/
+  /*	width: 700px;*/
+  /*	width: 1275.193798449612403px;*/
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  /*	position: absolute;*/
+  /*	top: 90px;*/
+  /*	top: -55px;*/
+  /*	left: -225px;*/
+  display: block;
+  z-index: 11;
+  overflow: visible;
+  -webkit-box-shadow: 0px -0px 10000px transparent;
+          box-shadow: 0px -0px 10000px transparent;
+  /*trick for chrome*/
+  cursor: pointer;
+}
+
+/* 
+#logo path, #logoIcon path {
+	fill: #FF0000;
+}
+*/
+/* ---------- LOGO / afro ---------- */
+/* 
+#shigeru_logo_afro {
+	fill: #FF0000;
+}
+ */
+#shigeru_logo_afro_k {
+  fill: #000000;
+  /* fill: rgb(229, 250, 229); */
+  -webkit-clip-path: url(#shigeru_logo_afro_k_mask);
+          clip-path: url(#shigeru_logo_afro_k_mask);
+}
+
+#shigeru_logo_afro_w {
+  fill: #FFFFFF;
+  /* fill: #FF0000; */
+  -webkit-clip-path: url(#shigeru_logo_afro_w_mask);
+          clip-path: url(#shigeru_logo_afro_w_mask);
+}
+
+/* ---------- LOGO / glasses ---------- */
+/* 
+#shigeru_logo_glasses {
+	fill: #FF0000;
+}
+ */
+#shigeru_logo_glasses_k {
+  /* fill: #00FF00; */
+  -webkit-clip-path: url(#shigeru_logo_glasses_k_mask);
+          clip-path: url(#shigeru_logo_glasses_k_mask);
+}
+
+#shigeru_logo_glasses_w {
+  fill: #FFFFFF;
+  /* fill: #FF0000; */
+  -webkit-clip-path: url(#shigeru_logo_glasses_w_mask);
+          clip-path: url(#shigeru_logo_glasses_w_mask);
+}
+
+/* ---------- LOGO / kanji ---------- */
+/* 
+#shigeru_logo_kanji {
+	fill: #FFFFFF;
+	fill: #0000FF;
+}
+ */
+#shigeru_logo_kanji_k {
+  /* fill: #0000FF; */
+  fill: #000000;
+}
+
+#shigeru_logo_kanji_w {
+  fill: #FFFFFF;
+  /* fill: #FF00FF; */
+  -webkit-clip-path: url(#shigeru_logo_kanji_w_mask);
+          clip-path: url(#shigeru_logo_kanji_w_mask);
+  /*	clip-path: url(#header_mask);*/
+}
+
+/* ---------- LOGO / masks ---------- */
+/* 
+#shigeru_logo_afro_w_mask, #shigeru_logo_glasses_w_mask, #shigeru_logo_kanji_w_mask {
+	position: relative;
+	position: fixed;
+	display: block;
+}
+ */
+/* ============================ */
+/* ========== SPLASH ========== */
+/* ============================ */
+/* -------------------- HED -------------------- */
+.splashHed {
+  /*	border: 02px solid #FF0000;*/
+  /*	color: #FFFFFF;*/
+  /*	color: #00FF00;*/
+  line-height: 55px;
+  text-align: center;
+  /*	letter-spacing: .00375em;*/
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: table;
+  z-index: 10;
+}
+
+.splashHed01 {
+  /*	border: 02px solid #00FF00;*/
+  /*	color: #00FF00;*/
+  font-size: 50px;
+  /*	width: auto;*/
+  margin: inherit;
+  position: inherit;
+  display: table;
+  /*	float: none;*/
+}
+
+.splashHed02 {
+  /*	border: 02px solid #0000FF;*/
+  /*	color: #0000FF;*/
+  font-size: 35px;
+  /*	width: auto;*/
+  margin: inherit;
+  position: inherit;
+  display: table;
+  /*	float: none;*/
+}
+
+.splashContact, .splashCTA {
+  /*	border: 02px solid #FFFF00;*/
+  /*	font-size: 18px;*/
+  font-size: 21px;
+  letter-spacing: .025em;
+  line-height: 30px;
+  /*	line-height: 60px;*/
+  margin: inherit;
+  position: inherit;
+  display: table;
+}
+
+.splashContact a, .splashContact a:visited, .splashCTA a, .splashCTA a:visited {
+  color: #000000;
+  /*	color: #FFFFFF;*/
+}
+
+.splashCTA {
+  /*	border: 02px solid #FF00FF;*/
+  border-radius: 5px;
+  /*	background: linear-gradient(#FFFFFF, #EEEEEE);*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+25,0.07+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.07)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.07) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#12000000',GradientType=0 );
+  /* IE6-9 */
+  text-decoration: none;
+  /*	margin: 20px auto 0 auto;*/
+  padding: 0 10px;
+}
+
+.splashCTA a {
+  /*	border: 02px solid #FF00FF;*/
+  text-decoration: none;
+}
+
+/* -------------------- GREETING -------------------- */
+#greeting {
+  /*	border: 02px solid #FF0000;*/
+  color: #000000;
+  /*	line-height: 45px;*/
+  line-height: 57.5px;
+  /*	top: 235px;*/
+  top: 240px;
+  left: 820px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+#greeting h1 {
+  /*	border: 02px solid #00FF00;*/
+  color: inherit;
+  /*	color: #00FF00;*/
+  font-size: 75px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#greeting h2 {
+  /*	border: 02px solid #00FF00;*/
+  color: inherit;
+  /*	color: #00FF00;*/
+  font-size: 37.5px;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+#greeting h3 {
+  /*	border: 02px solid #00FF00;*/
+  color: inherit;
+  /*	color: #00FF00;*/
+  font-size: 30px;
+  line-height: inherit;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+/* -------------------- GREETING - NAV -------------------- */
+.splashBtn {
+  /*	border: 02px solid #00FF00;*/
+  color: #FFFFFF;
+  font-size: 25px;
+  /*	line-height: 20px;*/
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+#btn_work {
+  /*	border: 02px solid #0000FF;*/
+  background-color: #000088;
+}
+
+#btn_about {
+  /*	border: 02px solid #FF0000;*/
+  background-color: #C00000;
+}
+
+/* -------------------- CALLIGRAPHY CREDIT - Esteban Martinez (Gohitsu Shodo Studio) -------------------- */
+.calligraphyCredit {
+  /*	border: 02px solid #FF0000;*/
+  /*	color: #666666;*/
+  color: #888888;
+  /*	color: #999999;*/
+  /*
+	text-align: right;
+
+	position: relative;
+	bottom: 2.5%;
+*/
+  text-align: right;
+  position: absolute;
+  top: 70px;
+  right: 1.25%;
+}
+
+.calligraphyCredit a, .calligraphyCredit a:visited {
+  /*	color: #999999;*/
+  color: inherit;
+}
+
+/* ============================ */
+/* ========== WORK ========== */
+/* ============================ */
+/* -------------------- WORK - BG -------------------- */
+#workBG {
+  /*	border: 02px solid #00FF00;*/
+  opacity: 0.25;
+}
+
+#workBG .gridRow {
+  /*	border: 02px solid #0000FF;*/
+  white-space: nowrap;
+}
+
+#workBG img {
+  /*	border: 02px solid #FF00FF;*/
+  margin-left: -40px;
+}
+
+/* -------------------- WORK - GRID (LOGOs/HEDs) -------------------- */
+#workGrid {
+  /*	border: 02px solid #FF0000;*/
+  width: 100%;
+  height: auto;
+  position: inherit;
+  top: -15px;
+  z-index: inherit;
+  /*	display: inline-block;*/
+}
+
+#workGrid h1 {
+  /*	border: 02px solid #00FF00;*/
+  color: #666666;
+  font-size: 30px;
+  /*	line-height: 20px;*/
+  width: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+#workGrid h2 {
+  /*	border: 02px solid #00FF00;*/
+  color: #666666;
+  font-size: 10px;
+  line-height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+#workGrid #hedOther {
+	border: 02px solid #00FF00;
+
+	text-align: center;
+
+	visibility: hidden;
+	cursor: pointer;
+}
+*/
+#workGrid #credit {
+  /*	border: 02px solid #00FF00;*/
+  color: #666666;
+  font-size: 15px;
+}
+
+.logoRow {
+  /*	border: 02px solid #00FF00;*/
+  /*	height: 170px;*/
+  height: 250px;
+}
+
+.workLogo {
+  /*	border: 02px solid #0000FF;*/
+  /*	width: 320px;*/
+  /*	position: absolute;*/
+  /*	margin: 0 auto;*/
+  /*	padding: 0;*/
+  /*	display: inline-block;*/
+  /*	display: table-cell;*/
+  cursor: pointer;
+}
+
+/* ======================================================================================================== */
+/* ========== SHOWCASE / SLIDESHOW - REF: https://www.w3schools.com/howto/howto_js_slideshow.asp ========== */
+/* ======================================================================================================== */
+/* -------------------- SHOWCASE -------------------- */
+.showcaseContainer {
+  /*	border: 02px solid #FF0000;*/
+  background: #FFFFFF;
+  width: 100%;
+  /*	height: 768px;*/
+  /*	height: 720px;*/
+  height: 721px;
+  position: absolute;
+  margin: 0 auto;
+  top: 60px;
+  overflow: hidden;
+}
+
+.showcase {
+  /*	border: 02px solid #00FF00;*/
+  width: 1500px;
+  height: inherit;
+  position: relative;
+  margin: 0 auto;
+  /*	overflow: hidden;*/
+}
+
+/*
+.showImg {
+	border: 02px solid #FF00FF;
+
+	width: 100%;
+	height: 100%;
+	height: 721px;
+
+	text-align: right;
+
+	position: relative;
+	margin: 0 auto;
+	margin-right: 10%;
+
+	display: table-cell;
+	float: right;
+}
+*/
+/* -------------------- SHOWCASE - description -------------------- */
+/* 
+.showDescr * {
+	border: 02px solid #0000FF;
+}
+ */
+.showDescr {
+  /*	border: 02px solid #FF0000;*/
+  /*	width: 30%;*/
+  width: 28.75%;
+  height: inherit;
+  /*	padding-top: 50px;*/
+  padding-left: 60px;
+  float: left;
+}
+
+.showDescr .showLogo {
+  /*	border: 02px solid #FFFF00;*/
+  text-align: center;
+  /*	position: relative;*/
+  /*	margin: 0 auto;*/
+  margin: 50px auto 20px;
+  /*	float: left;*/
+}
+
+.showDescr .title {
+  /*	border: 02px solid #FFFF00;*/
+  color: #333333;
+  font-size: 25px;
+  line-height: 25px;
+  /*	margin-top: 20px;*/
+}
+
+.showDescr .date {
+  /*	border: 02px solid #FFFF00;*/
+  color: #999999;
+  font-size: 17.5px;
+  line-height: 30px;
+  /*	margin-top: 20px;*/
+}
+
+.showDescr ul {
+  /*	border: 02px solid #FFFF00;*/
+  /*	width: 75%;*/
+  color: #666666;
+  font-size: 16.25px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  /*	margin-left: 20px;*/
+  margin: 0 0 0 20px;
+}
+
+.descr {
+  color: #000000;
+  /*	color: #888888;*/
+  width: 100%;
+  margin: 0 100 0 0;
+  padding: 0;
+  float: left;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.showDescr li {
+  /*	border: 02px solid #FFFF00;*/
+  list-style-type: disc;
+  margin-top: 5px;
+}
+
+.showDescr b {
+  /*	border: 02px solid #0000FF;*/
+  letter-spacing: -0.0125em;
+}
+
+/*.showDescr .brands {*/
+.showDescr table {
+  /*	border: 02px solid #FF0000;*/
+  /*	width: 30%;*/
+  width: 100%;
+  /*	height: auto;*/
+  padding-top: 20px;
+}
+
+.showDescr table #brandsHearst {
+  /*	border: 02px solid #FF0000;*/
+  padding-top: 0px;
+}
+
+.showDescr td {
+  /*	border: 02px solid #00FF00;*/
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  /*	margin: 0 auto;*/
+  padding: 0;
+}
+
+.showDescr #brandsmrm td {
+  /*.showDescr #brandsmrm td, .showDescr #brandsOther td {*/
+  /*	border: 02px solid #0000FF;*/
+  width: 33.333%;
+  text-align: center;
+  line-height: 40px;
+  /*	margin: 0 auto;*/
+  padding: 0;
+}
+
+.showDescr #brandsOther td {
+  /*	border: 02px solid #0000FF;*/
+  /*	width: 33.333%;*/
+  width: 25%;
+  text-align: center;
+  line-height: 40px;
+  /*	vertical-align: top;*/
+  /*	margin: 0 auto;*/
+  /*	padding: 0 10px 20px 10px;*/
+  padding: 0 5px;
+}
+
+.showDescr #brandsOther2 td img {
+  /*	border: 02px solid #0000FF;*/
+  width: 90%;
+  /*	height: 100px;*/
+  /*	padding: 0 !important;*/
+}
+
+.showDescr #brandsOther img, .showDescr #brandsOther2 img {
+  /*	border: 02px solid #0000FF;*/
+  cursor: pointer;
+}
+
+/*.showDescr .brands p {*/
+.showDescr table p {
+  /*	border: 02px solid #00FFFF;*/
+  color: #333333;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.showDescr .brandLogo {
+  /*	border: 02px solid #FF0000;*/
+  /*	width: 40%;*/
+  width: 75%;
+  /*	display: inline-block;*/
+  /*	vertical-align: middle;*/
+}
+
+/*
+.showDescr #brand01 {
+	border: 02px solid #FF00FF;
+
+	display: table-cell;
+}
+*/
+/* -------------------- SHOWCASE - SLIDESHOW -------------------- */
+.slideContainer * {
+  /*	border: 02px solid #FF00FF;*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slideContainer {
+  /*	border: 02px solid #FFFF00;*/
+  width: 100%;
+  max-width: 1000px;
+  /*	height: 100%;*/
+  height: 721px;
+  position: relative;
+  margin: auto;
+  float: right;
+}
+
+#slideContainer, #slideContainer * {
+  /*	border: 02px solid #00FFFF;*/
+  /*	width: inherit;*/
+  max-width: inherit;
+  height: inherit;
+}
+
+.slide {
+  /*	border: 02px solid #FF0000;*/
+  /*	width: 100%;*/
+  width: inherit;
+  /*	height: 100%;*/
+  /*	height: inherit;*/
+  /*	height: auto;*/
+  margin: 0 auto;
+  display: none;
+  /*	overflow: hidden;*/
+}
+
+.slide img {
+  /*	border: 02px solid #00FFFF;*/
+  width: inherit;
+  /*	height: inherit;*/
+  /*	height: auto;*/
+  margin: inherit;
+  display: table-cell;
+}
+
+.prev, .next {
+  width: auto;
+  /*	color: white;*/
+  color: #666666;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  /*	margin-top: -15px;*/
+  padding: 10px;
+  position: absolute;
+  /*	top: 50%;*/
+  bottom: -10px;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.prev {
+  right: 70px;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.captionText {
+  /*	border: 02px solid #FF0000;*/
+  width: 100%;
+  /*	width: 95%;*/
+  height: 20px !important;
+  /*	height: 50px !important;*/
+  /*	color: #f2f2f2;*/
+  color: #666666;
+  /*	color: #FFFFFF;*/
+  /*	color: #000000;*/
+  font-size: 20px;
+  /*	line-height: 25px;*/
+  /*	text-align: right;*/
+  position: absolute;
+  /*	top: 650px;*/
+  /*	top: 30px;*/
+  top: 20px;
+  /*	bottom: 8px;*/
+  /*	right: 20px;*/
+  padding: 0 20px;
+  /*	visibility: hidden;*/
+  /*	mix-blend-mode: difference;*/
+}
+
+.cta {
+  /*	border: 02px inset #FF0000;*/
+  /*	background: rgba(255, 0, 0, 0.5);*/
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+49 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(49%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 49%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  /* IE6-9 */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  line-height: 22.5px;
+  width: 100%;
+  /*	width: 1000px;*/
+  /*	height: 50px !important;*/
+  /*	height: 91px !important;*/
+  height: 141px !important;
+  position: absolute;
+  /*	top: 630px;*/
+  top: 580px;
+  padding-top: 50px;
+  /*	mix-blend-mode: difference;*/
+  /*	mix-blend-mode: darken;*/
+}
+
+.ctaAlert {
+  /*	border: 02px inset #FF0000;*/
+  font-size: 15px;
+  letter-spacing: 0.025em;
+  opacity: 0.5;
+}
+
+.numbertext {
+  /*	border: 02px inset #0000FF;*/
+  height: 20px !important;
+  /*	color: #f2f2f2;*/
+  /*	color: #666666;*/
+  color: #BBBBBB;
+  /*	color: #FFFFFF;*/
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  /*	top: 0;*/
+  top: 684px;
+  /*	bottom: 7.5px;*/
+  /*	bottom: 10px;*/
+  /*	bottom: 50px;*/
+  /*	right: 2.5%;*/
+  right: 0;
+  /*	padding: 10px 12px;*/
+  /*	padding: 10px 38px;*/
+  padding: 0px 35px;
+}
+
+.dotNav {
+  /*	border: 02px solid #FF0000;*/
+  text-align: center;
+  position: inherit;
+  /*	margin-top: -30px;*/
+  margin-top: -36.25px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  /*	background-color: #bbb;*/
+  background-color: #666666;
+  /*	background-color: #FFFFFF;*/
+  /*	opacity: 0.5;*/
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  /*	background-color: #717171;*/
+  background-color: #DDDDDD;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================================== */
+/* ========== MODAL WINDOW ========== */
+/* ================================== */
+.modalDialog {
+  /*	border: 5px #FF0000 inset !important;*/
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  /*	opacity: 1;*/
+  font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  z-index: 8999 !important;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.modalDialog:target {
+  /*	border: 5px #00FF00 inset !important;*/
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*
+.modalDialog > div {
+	border: 5px #00FF00 inset !important;
+
+	width: 75%;
+	height: 78.75%;
+
+	position: relative;
+	margin: 60px auto;
+}
+*/
+.btn_closeModal {
+  background: #606061;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  text-decoration: none;
+  width: 100px;
+  position: absolute;
+  /*	right: -12px;*/
+  right: -2.5%;
+  top: -10px;
+  z-index: 10;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+  background: #000000;
+}
+
+#close {
+  /*	border: 05px #00FF00 inset !important;*/
+  width: 10%;
+  height: 2.5%;
+  text-align: right;
+  margin: 0 2.5%;
+  padding: .5% 0 0 0;
+  float: right;
+}
+
+#modalContent, #resumeContent {
+  /*	border: 5px #00FFFF inset !important;*/
+  /*	background-color: rgba(0,255,0,0.5);*/
+  /*	width: auto !important;*/
+  /*	max-width: 80%;*/
+  /*	height: 100%;*/
+  /*	height: auto;*/
+  /*	position: inherit !important;*/
+  position: relative;
+  /*	top: inherit !important;*/
+  /*	box-sizing: inherit;*/
+  /*	margin: 2.5% auto !important;*/
+  margin: 60px auto;
+  /*	overflow: scroll;*/
+}
+
+#modalObject {
+  /*	border: 5px #FF00FF inset !important;*/
+  /*	background-color: rgba(0,0,255,0.5);*/
+  /*
+	position: relative;
+	z-index: 8998;
+*/
+  overflow: scroll;
+}
+
+.spacerClose {
+  /*	border: 5px #FFFF00 inset !important;*/
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  /*	z-index: 0;*/
+}
+
+/* 
+#spacerClose1 {
+#spacerClose1, #spacerClose2 {
+	border: 5px #0000FF inset !important;
+	background-color: rgba(255,0,255,0.25);
+
+
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+
+}
+ */
+/*
+#spacerClose2 {
+
+	border: 5px #FF00FF inset !important;
+	background-color: rgba(0,0,255,0.25);
+
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+}
+*/
+/*
+video {
+	border: 5px #FF00FF inset !important;
+
+	z-index: 9999 !important;
+}
+*/
+/* =========================== */
+/* ========== ABOUT ========== */
+/* =========================== */
+/* -------------------- NAME -------------------- */
+.btn_name {
+  /*	border: 02px solid #00FF00;*/
+  text-align: left;
+  /*	width: 85px;*/
+  /*	width: 8.75%;*/
+  width: 9%;
+  left: 120px;
+}
+
+.name_pronunciation {
+  /*	border: 02px solid #FF0000;*/
+  /*
+	background-color: #FFFFFF;
+	opacity: 0.5;
+*/
+  visibility: hidden;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: .025em;
+  /*	width: 750px;*/
+  width: 875px;
+  /*	width: 1000px;*/
+  /*	height: auto;*/
+  /*	padding: 15px;*/
+  position: absolute;
+  /*	top: 100px;*/
+  /*	left: 435px;*/
+  /*	top: 100px;*/
+  /*	left: 240px;*/
+  top: 95px;
+  left: 120px;
+  /*	display: table;*/
+  z-index: 100;
+}
+
+.name_syllables {
+  /*	border: 02px solid #00FFFF;*/
+  /*	font-size: 20px;*/
+  /*	width: 85px;*/
+  width: 15.3125%;
+  display: table-cell;
+  float: left;
+}
+
+.name_syllables * {
+  /*	border: 02px solid #00FF00;*/
+  /*	border: 01px solid #FFFFFF;*/
+  background-color: #EEEEEE;
+  /*	background-color: #000000;*/
+  /*	opacity: 0.1;*/
+  /*	visibility: hidden;*/
+  margin: 1px 0;
+  padding: 5px 15px;
+}
+
+.name_defs {
+  /*	border: 02px solid #FF00FF;*/
+  /*	background-color: #FFFFFF;*/
+  /*	opacity: 0.5;*/
+  width: 83.75%;
+  display: table-cell;
+  float: right;
+}
+
+.name_defs ol {
+  /*	border: 02px solid #0000FF;*/
+  /*	background-color: transparent;*/
+  font-size: 80%;
+  line-height: 20px;
+  margin: 10px 5px 15px 25px;
+  padding: 0;
+}
+
+/*
+.name_defs li {
+	border: 02px solid #0000FF;
+
+	font-size: 90%;
+	line-height: 15px;
+}
+*/
+#name_def01, #name_def02, #name_def03 {
+  /*	border: 02px solid #0000FF;*/
+  /*
+	background-color: #FFFFFF;
+	opacity: 0.5;
+*/
+  background-color: rgba(255, 255, 255, 0.925);
+  visibility: hidden;
+  /*	width: 100%;*/
+  width: inherit;
+  margin: 1px;
+  padding: 10px;
+  position: absolute;
+}
+
+/* -------------------- THOUGHTS -------------------- */
+#thoughtFro {
+  /*	border: 02px solid #FF0000;*/
+  /*	background-color: transparent;*/
+  width: 73.75%;
+  /*	width: auto;*/
+  /*	height: auto;*/
+  /*	height: 37.5%;*/
+  position: inherit;
+  z-index: 99;
+  margin: 0 auto;
+  display: inherit;
+  overflow: visible;
+}
+
+.rollover {
+  /*	border: 02px solid #FFFFFF;*/
+  /*	width: 50px;*/
+  /*	height: 50px;*/
+  cursor: pointer;
+}
+
+.thoughtBubble {
+  /*	border: 02px solid #FF0000;*/
+  /*	border-radius: 25px;*/
+  background-color: transparent;
+  background-image: url("../img/0elements/thoughtBubble.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  width: 400px;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  /*	margin: 0 auto;*/
+  /*	padding: 10px;*/
+  /*	display: inline-block;*/
+  overflow: visible;
+}
+
+.thoughtCopy {
+  /*	border: 02px solid #00FF00;*/
+  font-family: AnimeAceItalic, Comic Sans MS, cursive, sans-serif;
+  /*
+	font-size: 17.5px;
+	line-height: 20px;
+*/
+  font-size: 12.5px;
+  line-height: 17.5px;
+  letter-spacing: 0.03125em;
+  text-align: center;
+  width: 80%;
+  /*	height: 55%;*/
+  height: 60%;
+  margin: 0 auto;
+  position: absolute;
+  /*	top: 25%;*/
+  /*	right: 7.5%;*/
+  top: 22.5%;
+  left: 11.25%;
+  display: table;
+}
+
+#thoughtCopy {
+  /*	border: 02px solid #0000FF;*/
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.thoughtClose {
+  border: 05px solid #000000;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15%;
+  right: 2.5%;
+  cursor: pointer;
+}
+
+.resetThoughts {
+  /*	border: 02px solid #0000FF;*/
+  background-color: #EEEEEE;
+  font-size: 17.5px;
+  line-height: 40px;
+  letter-spacing: 0.03125em;
+  text-align: center;
+  width: 190px;
+  height: 40px;
+  position: absolute;
+  top: 720px;
+  right: 0;
+  cursor: pointer;
+}
+
+/* ================================== */
+/* ========== CONTACT FORM ========== */
+/* ================================== */
+.contactContent, .modalContact {
+  /* border: 02px solid #FF0000; */
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.modalContact {
+  /* border: 02px solid #00FF00; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.contactContainer {
+  /* border: 02px solid #0000FF; */
+  background-color: #FFFFFF;
+  font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: .0125em;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  /* width: 500px; */
+  /* height: 500px; */
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+/* ============================ */
+/* ========== RESUME ========== */
+/* ============================ */
+.resumeContent, .modalResume {
+  /*	border: 02px solid #FF0000;*/
+  width: 1000px;
+  /*	height: 1200px;*/
+  height: 1250px;
+}
+
+.modalResume {
+  /* border: 02px solid #00FF00; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.resumeContainer {
+  /* border: 02px solid #0000FF; */
+  background-color: #FFFFFF;
+  /*
+	background-image: url("../img/about/smcpherson_resume_2018_long.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
+  font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  /*	font-weight: normal;*/
+  line-height: 120%;
+  /*	letter-spacing: .025em;*/
+  letter-spacing: .0125em;
+  /*	letter-spacing: .00625em;*/
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  width: 1000px;
+  /*	height: 2150px;*/
+  height: 2500px;
+  display: block;
+  /*	overflow: scroll;*/
+  margin: 0 auto;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.resumeContainer a, .resumeContainer a:visited {
+  color: inherit;
+}
+
+.resumeContainer img {
+  width: 100%;
+}
+
+.resumeHed {
+  /*	border: 02px solid #0000FF;*/
+  background-color: #000000;
+  /*	background-color: #0000FF;*/
+  background-color: none;
+  font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  /*	line-height: 120%;*/
+  color: #FFFFFF;
+  /*	color: #FF0000;*/
+  width: inherit;
+  height: 75px;
+  margin: 0;
+  /*	padding: 75px 50px 0px 50px;*/
+  position: fixed;
+  /*	z-index: 100;*/
+  z-index: 1;
+}
+
+#logoResume {
+  /*	border: 02px solid #FF0000;*/
+  /*	fill: #FF0000;*/
+  width: 185px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5px;
+  left: -30px;
+  z-index: 99;
+  display: block;
+  cursor: pointer;
+}
+
+/*#logoResume #header_mask_kanji_w {*/
+#logoResume #shigeru_logo_kanji_w {
+  /*	border: 02px solid #FF0000;*/
+  /*	fill: #FF00FF;*/
+  -webkit-clip-path: url(#shigeru_logo_kanji_w_mask_resume);
+          clip-path: url(#shigeru_logo_kanji_w_mask_resume);
+}
+
+.resumeHed h1 {
+  /*	border: 02px solid #0000FF;*/
+  font-size: 162.5%;
+  letter-spacing: -.0125em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  /*
+	top: 42.5px;
+	left: 187.5px;
+*/
+  top: 40px;
+  left: 185px;
+}
+
+.h1_sub {
+  /*	border: 02px solid #0000FF;*/
+  font-size: 55%;
+  letter-spacing: -.025em;
+}
+
+.info {
+  /*	border: 02px solid #0000FF;*/
+  margin: 0;
+  padding: 15px 0;
+}
+
+.info * {
+  /*	border: 02px solid #0000FF;*/
+  display: inline-block;
+}
+
+.info02 {
+  /*	border: 02px solid #0000FF;*/
+  text-align: right;
+  /*	width: inherit;*/
+  position: absolute;
+  right: 5%;
+  /*	padding-right: 5%;*/
+}
+
+/*.expContainer * {*/
+.expContainer {
+  /*	border: 02px solid #FF0000;*/
+  font-size: 15px;
+  line-height: 20px;
+  /*	color: #FF0000;*/
+  height: 100%;
+  position: relative;
+  /*	z-index: -1;*/
+}
+
+.expTable {
+  /*	border: 02px solid #00FF00;*/
+  width: 92.5%;
+  /*	width: 95%;*/
+  /*	width: 90%;*/
+  /*	width: 72.5%;*/
+  /*	width: 70%;*/
+  /*	margin: 10% auto 0 5%;*/
+  margin: 80px auto 0 5%;
+  position: absolute;
+  /*	z-index: 99;*/
+  float: left;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.expTable * {
+  /*	border: 02px solid #0000FF;*/
+  /*	display: table-cell;*/
+  vertical-align: top;
+}
+
+.expDummy {
+  /*	border: 02px solid #FF00FF;*/
+  width: 20%;
+}
+
+.expIntro {
+  /*	border: 02px solid #0000FF;*/
+  width: 60%;
+  padding-right: 20px;
+}
+
+.expIntro p {
+  /*	border: 02px solid #0000FF;*/
+  margin: 0 0 5px 0;
+}
+
+.expLogo, .expSect {
+  /*	border: 02px solid #00FFFF;*/
+  text-align: center;
+  width: 17.5%;
+  /*	max-width: 80%;*/
+  /*	max-height: 50%;*/
+  padding-right: 20px;
+}
+
+.expSect {
+  /*	border: 02px solid #00FFFF;*/
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  /*	padding-bottom: 20px;*/
+  padding: 0 20px 0 0;
+}
+
+.expLogo img {
+  /*	border: 02px solid #FF00FF;*/
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  /*	max-height: 50px;*/
+  max-height: 80px;
+}
+
+#eduLogo_CU img {
+  max-height: 70px !important;
+}
+
+.expJob {
+  /*	border: 02px solid #FF00FF;*/
+  padding-right: 20px;
+}
+
+.expJob div {
+  /*	border: 02px solid #FF00FF;*/
+  vertical-align: text-bottom;
+}
+
+.expEmployer {
+  /*	border: 02px solid #FF00FF;*/
+  font-size: 20px;
+  /*	line-height: -5px;*/
+  /* baseline-shift: baseline; */
+  display: inline-block;
+}
+
+.expDate {
+  /*	border: 02px solid #0000FF;*/
+  text-align: right;
+  /*	white-space: nowrap;*/
+  /*	white-space: pre;*/
+  /*	width: 10% !important;*/
+  /*	overflow: visible;*/
+  /* display: inline-block; */
+  /*
+	position: absolute;
+	right: 0;
+*/
+  float: right;
+}
+
+.expNotes {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.expTable ul {
+  /*	border: 02px solid #0000FF;*/
+  /*	list-style-position: inside;*/
+  /*	margin: 0;*/
+  margin: 5px 0 5px 17.5px;
+  padding: 0;
+}
+
+.expTable li {
+  /*	border: 02px solid #0000FF;*/
+  font-size: 10px;
+  /*	line-height: 15px;*/
+}
+
+.expTable li span {
+  /*	border: 02px solid #0000FF;*/
+  font-size: 15px;
+  /*	padding-left: 10px;*/
+  position: relative;
+  left: 10px;
+}
+
+.expInfo {
+  /*	border: 02px solid #FF00FF;*/
+  line-height: 30px;
+  /*	width: 16.25%;*/
+  /*	width: 25%;*/
+  width: 200px;
+  position: fixed;
+  /*
+	top: 100px;
+	left: 600px;
+*/
+  /*	right: 5%;*/
+  /*	z-index: -1;*/
+  /*	float: right;*/
+  /*	padding-left: 2.5%;*/
+  overflow-y: scroll;
+}
+
+.expInfoHed {
+  /*	border: 02px solid #FF00FF;*/
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: inherit;
+}
+
+.expInfoContact, .expInfoContact a, .expInfoContact a:visited {
+  /*	border: 02px solid #FF0000;*/
+  /*	line-height: inherit;*/
+  /*	line-height: 25px;*/
+  line-height: 30px;
+}
+
+.expInfoSect {
+  /*	border: 02px solid #FF00FF;*/
+  /*	font-size: 17px;*/
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: inherit;
+  margin-top: 30px;
+}
+
+.expInfoPhone {
+  /*	border: 02px solid #FF00FF;*/
+  font-size: 17.5px;
+  margin: 5px 0;
+}
+
+.expInfoSkill {
+  /*	border: 02px solid #FF00FF;*/
+  line-height: inherit;
+  margin-bottom: 15px;
+}
+
+.expInfoLinks {
+  /*	border: 02px solid #FF0000;*/
+  /*	position: absolute;*/
+  position: fixed;
+  /*	top: 162.5px;*/
+  /*	top: 170px;*/
+  /*	right: 45px;*/
+  top: 162.5px;
+  right: 50px;
+}
+
+.resumeLink {
+  /*	border: 02px solid #00FF00;*/
+  /*	border: 01px inset #00FF00;*/
+  line-height: 50px;
+  width: 170px;
+  /*	height: 25px;*/
+  height: 30px;
+  /*
+	position: absolute;
+	right: 60px;
+*/
+  cursor: pointer;
+}
+
+#resumeLink_email {
+  /*	border: 02px solid #00FF00;*/
+  background-color: #00FF00;
+  opacity: 0.375;
+  /*	top: 150px;*/
+  /*	top: 148px;*/
+  top: 145px;
+}
+
+#resumeLink_dl {
+  /*	border: 02px solid #0000FF;*/
+  background-color: #0000FF;
+  opacity: 0.375;
+  /*	top: 175px;*/
+  /*	top: 173px;*/
+  top: 170px;
+}
+
+/* =============================== */
+/* ========== EMAIL_GIF ========== */
+/* =============================== */
+.email_gifContainer {
+  /*	border: 02px solid #FF0000;*/
+  width: 100%;
+  height: auto;
+  /*	height: 100%;*/
+  position: absolute;
+  top: 60px;
+}
+
+.email_gifMenu, .email_gifContent {
+  /*	border: 02px solid #0000FF;*/
+  height: 100%;
+}
+
+.email_gifMenu {
+  /*	border: 02px solid #FF00FF;*/
+  width: 22.5%;
+  line-height: 15px;
+  /*	margin: 0 0 0 12.5%;*/
+  margin: 30px 0 0 9.375%;
+  float: left;
+}
+
+.email_gifMenu h1 {
+  /*	border: 02px solid #0000FF;*/
+  font-size: 20px;
+  line-height: inherit;
+  margin: 20px 0 -10px 0;
+  padding: 0;
+}
+
+.email_gifMenu li {
+  /*	border: 02px solid #0000FF;*/
+  cursor: pointer;
+  margin: 0 0 0 -20px;
+  padding: 5px 0;
+}
+
+/*.email_gifMenu ul a:hover, .email_gifMenu ul a:active, .email_gifMenu ul a:focus {  this changes the background and text color for both mouse and keyboard navigators */
+.email_gifMenu li:hover, .email_gifMenu li:active, .email_gifMenu li:focus {
+  /* this changes the background and text color for both mouse and keyboard navigators */
+  background: #efefef;
+  color: #000000;
+}
+
+.email_gifContent {
+  /*	border: 02px solid #FF00FF;*/
+  width: 55%;
+  margin: 0 12.5% 0 0;
+  float: right;
+}
+
+/* ======================================= */
+/* ========== VIDEO - mesmerize ========== */
+/* ======================================= */
+.mezContent {
+  /* background-color: #000000; */
+  /* background-image: url("../img/Xscreens/shigimcp_2018_ME.jpg");
+	background-size: auto;
+	background-position-x: center;
+	background-position-y: 0%;
+	background-repeat: no-repeat; */
+  width: 100%;
+  /* width: 1366px; */
+  height: 100%;
+  /* height: auto; */
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  /*	z-index: 10;*/
+  display: block;
+}
+
+/* #shigeru_logo_afro *, #shigeru_logo_glasses * {
+	fill: #FFFFFF;
+} */
+.mezLogo {
+  border: 02px solid #00FF00;
+  position: absolute;
+  /* z-index: 0; */
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+
+.mezVidContainer {
+  border: 02px solid #0000FF;
+  width: 100%;
+  height: auto;
+  /* height: 100%; */
+  position: absolute;
+  top: 0px;
+  /* z-index: 999; */
+  /* visibility: hidden; */
+  /* display: table-cell; */
+}
+/*# sourceMappingURL=default.css.map */

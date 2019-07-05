@@ -1,0 +1,459 @@
+CACHE MANIFEST
+
+# Version Control
+# 2015-03-11
+# v03.11.15.22.22
+# Version = mm.dd.yr.hr.mn (military time)
+
+CACHE:
+
+# ==================================================
+# GOOGLE Universal Analytics
+# ==================================================
+# http://www.google-analytics.com/analytics.js
+# http://www.google-analytics.com/plugins/ua/linkid.js
+
+# http://www.google-analytics.com/collect?v=1&_v=j31&a=1501968451&t=pageview&_s=1&dl=http%3A%2F%2Farden-online.com%2FForReview%2FRED_DOOR%2FCR_7610_RED_DOOR_SPA_IPAD%2Fdev%2F&ul=en-us&de=UTF-8&dt=CR_7610_RED_DOOR_SPA_IPAD%20-%2008%20DEC%2014&sd=32-bit&sr=768x1024&vp=768x1024&je=0&_u=eCCAgAQi~&jid=&cid=238503512.1417729117&uid=ADMIN_TEST_061714&tid=UA-51991716-1&z=1663347911
+
+
+# ==================================================
+# JS
+# ==================================================
+
+js/alertify.min.js
+js/fastclick.js
+js/iscroll.js
+js/jquery-2.1.3.min.js
+js/jquery.touchSwipe.js
+js/main.js
+
+
+# ==================================================
+# CSS
+# ==================================================
+
+css/0Futura.css
+css/alertify.core.css
+css/alertify.default.css
+css/default.css
+
+
+# ==================================================
+# PHP
+# ==================================================
+
+php/connect.php
+php/JSON.php
+php/looks.php
+php/products.php
+
+
+# ==================================================
+# TYPEKIT
+# ==================================================
+# http://use.typekit.com/xxxxxxx.js
+# http://use.typekit.net/wog3ggl.js
+
+# http://use.typekit.net/c/e97b4a/futura-pt:i3:i4:i5:i7:n3:n4:n5:n7.SH7:N:2,SH9:N:2,SH4:N:2,SH6:N:2,SHB:N:2,Y5K:N:2,SH3:N:2,SH5:N:2/d.css
+# http://use.typekit.net/c/e5ebc6/1w;futura-pt,2,SH7:N:i3,SH9:N:i4,SH4:N:i5,SH6:N:i7,SHB:N:n3,Y5K:N:n4,SH3:N:n5,SH5:N:n7/d
+
+# http://use.typekit.net/c/e5ebc6/1w;futura-pt,2,SH7:N:i3,SH9:N:i4,SH4:N:i5,SH6:N:i7,SHB:N:n3,Y5K:N:n4,SH3:N:n5,SH5:N:n7/d?3bb2a6e53c9684ffdc9a9afe1d5b2a6262b4be0bfc491ced4e51baf43d5470ca73140c0a81a1e9d73b248665550fb2d210af8f4e44d65058a08208a8bd2bf5b58361214d1c6dc5195049fe3af6f6e2bd8c5107eb6d595a
+# http://p.typekit.net/p.gif?s=1&k=wog3ggl&ht=tk&h=arden-online.com&f=10881.10884.10885.10882.10886.10883.10879.10880&a=552173&_=1418075681016
+
+
+# ==================================================
+# FONTS
+# ==================================================
+# fonts/Futura-Bold.eot
+# fonts/Futura-Bold.svg
+# fonts/Futura-Bold.ttf
+fonts/Futura-Bold.woff
+# fonts/Futura-BoldItalic.eot
+# fonts/Futura-BoldItalic.svg
+# fonts/Futura-BoldItalic.ttf
+fonts/Futura-BoldItalic.woff
+# fonts/Futura-Book.eot
+# fonts/Futura-Book.svg
+# fonts/Futura-Book.ttf
+fonts/Futura-Book.woff
+# fonts/Futura-BookItalic.eot
+# fonts/Futura-BookItalic.svg
+# fonts/Futura-BookItalic.ttf
+fonts/Futura-BookItalic.woff
+# fonts/Futura-Heavy.eot
+# fonts/Futura-Heavy.svg
+# fonts/Futura-Heavy.ttf
+fonts/Futura-Heavy.woff
+# fonts/Futura-HeavyItalic.eot
+# fonts/Futura-HeavyItalic.svg
+# fonts/Futura-HeavyItalic.ttf
+fonts/Futura-HeavyItalic.woff
+# fonts/Futura-Light.eot
+# fonts/Futura-Light.svg
+# fonts/Futura-Light.ttf
+fonts/Futura-Light.woff
+# fonts/Futura-LightItalic.eot
+# fonts/Futura-LightItalic.svg
+# fonts/Futura-LightItalic.ttf
+fonts/Futura-LightItalic.woff
+# fonts/Futura-Medium.eot
+# fonts/Futura-Medium.svg
+# fonts/Futura-Medium.ttf
+fonts/Futura-Medium.woff
+# fonts/Futura-MediumItalic.eot
+# fonts/Futura-MediumItalic.svg
+# fonts/Futura-MediumItalic.ttf
+fonts/Futura-MediumItalic.woff
+
+
+# ==================================================
+# EDGE ANIMATE (splash screen)
+# ==================================================
+# edgeanimate_assets/splash_anim/config.xml
+
+# edgeanimate_assets/splash_anim/Assets/splash_anim_edge.js
+# edgeanimate_assets/splash_anim/Assets/splash_anim_edgeActions.js
+# edgeanimate_assets/splash_anim/Assets/splash_anim_edgePreload.js
+# edgeanimate_assets/splash_anim/Assets/splash_anim_oam.xml
+# edgeanimate_assets/splash_anim/Assets/splash_anim.html
+
+# edgeanimate_assets/splash_anim/Assets/edge_includes/edge.4.0.0.min.js
+# edgeanimate_assets/splash_anim/Assets/edge_includes/edge.4.0.0.min.map
+# edgeanimate_assets/splash_anim/Assets/edge_includes/jquery-2.0.3.min.js
+# edgeanimate_assets/splash_anim/Assets/edge_includes/jquery-2.0.3.min.map
+
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_01_trans.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_01.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_02_trans.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_02.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_03_trans.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash_03.png
+# edgeanimate_assets/splash_anim/Assets/images/app_splash.jpg
+
+
+# ==================================================
+# APP
+# ==================================================
+# lookfinder_FULL.appcache
+# index.php
+index.html
+
+# audio/dodo.m4a
+# audio/dodo.mp3
+# audio/dodo.ogg
+# audio/dodo.wav
+# audio/dodo.wma
+
+img/bg.jpg
+img/spacer.gif
+img/favicon.ico
+img/app_icon.png
+img/app_splash.jpg
+
+img/hair/hair_000.jpg
+img/hair/hair_black.jpg
+img/hair/hair_blonde.jpg
+img/hair/hair_dkbrown.jpg
+img/hair/hair_ltbrown.jpg
+img/hair/hair_red.jpg
+
+img/look/arrow_lf.gif
+img/look/arrow_rt.gif
+img/look/arrow_sm_lf.gif
+img/look/arrow_sm_rt.gif
+
+img/look/look_000.jpg
+img/look/look_001.jpg
+img/look/look_002.jpg
+img/look/look_003.jpg
+img/look/look_005.jpg
+img/look/look_006.jpg
+img/look/look_007.jpg
+img/look/look_009.jpg
+img/look/look_010.jpg
+img/look/look_011.jpg
+img/look/look_013.jpg
+img/look/look_014.jpg
+img/look/look_015.jpg
+img/look/look_017.jpg
+img/look/look_018.jpg
+img/look/look_019.jpg
+img/look/look_021.jpg
+img/look/look_022.jpg
+img/look/look_023.jpg
+img/look/look_025.jpg
+img/look/look_026.jpg
+img/look/look_027.jpg
+img/look/look_029.jpg
+img/look/look_030.jpg
+img/look/look_031.jpg
+img/look/look_033.jpg
+img/look/look_034.jpg
+img/look/look_035.jpg
+img/look/look_037.jpg
+img/look/look_038.jpg
+img/look/look_039.jpg
+img/look/look_041.jpg
+img/look/look_042.jpg
+img/look/look_043.jpg
+img/look/look_045.jpg
+img/look/look_046.jpg
+img/look/look_047.jpg
+img/look/look_049.jpg
+img/look/look_050.jpg
+img/look/look_051.jpg
+img/look/look_053.jpg
+img/look/look_054.jpg
+img/look/look_055.jpg
+img/look/look_057.jpg
+img/look/look_058.jpg
+img/look/look_059.jpg
+img/look/look_061.jpg
+img/look/look_062.jpg
+img/look/look_063.jpg
+img/look/look_065.jpg
+img/look/look_066.jpg
+img/look/look_067.jpg
+img/look/look_069.jpg
+img/look/look_070.jpg
+img/look/look_071.jpg
+img/look/look_072.jpg
+img/look/look_073.jpg
+img/look/look_074.jpg
+img/look/look_075.jpg
+img/look/look_076.jpg
+img/look/look_077.jpg
+img/look/look_078.jpg
+img/look/look_079.jpg
+img/look/look_080.jpg
+img/look/look_081.jpg
+img/look/look_082.jpg
+img/look/look_083.jpg
+img/look/look_084.jpg
+img/look/look_085.jpg
+img/look/look_086.jpg
+img/look/look_087.jpg
+img/look/look_088.jpg
+img/look/look_089.jpg
+img/look/look_090.jpg
+img/look/look_091.jpg
+img/look/look_092.jpg
+img/look/look_093.jpg
+img/look/look_094.jpg
+img/look/look_095.jpg
+img/look/look_096.jpg
+img/look/look_097.jpg
+img/look/look_098.jpg
+img/look/look_099.jpg
+img/look/look_100.jpg
+img/look/look_101.jpg
+img/look/look_102.jpg
+img/look/look_103.jpg
+img/look/look_104.jpg
+img/look/look_105.jpg
+img/look/look_106.jpg
+img/look/look_107.jpg
+img/look/look_108.jpg
+img/look/look_109.jpg
+img/look/look_110.jpg
+img/look/look_111.jpg
+img/look/look_112.jpg
+img/look/look_113.jpg
+img/look/look_114.jpg
+img/look/look_115.jpg
+img/look/look_116.jpg
+img/look/look_117.jpg
+img/look/look_118.jpg
+img/look/look_119.jpg
+img/look/look_120.jpg
+img/look/look_121.jpg
+img/look/look_122.jpg
+img/look/look_123.jpg
+img/look/look_124.jpg
+img/look/look_125.jpg
+
+img/prod/prod_000.jpg
+img/prod/1002bcmc400_000000.jpg
+img/prod/1002bcmc400_2e2526.jpg
+img/prod/1002bcrc400_5c423b.jpg
+img/prod/1002bcrc400_7b474a.jpg
+img/prod/1002bcrc400_9d3e42.jpg
+img/prod/1002bcrc400_9d6257.jpg
+img/prod/1002bcrc400_673c3a.jpg
+img/prod/1002bcrc400_784b62.jpg
+img/prod/1002bcrc400_a36f52.jpg
+img/prod/1002bcrc400_a3543c.jpg
+img/prod/1002bcrc400_a32234.jpg
+img/prod/1002bcrc400_af6360.jpg
+img/prod/1002bfbc400_a5503b.jpg
+img/prod/1002bfbc400_b55d42.jpg
+img/prod/1002bfbc400_c97782.jpg
+img/prod/1002bfbc400_cf6a73.jpg
+img/prod/1002bfbc400_d4877f.jpg
+img/prod/1002bfbc400_d45350.jpg
+img/prod/1002bfbc400_e0858a.jpg
+img/prod/1002bfbc400_ea9381.jpg
+img/prod/1002bfbc400_f6b0ce.jpg
+img/prod/1002bfbc400_f29f9a.jpg
+img/prod/1002bflc400_9d554b.jpg
+img/prod/1002bflc400_914a44.jpg
+img/prod/1002bflc400_a25556.jpg
+img/prod/1002bflc400_b0664d.jpg
+img/prod/1002bflc400_b7655a.jpg
+img/prod/1002bflc400_cf3580.jpg
+img/prod/1002bflc400_d3836b.jpg
+img/prod/1002bflc400_d66278.jpg
+img/prod/1002bflc400_e2dacd.jpg
+img/prod/1002bflc400_e45f62.jpg
+img/prod/1002bflc400_e48575.jpg
+img/prod/1002bflc400_ed8172.jpg
+img/prod/1002bflc400_f9b3a4.jpg
+img/prod/1002blsc400_6d3337.jpg
+img/prod/1002blsc400_7a4d48.jpg
+img/prod/1002blsc400_7e3c40.jpg
+img/prod/1002blsc400_8c525b.jpg
+img/prod/1002blsc400_9f5950.jpg
+img/prod/1002blsc400_874f4.jpg
+img/prod/1002blsc400_991d5c.jpg
+img/prod/1002blsc400_90525e.jpg
+img/prod/1002blsc400_96584b.jpg
+img/prod/1002blsc400_855345.jpg
+img/prod/1002blsc400_983029.jpg
+img/prod/1002blsc400_a33d42.jpg
+img/prod/1002blsc400_a35f56.jpg
+img/prod/1002blsc400_a6546c.jpg
+img/prod/1002blsc400_ab5a66.jpg
+img/prod/1002blsc400_ab2020.jpg
+img/prod/1002blsc400_ab6266.jpg
+img/prod/1002blsc400_af6a61.jpg
+img/prod/1002blsc400_af6e57.jpg
+img/prod/1002blsc400_b77e6c.jpg
+img/prod/1002blsc400_b87776.jpg
+img/prod/1002blsc400_ba806d.jpg
+img/prod/1002blsc400_c64c44.jpg
+img/prod/1002blsc400_c1747a.jpg
+img/prod/1002blsc400_cd7974.jpg
+img/prod/1002cpcc400_bb8377.jpg
+img/prod/1002cpcc400_bc866b.jpg
+img/prod/1002cpcc400_d18a78.jpg
+img/prod/1002cpcc400_e7998e.jpg
+img/prod/1002cppc400_ad5156.jpg
+img/prod/1002cppc400_b9686f.jpg
+img/prod/1002cppc400_b97970_a.jpg
+img/prod/1002cppc400_b97970.jpg
+img/prod/1002cppc400_bb665f.jpg
+img/prod/1002cppc400_c3796c_a.jpg
+img/prod/1002cppc400_c3796c.jpg
+img/prod/1002cppc400_c78272_a.jpg
+img/prod/1002cppc400_c78272.jpg
+img/prod/1002cppc400_c89083.jpg
+img/prod/1002cppc400_ce6758.jpg
+img/prod/1002cppc400_e4a292.jpg
+img/prod/1002cppc400_f8a698.jpg
+img/prod/1002ffcc400_c3a581.jpg
+img/prod/1002ffcc400_d5b896.jpg
+img/prod/1002ffmc400_996d48.jpg
+img/prod/1002ffmc400_ab734e.jpg
+img/prod/1002ffmc400_fcc8a0.jpg
+img/prod/1002ffsc400_d89d77.jpg
+img/prod/1002ffsc400_db9e68.jpg
+img/prod/1002ffsc400_e2ab89.jpg
+img/prod/1002ffsc400_e7a47b.jpg
+img/prod/1002invc400_ac8856.jpg
+img/prod/1002invc400_cdae85.jpg
+img/prod/1002invc400_ceab87.jpg
+img/prod/1002invc400_d8b892.jpg
+img/prod/1002invc400_e1c39c.jpg
+img/prod/1002mffc000_976e4d.jpg
+img/prod/1002mffc000_b78151.jpg
+img/prod/1002mffc000_cd9d6a.jpg
+img/prod/1002mffc000_cea272.jpg
+img/prod/1002mffc000_d0a87c.jpg
+img/prod/1002mffc000_e1c1a9.jpg
+img/prod/1002pufc401_caa17c.jpg
+img/prod/1002vd2c400_b5a495.jpg
+img/prod/1002vd2c400_b89e9f.jpg
+img/prod/1002vd2c400_e0bba6.jpg
+img/prod/1002vd2c400_ece2cf.jpg
+img/prod/1002vd2c400_f0cfa3.jpg
+img/prod/1002vd2c400_fee0d4.jpg
+img/prod/1002vd2c400_ffe9d0.jpg
+img/prod/1002vdsc400_4c7967.jpg
+img/prod/1002vdsc400_5e6060.jpg
+img/prod/1002vdsc400_6f6065.jpg
+img/prod/1002vdsc400_9b7861.jpg
+img/prod/1002vdsc400_9c7767.jpg
+img/prod/1002vdsc400_88a0b7.jpg
+img/prod/1002vdsc400_726a58.jpg
+img/prod/1002vdsc400_836a5c.jpg
+img/prod/1002vdsc400_866e93.jpg
+img/prod/1002vdsc400_41574f.jpg
+img/prod/1002vdsc400_75889a.jpg
+img/prod/1002vdsc400_654541.jpg
+img/prod/1002vdsc400_767590.jpg
+img/prod/1002vdsc400_785249.jpg
+img/prod/1002vdsc400_836057a.jpg
+img/prod/1002vdsc400_a48b7e.jpg
+img/prod/1002vdsc400_a98d86.jpg
+img/prod/1002vdsc400_a66275.jpg
+img/prod/1002vdsc400_a87052.jpg
+img/prod/1002vdsc400_c0bfc2.jpg
+img/prod/1002vdsc400_c58a70.jpg
+img/prod/1002vdsc400_c88f9e.jpg
+img/prod/1002vdsc400_c5897a.jpg
+img/prod/1002vdsc400_d3aeb8.jpg
+img/prod/1002vdsc400_d4b299.jpg
+img/prod/1002vdsc400_d8aa73.jpg
+img/prod/1002vdsc400_e0cab7.jpg
+img/prod/1002vdsc400_e1bbab.jpg
+img/prod/1002vdsc400_f1b595.jpg
+img/prod/1002vdsc400_f5eeea.jpg
+img/prod/1002vdsc400_f9ceda.jpg
+img/prod/1002vdsc400_fce0bd.jpg
+img/prod/299698_FF_BarePerf_SPF_Sienna_Index_007.jpg
+img/prod/299699_FF_Cream_Chestnut_Index_015.jpg
+img/prod/305003_FF_BarePerf_SPF_Spice_Index_008.jpg
+img/prod/1002206c400_5c1921.jpg
+img/prod/1002206c400_8c274a.jpg
+img/prod/1002206c400_a65a45.jpg
+img/prod/1002206c400_e67a8b.jpg
+img/prod/1002232c400_1b1d1e.jpg
+img/prod/1002232c400_2d2625.jpg
+img/prod/1002232c400_5b221e.jpg
+img/prod/1002232c400_66665f.jpg
+img/prod/1002232c400_80695c.jpg
+img/prod/1002232c400_272821.jpg
+img/prod/1002244c401.jpg
+img/prod/1002275c400_bd8f77.jpg
+img/prod/1002275c400_c98367.jpg
+img/prod/1002275c400_d7a275.jpg
+img/prod/1002275c400_f6e2be.jpg
+img/prod/1002276c400_c98367.jpg
+img/prod/1002276c400_d7a275.jpg
+img/prod/10021028401.jpg
+img/prod/10021042400_1a1115.jpg
+img/prod/10021042400_5c3f48.jpg
+img/prod/10021042400_051a41.jpg
+img/prod/10021042400_070c09.jpg
+img/prod/10021042400_868cb1.jpg
+img/prod/10021042400_192318.jpg
+img/prod/10021042400_252526.jpg
+img/prod/10021279400_d5af8f.jpg
+img/prod/10021279400_d79a69.jpg
+img/prod/10021279400_e9c697.jpg
+img/prod/10023971400_c5a581.jpg
+img/prod/10023971400_dcc19a.jpg
+img/prod/BC_Lipstick_fig_Index_104.jpg
+img/prod/BC_Lipstick_pink_honey_Index_115.jpg
+img/prod/BC_SmLineLip_09_CocoaRose_Index_159.jpg
+img/prod/FBPC055_FFBP_WarmMahogany_Index_009.jpg
+
+
+FALLBACK:
+index.html
+# img/app_splash.jpg
+
+
+NETWORK:
+# Defines resources that will not be cached.
+*

@@ -1,0 +1,98 @@
+#u5603 {
+	background: transparent url("../images/logo.png") no-repeat center top;
+}
+
+#accordionu7235 {
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+#u7330-3 {
+	border-color: #FFFFFF;
+	color: #999999;
+	line-height: 14px;
+	font-family: cantarell, sans-serif;
+	font-weight: 400;
+	background: transparent url("../images/icon_menu.gif") no-repeat right center;
+}
+
+#u7330-3.AccordionPanelTabOpen {
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#u7237 {
+	border-style: none;
+	border-color: transparent;
+	background: transparent url("../images/bg-u7237-fr.png") no-repeat center center;
+	background-size: cover;
+}
+
+#u7901, #u7899, #u7897, #u7895, #u7893, #u7891, #u7889, #u7887, #u7885, #u7883, #u7881, #u7879 {
+	background-color: transparent;
+	position: relative;
+}
+
+.AccordionPanelTab /* accordion */ {
+	cursor: pointer;
+}
+
+#u5608 {
+	background: transparent url("../images/bg_header.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+#u5491 {
+	background-color: transparent;
+	position: fixed;
+}
+
+#u7497 {
+	position: fixed;
+}
+
+#u7236, #u5650 {
+	background-color: transparent;
+}
+
+#u9152 {
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u4002 {
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: left;
+	position: relative;
+}
+
+#u4004 {
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	position: relative;
+}
+
+#u5615 {
+	background: transparent url("../images/bg_footer.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+#u3609-14 {
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #7E3A9B;
+	text-align: center;
+	font-size: 10px;
+	line-height: 10px;
+	font-family: open-sans, sans-serif;
+	font-weight: 300;
+}
+

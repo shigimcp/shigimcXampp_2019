@@ -1,0 +1,81 @@
+html, body {
+/*	border: 02px solid #FF0000 !important;*/
+
+	background-color: transparent;
+
+	width: 450px;
+	height: 770px;
+
+	position: relative !important;
+	margin: 0 auto;
+}
+
+#measure {
+/*	border: 02px solid #00FF00 !important;*/
+
+	width: 450px;
+	height: 770px;
+
+/*	width: 320px;*/
+/*	height: 400px;*/
+
+	background-image: url(../assets/bg_iPhone_3GS.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+/*	position: absolute;*/
+/*	top: 167px;*/
+/*	left: 65px;*/
+
+	margin: 0 auto;
+}
+
+#table_measure {
+/*	border: 02px solid #0000FF !important;*/
+
+	position: absolute;
+	top: 167px;
+	left: 65px;
+}
+
+ol {
+/*	border: 02px solid #FFFF00 !important;*/
+
+	background-image: url(../assets/bg_iPhone_3GS.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	width: inherit;
+	height: inherit;
+}
+
+/*
+#00site_0318 {
+	border: 02px solid #0000FF !important;
+
+	position: relative !important;
+	top: 50px !important;
+
+	margin: 0 auto !important;
+}
+*/
+
+#scene-0, 
+#scene-1, 
+#scene-2, 
+#scene-3, 
+#scene-4, 
+#scene-5, 
+#scene-6, 
+#scene-7, 
+#scene-8, 
+#scene-9, 
+#scene-10, 
+#scene-11, 
+#scene-12 
+{
+/*	border: 02px solid #0000FF !important;*/
+
+	top: 167px;
+	left: 65px;
+}

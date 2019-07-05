@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html>
+
+    <head>
+        <title>The A|X Holiday 2011 Gift Guide For Her</title>
+    
+    
+    <!-- ======================================================= -->
+    <!-- Meta Tags -->
+    <!-- ======================================================= -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+<!--        <meta name="viewport" content="width=device-width; initial-scale=1.0;" />-->
+    
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ======================================================= -->
+    <!-- CSS -->
+    <!-- ======================================================= -->
+<!--        <link rel="stylesheet" type="text/css" href="css/default.css" />-->
+        <link rel="stylesheet" type="text/css" href="css/iPhone_0318.css" />
+    
+    
+    <!-- ======================================================= -->
+    <!-- SLIDES AT TOP - WEBKIT ANIMATION -->
+    <!-- ======================================================= -->
+    
+        <style>
+            div#box {
+                display:block;
+                width: 320px;
+                height: 200px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                position: absolute;
+                left: -0px;
+                background: #FFFFFF;
+                overflow:hidden;
+            }
+    
+            div.slides {
+                width: 640px;
+                position: absolute;
+    
+                -webkit-animation-name: slide;
+                -webkit-animation-duration: .5s;
+                -webkit-animation-delay: .5s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-fill-mode: forwards;
+            }
+    
+            @-webkit-keyframes slide {
+                from {
+                    left: 0px;
+                } to {
+                    left: 0px;
+                }
+            }
+    
+        </style>
+    
+    
+    <!-- ======================================================= -->
+    <!-- JavaScript -->
+    <!-- ======================================================= -->
+        <script type="text/javascript" src="../javascript/prototype.js"></script>
+        <script type="text/javascript" src="../javascript/effects.js"></script>
+        <script type="text/javascript" src="../javascript/accordion.js"></script>
+        <script type="text/javascript" src="../javascript/code_highlighter.js"></script>
+        <script type="text/javascript" src="../javascript/javascript.js"></script>
+        <script type="text/javascript" src="../javascript/html.js"></script>
+    
+        <script type="application/x-javascript">
+    
+//    <!-- ========== HIDE URL BAR ========== -->
+
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            
+            function hideURLbar(){
+                window.scrollTo(0,0);
+//			document.getElementById("topSlides").className = "slides";
+            }
+    
+            function moveMe(newY){
+                window.scrollTo(0,newY);
+            }
+    
+//    <!-- ========== ACCORDION ========== -->
+            // ---------- In my case I want to load them onload, this is how you do it! ----------
+            Event.observe(window, 'load', loadAccordions, false);
+    
+            // ---------- Set up all accordions ----------
+            var topAccordion;
+            var bottomAccordion;
+    
+            function loadAccordions() {
+                topAccordion = new accordion('horizontal_container', {
+                    classNames : {
+                        toggle : 'horizontal_accordion_toggle',
+                        toggleActive : 'horizontal_accordion_toggle_active',
+                        content : 'horizontal_accordion_content'
+                    },
+    
+                    defaultSize : {
+                        width : 320
+                    },
+    
+                    direction : 'horizontal'
+                });
+                
+                bottomAccordion = new accordion('vertical_container');
+                
+                var nestedVerticalAccordion = new accordion('vertical_nested_container', {
+                    classNames : {
+                        toggle : 'vertical_accordion_toggle',
+                        toggleActive : 'vertical_accordion_toggle_active',
+                        content : 'vertical_accordion_content'
+                    }
+                });
+    
+                // ---------- Open first one ----------
+    			bottomAccordion.activate($$('#vertical_container .accordion_toggle')[0]);
+                
+                // ---------- Open second (sub) one ----------
+//              topAccordion.activate($$('#horizontal_container .horizontal_accordion_toggle')[2]);
+    
+                window.scrollTo(0,0);
+           }
+    
+//	<!-- ========== SLIDES AT TOP ========== -->
+//	<!-- ========== this waits for the slide(s) at the top of the page to horizontally scroll to the end(slide) ========== -->
+//	<!-- ========== THEN expands the accordion that corresponds to said end(slide) ========== -->
+//	<!-- ========== NOTE: MUST be the last slide of horizontal scroll ========== -->
+/*
+            function attachEventHandler() {
+                box.addEventListener( 'webkitAnimationEnd', function( event ) { 
+//    				alert( "Finished animation!" );
+					window.scrollTo(0,0);
+                    bottomAccordion.activate($$('#vertical_container .accordion_toggle')[0]);
+                }, false );
+            }
+*/
+    
+//	<!-- ========== OPEN ACCORDION FROM MENU ========== -->
+//	<!-- ========== this waits for a trigger from a menu item ========== -->
+
+            function openAccordion(thisAccordion) {
+                bottomAccordion.activate($$('#vertical_container .accordion_toggle')[thisAccordion]);
+            }
+    
+//	<!-- ========== OPEN ACCORDION FROM PODS AT TOP ========== -->
+//	<!-- ========== this waits for a trigger from a pod item ========== -->
+
+            function openAccordion2(thisAccordion,thisY) {
+				window.scrollTo(0,thisY);
+                bottomAccordion.activate($$('#vertical_container .accordion_toggle')[thisAccordion]);
+            }
+    
+        </script>
+    
+    
+    <!-- ======================================================= -->
+    <!-- YOUTUBE VIDEO - DETECT iPHONE/iPAD -->
+    <!-- ======================================================= -->
+    <!--
+        <script type="text/javascript">
+        
+            var agent = navigator.userAgent.toLowerCase();
+            var useHTML5 = (agent.indexOf('iphone')!=1 || agent.indexOf('ipad')!=1);
+            
+            if (useHTML5) {
+                document.write("");
+            } else {
+                document.write("");
+            }
+        
+        </script>
+    -->
+
+
+    <!-- ======================================================= -->
+    <!-- BROWSER SNIFFERS -->
+    <!-- ======================================================= -->
+    
+        <script language="javascript">
+
+
+			// For use within normal web clients 
+			var isiPad = navigator.userAgent.match(/iPad/i) != null;
+			
+			// For use within iPad developer UIWebView
+			// Thanks to Andrew Hedges!
+			var ua = navigator.userAgent;
+//			var isiPad = /iPad/i.test(ua) || /iPhone OS 3_1_2/i.test(ua) || /iPhone OS 3_2_2/i.test(ua);
+			var isiPad = /iPad/i.test(ua);
+
+
+//			<!--if (navigator.userAgent && (navigator.userAgent.indexOf("iPhone") > -1 || navigator.userAgent.indexOf("Mobile") > -1 || navigator.userAgent.indexOf("BlackBerry") > -1)) {-->
+//			if (navigator.userAgent && (navigator.userAgent.indexOf("iPhone") > -1 || navigator.userAgent.indexOf("Mobile") > -1 || navigator.userAgent.indexOf("BlackBerry") > -1 || navigator.userAgent.indexOf("Android") > -1)) {
+//				alert( "Is smaller mobile device!" );
+//				alert( "isiPad = " + isiPad);
+//				<!--window.location.replace("http://www.axholiday.com/stage");-->
+//			}
+
+//    <!-- ======================================================= -->
+//    <!-- BROWSER SNIFFER (iPAD) -->
+//    <!-- ======================================================= -->
+
+//            else if (isiPad) {
+            if (isiPad) {
+//				alert( "isiPad = " + isiPad);
+                window.location.replace("http://www.axholiday.com/stage/index_ipad.html");
+			}
+
+//    <!-- ======================================================= -->
+//    <!-- BROWSER SNIFFER (smaller devices) -->
+//    <!-- ======================================================= -->
+
+			else if (navigator.userAgent && (navigator.userAgent.indexOf("iPhone") > -1 || navigator.userAgent.indexOf("Mobile") > -1 || navigator.userAgent.indexOf("BlackBerry") > -1 || navigator.userAgent.indexOf("Android") > -1)) {
+//				alert( "Is a smaller mobile device!" );
+//				<!--window.location.replace("http://www.axholiday.com/stage");-->
+			}
+
+//    <!-- ======================================================= -->
+//    <!-- BROWSER SNIFFER (desktop) - RE-DIRECT TO ARMANIEXCHANGE.COM -->
+//    <!-- ======================================================= -->
+
+            else {
+//                window.location.replace("http://www.armaniexchange.com/jump.do?itemID=5&itemType=LANDING&giftguide=2011");
+			}
+
+        </script>
+
+
+    <!-- ======================================================= -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================================= -->
+<!--    
+        <script type="text/javascript">
+        
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-21017831-2']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        
+        </script>
+-->    
+    </head>
+    
+    
+<!--    <body onload="attachEventHandler()"> -->
+    <body>
+	    <div id="bgContainer">
+
+		<!--------------------------- BEGIN BODY CONTAINER --------------------------->
+		    <div id="container">
+
+		<!--------------------------- HED --------------------------->
+			   <table>
+				  <tr>
+		<!--
+					 <td>
+						<a href="http://www.armaniexchange.com/category/mobile.do"><img src="../img/ax_hed.jpg" border="0"></a>
+					 </td>
+		-->
+					 <td colspan="2" style="background: url(../img/ax_hed.jpg) no-repeat top left;"><a href="index.html"><img src="../img/spacer.gif" width="100%" height="31" border="0"></a></td>
+				  </tr>
+			   </table>
+
+		<!--------------------------- BEGIN VERTICAL CONTAINER --------------------------->
+			   <div id="vertical_container" >
+
+		<!--------------------------- NON-EXPANDING CONTENT - MAIN --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav0.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,0)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content"></div>
+
+		<!--------------------------- NON-EXPANDING CONTENT --------------------------->
+		<!--            <h1 class="accordion_toggle" style="background: url(../img/ax_bar.jpg) no-repeat top left; height:35;">&nbsp;</h1>-->
+				  <h1 class="accordion_toggle" style="background: url(../img/ax_bar.jpg) no-repeat top left; height: 35px;"><img src="../img/spacer.gif" width="100%" height="35" border="0" onClick="location.href='index.html'"></h1>
+				  <div class="accordion_content"></div>
+
+
+		<!--------------------------- EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav1.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,135)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content">
+
+					 <div id="vertical_nested_container">
+						<table>
+						    <tr>
+							   <td>
+								  <map name="giftmap1">
+									 <area shape="rect" coords="0,0,115,215" href="http://www.armaniexchange.com/product/mobile/womens+/jackets+%26+blazers/stitched+leather+jacket.do" />
+									 <area shape="rect" coords="115,0,320,215" href="http://www.armaniexchange.com/product/mobile/gift+guide/women's+bundle+%26+save/turnlock+hobo+and+wallet+set.do" />
+									 <area shape="rect" coords="0,215,150,425" href="http://www.armaniexchange.com/product/mobile/womens+/watches/a|xx+20th+rose+gold+chrono+watch.do" />
+									 <area shape="rect" coords="150,215,320,425" href="http://www.armaniexchange.com/product/mobile/womens+/outerwear/fur+trim+wool+coat.do" />
+									 <area shape="rect" coords="0,425,205,640" href="http://www.armaniexchange.com/product/mobile/womens+/scarves+%26+gloves/a|xx+20th+fur+trim+glove.do" />
+									 <area shape="rect" coords="205,425,320,640" href="http://www.armaniexchange.com/product/mobile/womens+/denim/j22+-+black+high+rise+legging.do" />
+								  </map>
+
+		<!--                                <img src="../img/womens/content1.jpg" border="0" alt="BEST GIFTS" usemap ="#giftmap1">-->
+								  <img src="../img/womens/content1.jpg" border="0" alt="BEST GIFTS">
+							   </td>
+						    </tr>
+						</table>
+					 </div>
+
+				  </div>
+
+		<!--------------------------- EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav2.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,200)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content">
+
+					 <div id="vertical_nested_container">
+						<table>
+						    <tr>
+							   <td>
+								  <map name="giftmap2">
+									 <area shape="rect" coords="0,0,115,215" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/turnlock+hobo+bag.do" />
+									 <area shape="rect" coords="115,0,320,215" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/encrusted+clutch.do" />
+									 <area shape="rect" coords="0,215,150,425" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/turnlock+crossbody+bag.do" />
+									 <area shape="rect" coords="150,215,320,425" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/envelope+pocket+tote<br>online+exclusive.do" />
+									 <area shape="rect" coords="0,425,205,640" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/medium+turnlock+bag.do" />
+									 <area shape="rect" coords="205,425,320,640" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/sequin+clutch.do" />
+								  </map>
+
+		<!--                                <img src="../img/womens/content2.jpg" border="0" alt="BEST GIFTS" usemap ="#giftmap2">-->
+								  <img src="../img/womens/content2.jpg" border="0" alt="BEST GIFTS">
+							   </td>
+						    </tr>
+						</table>
+					 </div>
+
+				  </div>
+
+		<!--------------------------- EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav3.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,265)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content">
+
+					 <div id="vertical_nested_container">
+						<table>
+						    <tr>
+							   <td>
+								  <map name="giftmap3">
+									 <area shape="rect" coords="0,0,115,215" href="http://www.armaniexchange.com/product/mobile/womens+/dresses/metallic+lace+inset+dress.do" />
+									 <area shape="rect" coords="115,0,320,215" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/oversized+clutch<br>online+exclusive.do" />
+									 <area shape="rect" coords="0,215,150,425" href="http://www.armaniexchange.com/product/mobile/womens+/scarves+%26+gloves/faux+fur+scarf.do" />
+									 <area shape="rect" coords="150,215,320,425" href="http://www.armaniexchange.com/product/mobile/gift+guide/women's+bundle+%26+save/ring+stone+necklace+and+earring+set.do" />
+									 <area shape="rect" coords="0,425,205,640" href="http://www.armaniexchange.com/product/mobile/womens+/sunglasses/classic+wireframe+aviator+sunglasses.do" />
+									 <area shape="rect" coords="205,425,320,640" href="http://www.armaniexchange.com/product/mobile/womens+/dresses/fringe+ponte+dress.do" />
+								  </map>
+
+		<!--                                <img src="../img/womens/content3.jpg" border="0" alt="BEST GIFTS" usemap ="#giftmap3">-->
+								  <img src="../img/womens/content3.jpg" border="0" alt="BEST GIFTS">
+							   </td>
+						    </tr>
+						</table>
+					 </div>
+
+				  </div>
+
+		<!--------------------------- EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav4.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,330)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content">
+
+					 <div id="vertical_nested_container">
+						<table>
+						    <tr>
+							   <td>
+								  <map name="giftmap4">
+									 <area shape="rect" coords="0,0,115,215" href="http://www.armaniexchange.com/product/mobile/womens+/dresses/mesh+strapless+dress.do" />
+									 <area shape="rect" coords="115,0,320,215" href="http://www.armaniexchange.com/product/mobile/womens+/handbags/sequin+clutch.do" />
+									 <area shape="rect" coords="0,215,150,425" href="http://www.armaniexchange.com/product/mobile/womens+/denim/j22+-+colored+crop+legging.do" />
+									 <area shape="rect" coords="150,215,320,425" href="http://www.armaniexchange.com/product/mobile/womens+/jackets+%26+blazers/sequin+blazer<br>online+exclusive.do" />
+									 <area shape="rect" coords="0,425,205,640" href="http://www.armaniexchange.com/product/mobile/womens+/other+accessories/zipper+pump.do" />
+									 <area shape="rect" coords="205,425,320,640" href="http://www.armaniexchange.com/product/mobile/womens+/watches/black+chain+link+watch.do" />
+								  </map>
+
+		<!--                                <img src="../img/womens/content4.jpg" border="0" alt="BEST GIFTS" usemap ="#giftmap4">-->
+								  <img src="../img/womens/content4.jpg" border="0" alt="BEST GIFTS">
+							   </td>
+						    </tr>
+						</table>
+					 </div>
+
+				  </div>
+
+		<!--------------------------- NON-EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav5.jpg) no-repeat top left;">
+					 <a onClick="location.href='mens.html'"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content"></div>
+
+		<!--------------------------- NON-EXPANDING CONTENT --------------------------->
+		<!--
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav6.jpg) no-repeat top left;">
+					 <a onClick="window.scrollTo(0,460)"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content"></div>
+		-->
+
+		<!--------------------------- EXPANDING CONTENT --------------------------->
+				  <h1 class="accordion_toggle" style="background: url(../img/womens/nav7.jpg) no-repeat top left;">
+		<!--                <a onClick="location.href='http://www.armaniexchange.com/category/mobile.do'"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>-->
+					 <a onClick="location.href='index.html'"><img src="../img/spacer.gif" width="320" height="65" border="0"></a>
+				  </h1>
+
+				  <div class="accordion_content">
+
+					 <div id="horizontal_container"></div>
+
+				  </div>
+
+		<!--------------------------- END VERTICAL CONTAINER --------------------------->
+			   </div>
+
+		<!--------------------------- FOOTER --------------------------->
+			   <div class="page-footer">
+				  <br>
+				  <p>Privacy and Security</p>
+				  <p>&copy;2011 Armani Exchange</p>
+				  <br>
+			   </div>
+
+		<!--------------------------- END BODY CONTAINER --------------------------->
+		    </div>
+	    </div>
+    
+    <script type="text/javascript" >
+      
+        // You can hide the accordions on page load like this, it maintains accessibility
+        // Special thanks go out to Will Shaver @ http://primedigit.com/
+    
+        var verticalAccordions = $$('.accordion_toggle');
+        verticalAccordions.each(function(accordion) {
+            $(accordion.next(0)).setStyle({
+              height: '0px'
+            });
+        });
+    
+    </script>
+<!--        
+    <script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+    <script type="text/javascript">_uacct = "UA-624845-2";urchinTracker();</script>
+-->    
+    </body>
+
+</html>

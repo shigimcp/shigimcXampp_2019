@@ -1,0 +1,32 @@
+html, body {
+/*	border: 2px #FF0000 inset !important;*/
+
+/*	width: 1730px;*/
+	width: 1750px;
+	height: 1150px;
+
+	position: relative;
+	margin: 0 auto;
+}
+
+#iPadContainer {
+/*	border: 2px #00FF00 inset !important;*/
+
+	width: 1280px;
+	height: 1150px;
+
+	float: left;
+}
+
+#iPhoneContainer {
+/*	border: 2px #0000FF inset !important;*/
+
+	width: 450px;
+	height: 770px;
+
+	position: absolute;
+	bottom: 150px;
+	right: 0px;
+
+/*	float: right;*/
+}

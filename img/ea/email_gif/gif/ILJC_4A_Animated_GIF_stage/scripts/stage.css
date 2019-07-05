@@ -1,0 +1,178 @@
+html, body {
+	height: 100%;
+	width: 100%;
+
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+
+	font-family: Arial, Helvetica, "Trebuchet MS", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: .125px;
+	color: #000000;
+}
+
+hed {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+subhed {
+	font-size: 20px;
+	line-height: 25px;
+	
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#dimensions {
+	top: 50px;
+	left: 350px;
+	margin: auto;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#dimensions2 {
+	top: 180px;
+	left: 240px;
+	margin: auto;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#flashcontent {
+	top: 80px;
+	left: 300px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#flashcontent2 {
+	top: 180px;
+	left: 240px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#flashcontent3 {
+	top: 300px;
+	left: 240px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#flashcontent4 {
+	top: 50px;
+	left: 1000px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#image {
+	top: 80px;
+	left: 350px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#image2 {
+	top: 180px;
+	left: 240px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#image3 {
+	top: 300px;
+	left: 240px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+#image4 {
+	top: 50px;
+	left: 1000px;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+}
+
+navContainer {
+	top: 0px;
+	left: 0px;
+	margin: 30px 0px 0px 25px;
+	padding: 0px 0px 0px 0px;
+	
+	position: absolute;
+	
+	display: block;
+	float: left;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+
+nav {
+	border-top: 0px solid #888888; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	/*
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0F0;
+	*/
+}
+
+nav ul {
+	border-top: 0px solid #888888; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #888888;
+}
+
+nav ul li {
+	list-style-type: none; /* this removes the list marker */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 0px solid #666; /* this creates the button separation */
+}
+
+nav ul a, nav ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 100%;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+}
+
+nav ul a:hover, nav ul a:active, nav ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #efefef;
+	color: #000000;
+}
+
+table {
+	margin: 0px auto;
+	margin-top: 5%;
+}
+
+footnote {
+	font-size: 11px;
+	line-height: 15px;
+}

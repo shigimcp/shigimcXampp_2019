@@ -1,0 +1,1242 @@
+/* ========== COLORS ========== */
+/*
+grey: #999999
+gold: #90805D
+*/
+
+
+/* ========== REF: MICRO-CLEARFIX (ref: http://themergency.com/css-clearfix-demystified/) ========== */
+
+.clearFix:before, .clearFix:after {
+	content: "";
+	display: table;
+}
+
+.clearFix:after {
+	clear: both;
+}
+
+.clearFix {
+	zoom: 1;
+}
+
+
+
+/* ========== FONTS ========== */
+
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url("../fonts/CenturyGothic.otf") format("opentype");
+	src: url('../fonts/CenturyGothic.eot');
+	src: url('../fonts/CenturyGothic.woff') format('woff'),
+	url('../fonts/CenturyGothic.svg#-CenturyGothic') format('svg');
+	
+}
+
+@font-face {
+	font-family: 'CenturyGothicItalic';
+	src: url("../fonts/CenturyGothicItalic.otf") format("opentype");
+	src: url('../fonts/CenturyGothicItalic.eot');
+	src: url('../fonts/CenturyGothicItalic.woff') format('woff'),
+	url('../fonts/CenturyGothicItalic.svg#CenturyGothic-Italic') format('svg');
+}
+
+@font-face {
+	font-family: 'CenturyGothicBold';
+	src: url("../fonts/CenturyGothicBold.otf") format("opentype");
+	src: url('../fonts/CenturyGothicBold.eot');
+	src: url('../fonts/CenturyGothicBold.woff') format('woff'),
+	url('../fonts/CenturyGothicBold.svg#CenturyGothic-Bold') format('svg');
+}
+
+@font-face {
+	font-family: 'CenturyGothicBoldItalic';
+	src: url("../fonts/CenturyGothicBoldItalic.otf") format("opentype");
+	src: url('../fonts/CenturyGothicBoldItalic.eot');
+	src: url('../fonts/CenturyGothicBoldItalic.woff') format('woff'),
+	url('../fonts/CenturyGothicBoldItalic.svg#CenturyGothic-BoldItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'GothamBlack';
+	src: url("../fonts/GothamBlack.otf") format("opentype");
+	src: url('../fonts/GothamBlack.eot');
+	src: url('../fonts/GothamBlack.woff') format('woff'),
+	url('../fonts/GothamBlack.svg#Gotham-Black') format('svg');
+}
+
+
+
+/* ====================================== */
+/* ========== GLOBAL / GENERIC ========== */
+/* ====================================== */
+
+html, body {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	color: #999999;
+
+	font-family: CenturyGothic, sans-serif;
+	/*font-size: 100%;*/
+	font-size: 70%;
+	font-weight: lighter;
+
+	line-height: 100%;
+	letter-spacing: 1%;
+
+	/*width: 100%;*/
+	height: 100%;
+	/*height: 66.666666666667%;*/
+
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+
+body {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	/*height: 50%;*/
+	/*height: 50%;*/
+	height: 100% !important;
+
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+
+
+/* ========== hed(s) ========== */
+
+hed {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 34.895833333333%;
+	/*height: 100%;*/
+
+	position: absolute;
+	/*top: 35.185185185185%;*/
+	top: 30%;
+	/*left: 21.25%;*/
+	left: 21.354166666667%;
+	/*right: 43.489583333333%;*/
+}
+
+
+hedAlt {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 34.895833333333%;
+	/*height: 100%;*/
+
+	position: absolute;
+	top: 21.296296296296%;
+	left: 17.708333333333%;
+}
+
+
+hed img, hedAlt img {
+/*hed img {*/
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 100%;
+	/*height: 100%;*/
+}
+
+
+/* ========== hero(s) ========== */
+
+hero {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	width: 40%;
+	/*height: 100%;*/
+	opacity: 0;
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+hero img {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	width: 100%;
+	/*height: auto;*/
+	/*height: 40%;*/
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+/* ========== text formatting - reserved tags ========== */
+
+h1 {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	/*font-size: 35px;*/
+	font-size: 200%;
+	font-weight: lighter;
+
+	letter-spacing: inherit;
+
+	margin: 0;
+	padding: 0 0 1.875% 0;
+}
+
+h2 {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	/*font-size: 25px;*/
+	font-size: 115%;
+	font-weight: lighter;
+
+	letter-spacing: inherit;
+
+	margin: 0;
+	padding: 1.25% 0;
+}
+
+h3 {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	/*font-family: CenturyGothicItalic, sans-serif;*/
+	/*font-style: italic;*/
+	font-size: 130%;
+	font-weight: lighter;
+
+	line-height: 35px;
+	letter-spacing: inherit;
+}
+
+b {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	font-family: CenturyGothicBold, sans-serif;
+}
+
+i {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	font-family: CenturyGothicItalic, sans-serif;
+}
+
+p {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	/*font-size: 17px;*/
+	font-size: 95%;
+	font-weight: lighter;
+
+	width: 95%;
+
+	/*line-height: 25px;
+	letter-spacing: .75px;*/
+
+	line-height: 150%;
+	letter-spacing: 1%;
+
+	margin: 0;
+	padding: .75% 0;
+}
+
+q {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	font-family: CenturyGothicItalic, sans-serif;
+	font-weight: lighter;
+}
+
+ul {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	list-style: inside;
+	list-style-type: bullet;
+
+	margin-left: 0;
+	padding-left: 0;
+}
+
+li {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	width: 90%;
+
+	font-size: 95%;
+	line-height: 125%;
+	text-indent: -5%;
+/*
+	margin: 0;
+	padding: 0;
+*/
+	padding: 0 0 1.25% 5%;
+}
+
+sub {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+	opacity: .6;
+
+	font-size: 75%;
+	letter-spacing: .875px;
+	line-height: 150%;
+}
+
+sub a {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+}
+
+
+/* ========== text formatting - custom ========== */
+
+.logo {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	font-family: GothamBlack, sans-serif;
+
+	text-transform: uppercase;
+}
+
+.statement {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	font-family: CenturyGothicItalic, sans-serif;
+}
+
+
+/* ========== CONTAINER - copyContainer ========== */
+
+copyContainer {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	/*color: #90805D;*/
+	color: #999999;
+
+	width: 51.302083333333%;
+	/*height: auto;*/
+
+	margin: 0;
+	padding: 0;
+
+	opacity: 0;
+
+	/*position: absolute;
+	top: 61.111111111111%;
+	left: 9.375%;*/
+}
+
+
+/* ========== NAV ========== */
+
+navContainer {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	width: 100%;
+	height: 10.185185185185%;
+
+	position: fixed;
+	z-index: 999999;
+}
+
+nav {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	font-size: 5px;
+
+	margin: -3.75% 0px 0px 17.96875%;
+}
+
+nav a {
+	/*border: 02px solid #FFFFFF;
+	border-style: inset;*/
+	/*border-bottom: 1px solid #90805D;*/
+
+	color: #999999;
+
+	text-decoration: none;
+
+	margin: 0px 1.25%;
+	padding: 0px;
+
+	-webkit-transition: 0.375s;
+	-moz-transition: 0.375s;
+	-o-transition: 0.375s;
+	-ms-transition: 0.375s;
+	transition: 0.375s;
+}
+
+nav a:hover {
+	color: #90805D;
+	border-bottom: 1px solid #90805D;
+}
+
+/*
+nav a:link, nav a:visited {
+	background-color: #CCCCCC;
+}
+
+nav a:hover {
+	background-color: #000000;
+}
+
+nav a:active {
+	background-color: #000000;
+}
+*/
+
+#navLogo {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+	border: none;
+
+	width: 17.96875%;
+
+	/*margin-top: 2.5%;*/
+}
+
+nav img {
+	border: none;
+	height: 30%;
+}
+
+
+.pinnit {
+	border: 02px solid #FF00FF;
+	border-style: inset;
+
+	background-image: url(img/nav/share_pn.png) !important;
+
+	height: 30%;
+}
+
+
+
+/* ========================== */
+/* ========== HOME ========== */
+/* ========================== */
+
+.hedHome {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	/*width: 50.260416666667%;*/
+	/*width: 49.875%;*/
+	width: 50%;
+	/*height: 100%;*/
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	/*top: 28.6%;*/
+	/*top: 23.375%;*/
+	/*left: 15.95%;*/
+	top: 20%;
+	left: 10%;
+}
+
+.hedHome img {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.copyHome {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	/*width: 56.770833333333%;*/
+	width: 60%;
+
+	position: absolute;
+	/*top: 61.111111111111%;
+	left: 9.375%;*/
+	/*top: 60%;*/
+	/*left: 11.25%;*/
+	/*top: 67.5%;
+	left: 6.25%;*/
+	top: 62.5%;
+	left: 6.25%;
+}
+
+.copyHome img {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	width: 50%;
+	/*width: 25%;*/
+	/*height: 100%;*/
+}
+
+.copyHome p {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*font-size: 90%;*/
+
+	/*width: 40%;*/
+	width: 47.5%;
+
+	position: absolute;
+	/*top: 44.036697247706%;*/
+	top: 15%;
+	left: 52.5%;
+	/*left: 42.5%;*/
+}
+
+.heroHome {
+}
+
+
+
+/* =========================== */
+/* ========== ABOUT ========== */
+/* =========================== */
+
+.hedAbout {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*width: 34.895833333333%;*/
+	width: 35%;
+
+	/*position: absolute;*/
+	position: fixed;
+	top: 21.296296296296%;
+	left: 17.708333333333%;
+}
+
+.hedAbout img {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.heroAbout {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*width: 54.427083333333%;*/
+	/*width: 34.895833333333%;*/
+	width: 40.104166666667%;
+	/*width: 100%;*/
+	/*height: 100%;*/
+
+	/*position: absolute;*/
+	position: fixed;
+	/*top: 0px;*/
+	/*top: 7.8125%;*/
+	top: 0%;
+	right: 0px;
+}
+
+.heroAbout img {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 100%;
+	height: auto;
+	/*height: 208.333333333333%;*/
+/*
+	position: absolute;
+	top: 0px;
+	right: 0px;
+*/
+}
+
+.copyAbout {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	color: #999999;
+
+	/*width: 38.75%;*/
+	/*width: 50%;*/
+	/*width: 46.875%;*/
+	width: 42.5%;
+	/*height: 100%;*/
+	height: 50%;
+
+	/*position: absolute;*/
+	position: fixed;
+/*
+	top: 52.777777777778%;
+	left: 10.416666666667%;
+*/
+/*
+	top: 47.5%;
+	left: 12.5%;
+*/
+	top: 47.5%;
+	left: 13.75%;
+	overflow: auto;
+}
+
+.copyAbout img {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	width: 33.333333333333%;
+
+	margin: 0px;
+	padding: 1.25% 5% 1.25% 0%;;
+
+	float: left;
+}
+
+
+
+/* ======================================= */
+/* ========== PRODUCT - CONQUER ========== */
+/* ======================================= */
+
+/* ========== CONTAINER - prodContainer ========== */
+
+prodContainer {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	/*width: 810px;*/
+	/*width: 100%;*/
+/*
+	max-width: 30.729166666667%;
+	max-height: 100%;
+*/
+	width: 30.729166666667%;
+	/*height: 73.148148148148%;*/
+	height: auto;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 25%;
+	left: 0px;
+}
+
+prodContainer img {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	/*width: 810px;*/
+	/*width: 100%;*/
+
+	width: 100%;
+	height: auto;
+
+/*
+	max-width: 100%;
+	max-height: 100%;
+*/
+/*
+	width: 30.729166666667%;
+	height: 73.148148148148%;
+*/
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+
+	opacity: 0;
+}
+
+
+/* ========== CONTAINER - prodNavContainer ========== */
+
+prodNavContainer {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+/*
+	background-image: url('../img/product/prod_nav.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+*/
+
+	width: 33.333333333333%;
+	height: 38.425925925926;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	/*top: 15%;*/
+	top: 12.5%;
+	/*left: 61.71875%;*/
+	left: 61.25%;
+}
+
+prodNavContainer img {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+	border: none;
+
+	width: 17.5%;
+	height: 17.5%;
+	/*height: auto;*/
+
+	/*opacity: .25;*/
+
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ========== CONTAINER - focusContainer ========== */
+
+focusContainer {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	opacity: 0;
+}
+
+
+/* ========== CONTAINER - hedContainer ========== */
+
+hedContainer {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	line-height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	opacity: 0;
+
+	position: absolute;
+	/*top: 57.5%;*/
+	top: 55%;
+	left: 30.729166666667%;
+}
+
+hedContainer h1 {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	font-size: 175%;
+}
+
+hedContainer h2 {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #999999;
+
+	font-size: 150%;
+
+	padding-bottom: 5%;
+}
+
+hedContainer a {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+	/*border-bottom: 1px solid #90805D;*/
+
+	color: #90805D;
+
+	text-decoration: none;
+
+	-webkit-transition: 0.375s;
+	-moz-transition: 0.375s;
+	-o-transition: 0.375s;
+	-ms-transition: 0.375s;
+	transition: 0.375s;
+}
+
+hedContainer a:hover {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+	border-bottom: 1px solid #90805D;
+
+	color: #90805D;
+}
+
+
+/* ========== CONTAINER - infoContainer ========== */
+
+description, benefits, ingredients {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	width: 40%;
+	/*height: 15%;*/
+	height: 25%;
+
+	margin: 0;
+	padding: 0;
+
+	opacity: 0;
+
+	position: absolute;
+	top: 66.3125%;
+	left: 30.729166666667%;
+
+	overflow-y: auto;
+}
+
+
+/* ========== BUY BOW - .buy ========== */
+
+.buy {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #90805D;
+
+	font-family: CenturyGothicBold, sans-serif;
+	font-size: 90%;
+	font-weight: lighter;
+
+	opacity: 0;
+
+	position: absolute;
+	top: 92.5%;
+	left: 30.729166666667%;
+}
+
+
+/* ========== CONTAINER - plusOneContainer ========== */
+
+plusOneContainer {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	color: #999999;
+
+	width: 20%;
+
+	font-size: 17.5px;
+	
+	opacity: 0;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 60%;
+	left: 73.958333333333%;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+plusOneContainer img {
+	border: 01px solid #90805D;
+	/*border-style: inset;*/
+
+	width: 30%;
+	height: auto;
+
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+}
+
+
+
+/* ========================== */
+/* ========== REGIMEN ========== */
+/* ========================== */
+
+
+/* ========== CONTAINER - regContainer ========== */
+
+regContainer {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-size: 80%;
+
+	line-height: 125%;
+
+	width: 52.083333333333%;
+	height: 46.296296296296%;
+
+	opacity: 0;
+
+	position: absolute;
+	left: 4.166666666667%;
+	top: 35%;
+	/*top: 37.962962962963%;*/
+	/*top: 56.481481481481%;*/
+}
+
+regImage {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	/*width: 17.1875%;*/
+	width: 33%;
+
+	position: inherit;
+}
+
+regImage img {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	width: 100%;
+}
+
+regContainer h1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-size: 200%;
+	font-weight: lighter;
+
+	position: inherit;
+	top: 38.75%;
+	left: 35%;
+}
+
+regDescr {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	/*height: 46.296296296296%;*/
+	/*height: 47.5%;*/
+	height: 60%;
+
+	margin: 0;
+	padding: 0;
+
+	position: inherit;
+	/*top: 44.444444444444%;*/
+	/*top: 38.75%;*/
+	top: 51.25%;
+	left: 35%;
+
+	overflow: auto;
+}
+
+regDescr h2 {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	font-size: 125%;
+	font-weight: lighter;
+
+	margin: 0;
+	padding: 0;
+
+}
+
+
+/* ========== CONTAINER - regNavContainer ========== */
+
+regNavContainer {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*width: 36.458333333333%;*/
+	width: 36.25%;
+	height: 38.888888888889%;
+
+	letter-spacing: 1.5%;
+
+	position: absolute;
+	/*top: 12.5%;
+	right: 2.5%;*/
+}
+
+regNavContainer h1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-size: 150%;
+
+	text-align: right;
+
+	margin: 0 52.5% 2.5% 0;
+	padding: 0;
+}
+
+regNavContainer ul, regNavContainer li {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-size: 90%;
+
+	line-height: 150%;
+
+	margin: 0;
+	padding: 0;
+}
+
+regNavContainer img {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	height: 100%;
+
+	position: inherit;
+	top: 0%;
+	right: 0%;
+}
+
+#rn0 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	position: absolute;
+	/*top: 10%;
+	right: 1.25%;*/
+	/*top: 9.875%;*/
+	top: 9.875%;
+	right: 1.125%;
+}
+
+#rn0 h1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	margin-top: 20%;
+}
+
+#rn1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	position: absolute;
+	top: 32.5%;
+	right: 8.75%;
+}
+
+#rn1 h1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	margin-top: 25%;
+}
+
+#rn2 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	position: absolute;
+	top: 47.5%;
+	right: 2.75%;
+}
+
+#rn2 h1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	margin-top: 40%;
+}
+
+
+/* ========== HOTSPOTS ========== */
+
+hotspot {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*width: 36.458333333333%;*/
+	width: 40%;
+	height: 25%;
+
+	position: absolute;
+	top: 11.25%;
+	right: 0%;
+}
+
+hotspot img {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	width: 100%;
+	height: 100%;
+}
+
+
+#hs0 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	top: 11.25%;
+}
+
+#hs1 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	height: 21.25%;
+	top: 36.25%;
+}
+
+#hs2 {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	top: 57.5%;
+}
+
+
+
+/* ========================== */
+/* ========== CONTACT ========== */
+/* ========================== */
+
+form {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 65%;
+	/*height: 50%;*/
+
+	color: #90805D;
+
+	font-size: 125%;
+	font-weight: lighter;
+
+	line-height: 200%;
+
+	position: absolute;
+	top: 46.25%;
+	left: 18.75%;
+}
+
+form .contact {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-size: 85%;
+
+	/*padding-top: 1.25%;*/
+	margin: 0;
+	padding: 0;
+}
+
+form table b {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-family: GothamBlack, sans-serif;
+	font-weight: 100;
+}
+
+form table tr, form table td {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	vertical-align: middle;
+
+	margin: 0px;
+	padding: 0 2.5% 0 0;
+}
+
+form input, form textarea {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	color: #999999;
+
+	width: 100%;
+	height: 75%;
+
+	font-family: inherit;
+	font-size: 75%;
+
+	line-height: 100%;
+	letter-spacing: 1%;
+
+	margin: 0;
+	padding: 0;
+}
+
+input[type='submit'] {
+	border: 1px solid #90805D;
+	border-style: inset;
+
+	background: #90805D;
+	color: #FFFFFF;
+
+	width: 27.5%;
+	height: 200%;
+
+	margin: 0;
+	/*margin-top: 15%;*/
+	/*margin-top: 5%;*/
+	padding: .5% 0 1% 0;
+}
+
+
+
+/* ========================== */
+/* ========== SHOP(IFY) ========== */
+/* ========================== */
+
+iframe {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+	border: none;
+
+	width: 100%;
+	/*height: 95%;*/
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 10.185185185185%;
+	/*top: 25%;*/
+	left: 0%;
+}

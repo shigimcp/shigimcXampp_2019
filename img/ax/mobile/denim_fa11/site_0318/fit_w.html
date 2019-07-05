@@ -1,0 +1,2252 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+<title>A|X DENIM - FIND YOUR FIT</title>
+
+
+<!-- ======================================================= -->
+<!-- Meta Tags -->
+<!-- ======================================================= -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!--<meta name="viewport" content="width=device-width; initial-scale=1.0;" />-->
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- Meta Tags - FACEBOOK Open Graph Protocol -->
+<!--
+<meta property="og:title" content="A|XX - Celebrating 20 Years of Style in 2011" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.axx2011.com/mobile.html" />
+<meta property="og:image" content="http://www.axx2011.com/img/AXX_badge.jpg" />
+<meta property="og:site_name" content="A|XX 2011" />
+<meta property="fb:app_id" content="151938061528481" />
+
+<meta property="og:description" content="A|XX - Celebrating 20 Years of Style in 2011"/>
+<meta property="og:video" content="http://www.youtube.com/watch?v=b2wRjPR6Ogs"/>
+-->    
+
+
+
+<!-- ======================================================= -->
+<!-- IMPORTS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript" src="../javascript/prototype.js"></script>
+<script type="text/javascript" src="../javascript/effects.js"></script>
+<script type="text/javascript" src="../javascript/accordion.js"></script>
+<script type="text/javascript" src="../javascript/code_highlighter.js"></script>
+<script type="text/javascript" src="../javascript/javascript.js"></script>
+<script type="text/javascript" src="../javascript/html.js"></script>
+
+<link rel="stylesheet" type="text/css" href="00site_0318.css" />
+
+<script type="application/x-javascript">
+
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    
+    function hideURLbar(){
+        window.scrollTo(0,0);
+//        document.getElementById("topSlides").className = "slides";
+    }
+
+    function moveMe(newY){
+        window.scrollTo(0,newY);
+    }
+
+</script>
+
+
+<!-- ======================================================= -->
+<!-- BROWSER SNIFFER -->
+<!-- ======================================================= -->
+
+<!--
+<script language="javascript">
+
+    if (navigator.userAgent && navigator.userAgent.indexOf("iPhone") == -1 && navigator.userAgent.indexOf("Mobile") == -1 && navigator.userAgent.indexOf("BlackBerry") == -1 ) {
+ 		   window.location.replace("http://www.armaniexchange.com/category/denim.do?");
+    }
+
+</script>
+-->
+
+
+<script type="text/javascript">
+function setConfig(configObject) {
+	config = configObject;
+	
+	//get ol list and children
+    var ol = document.body.getElementsByTagName('ol')[0];
+    scenes = ol.children;
+
+	currentSceneIndex = -1;
+}
+
+
+function start() {	
+	goToScene(0);
+}
+
+function goToSceneID(id) {
+	for (var i=0; i < config.length; i++) {
+		if (config[i].id === id) {
+			goToScene(i);
+			return;
+		}
+	}
+}
+
+
+//function to go directly to any scene
+function goToScene(index) {
+    
+    //go to scene
+    startScene(index);
+
+	//set up timer if jumping on done
+	if (config[index].jump !== -1) {
+		applyTimeout(config[index].jump, config[index].duration);
+	}
+	
+}
+
+function startScene(index) {
+    
+	//restart current scene without flicker
+	if (index === currentSceneIndex) {
+		scenes[index].setAttribute('class','run restart');
+		setTimeout(function(){
+	        scenes[index].setAttribute('class','run');
+			},0);
+		return;
+	}
+
+    //add the class "run" to the scene currently running and remove it from anybody else
+    var scene;
+    for (var i=0; i < scenes.length; i++) {
+        scene = scenes[i];
+        if (i === index) {
+            scene.setAttribute('class','run');
+        } else {
+            scene.setAttribute('class','');
+        }
+        
+    }
+
+	currentSceneIndex = index;
+    
+}
+
+//set timeout
+function applyTimeout(index,time) {
+    setTimeout(function(){
+        goToScene(index);
+    },time);
+}
+</script>
+
+
+<script type="text/javascript">
+window.onload=setup;
+function setup() {
+setConfig([{"jump":-1,"duration":1500,"id":4},{"jump":-1,"duration":1250.0000000000002,"id":9},{"jump":-1,"duration":1259.9999999999998,"id":16},{"jump":-1,"duration":1250,"id":14},{"jump":-1,"duration":1250,"id":10},{"jump":-1,"duration":1250,"id":7},{"jump":-1,"duration":1250,"id":11},{"jump":-1,"duration":1250,"id":8},{"jump":-1,"duration":1250,"id":12},{"jump":-1,"duration":1250,"id":34},{"jump":-1,"duration":1250,"id":35}]);
+start();
+}
+</script>
+
+
+<style type="text/css">
+
+.AN-sObj-stage {
+ border:0px solid #000;
+ position: relative;
+ overflow:hidden;
+ -webkit-perspective: 600;
+ -webkit-transform-style:preserve-3d;
+ }
+
+ .AN-sObj-stage div {
+ position: absolute;
+ }
+
+ .AN-sObj-stage a {
+color: inherit;
+ text-decoration:none;
+}
+
+ .AN-sObj-stage * {
+margin:0;
+ padding:0;
+ -webkit-font-smoothing: antialiased;
+}
+
+ body,.AN-sObj-stage,ol,li {
+margin:0;
+ padding:0;
+}
+
+ ol {
+list-style:none;
+ position:relative;
+}
+
+ li {
+position:absolute;
+ top:0;
+ left:0;
+}
+
+li {
+ display:none;
+ }
+
+li.run {
+display:block;
+ }
+
+.restart * {
+ -webkit-animation-name: none !important;
+ }
+
+.AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+display:block;
+ }
+
+#AN-sObj-34980{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34981{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34982{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34983{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34984{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34985{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-34986{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-34987{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-34988{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-34989{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-34990{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-34991{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-34999{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35000{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35001{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35002{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35003{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35004{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35005{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35006{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35007{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35008{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35009{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35010{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35011{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35015{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35016{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35017{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35018{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35019{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35020{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35021{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35022{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35023{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35024{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35025{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35026{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35027{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35031{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35032{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35033{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35034{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35035{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35036{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35037{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35038{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35039{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35040{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35041{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35042{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35043{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35047{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35048{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35049{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35050{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35051{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35052{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35053{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35054{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35055{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35056{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35057{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35058{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35059{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35063{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35064{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35065{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35066{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35067{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35068{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35069{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35070{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35071{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35072{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35073{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35074{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35075{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35079{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35080{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35081{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35082{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35083{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35084{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35085{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35086{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35087{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35088{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35089{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35090{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35091{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35095{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35096{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35097{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35098{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35099{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35100{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35101{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35102{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35103{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35104{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35105{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35106{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35107{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35111{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35112{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35113{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35114{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35115{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35116{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 320px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35117{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35118{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35119{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35120{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35121{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35122{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35123{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35127{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35128{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35129{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35130{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35131{
+ -webkit-transform: translate3d(0px, 40px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35132{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35133{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35134{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35135{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35136{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35137{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35138{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35139{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35143{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35144{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35145{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35146{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35147{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35148{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35149{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35150{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35151{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+-webkit-animation-direction: alternate;
+ }
+
+#AN-sObj-35152{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35153{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35154{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35155{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+@-webkit-keyframes AN-ani-34992 {
+0% {
+-webkit-transform: translate3d(195px, 285px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(175px, 285px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34982 {
+-webkit-animation-name: AN-ani-34992;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34982 {
+-webkit-transform: translate3d(195px, 285px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-34993 {
+0% {
+-webkit-transform: translate3d(165px, 255px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(145px, 255px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34983 {
+-webkit-animation-name: AN-ani-34993;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34983 {
+-webkit-transform: translate3d(165px, 255px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-34994 {
+0% {
+-webkit-transform: translate3d(20px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34985 {
+-webkit-animation-name: AN-ani-34994;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34985 {
+-webkit-transform: translate3d(20px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-34995 {
+0% {
+-webkit-transform: translate3d(225px, 345px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(205px, 345px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34986 {
+-webkit-animation-name: AN-ani-34995;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34986 {
+-webkit-transform: translate3d(225px, 345px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-34996 {
+0% {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(270px, 125px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34987 {
+-webkit-animation-name: AN-ani-34996;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 0.75s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34987 {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-34997 {
+0% {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 125px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-34988 {
+-webkit-animation-name: AN-ani-34997;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 0.75s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34988 {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35012 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35003 {
+-webkit-animation-name: AN-ani-35012;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35003 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35013 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35004 {
+-webkit-animation-name: AN-ani-35013;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35004 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35028 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35019 {
+-webkit-animation-name: AN-ani-35028;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35019 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35029 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35020 {
+-webkit-animation-name: AN-ani-35029;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35020 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35044 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35035 {
+-webkit-animation-name: AN-ani-35044;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35035 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35045 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35036 {
+-webkit-animation-name: AN-ani-35045;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35036 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35060 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35051 {
+-webkit-animation-name: AN-ani-35060;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35051 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35061 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35052 {
+-webkit-animation-name: AN-ani-35061;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35052 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35076 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35067 {
+-webkit-animation-name: AN-ani-35076;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35067 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35077 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35068 {
+-webkit-animation-name: AN-ani-35077;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35068 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35092 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35083 {
+-webkit-animation-name: AN-ani-35092;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35083 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35093 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35084 {
+-webkit-animation-name: AN-ani-35093;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35084 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35108 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35099 {
+-webkit-animation-name: AN-ani-35108;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35099 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35109 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35100 {
+-webkit-animation-name: AN-ani-35109;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35100 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35124 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35115 {
+-webkit-animation-name: AN-ani-35124;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35115 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35125 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35116 {
+-webkit-animation-name: AN-ani-35125;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35116 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35140 {
+0% {
+-webkit-transform: translate3d(320px, 40px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 40px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35131 {
+-webkit-animation-name: AN-ani-35140;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35131 {
+-webkit-transform: translate3d(320px, 40px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35141 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35132 {
+-webkit-animation-name: AN-ani-35141;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35132 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35156 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35147 {
+-webkit-animation-name: AN-ani-35156;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35147 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35157 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35148 {
+-webkit-animation-name: AN-ani-35157;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35148 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+</style>
+
+
+<!-- ======================================================= -->
+<!-- GOOGLE ANALYTICS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21017831-6']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+</head>
+<body>
+<ol>
+
+<li id="scene-0"><div class="AN-sObj-stage" id="ext-gen6674"><div class="AN-Object" id="AN-sObj-34980"><div id="AN-sObj-val-34980"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-34981"><div id="AN-sObj-val-34981"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-34982"><div id="AN-sObj-val-34982"><img src="../assets/cta.png"></div></div><div id="AN-sObj-34983"></div><div class="AN-Object" id="AN-sObj-34984"><div id="AN-sObj-val-34984"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-34985" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-34985"><div id="AN-sObj-val-34985"><img src="../assets/womensFIT_J22.png"></div></div></a><a id="AN-sObj-link-34986" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-34986"><div id="AN-sObj-val-34986"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-34987" href="javascript:goToSceneID(9)" target="_self"> <div class="AN-Object" id="AN-sObj-34987"><div id="AN-sObj-val-34987"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-34988" href="javascript:goToSceneID(35)" target="_self"> <div class="AN-Object" id="AN-sObj-34988"><div id="AN-sObj-val-34988"><img src="../assets/btn_prev.png"></div></div></a><a id="AN-sObj-link-34989" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-34989"><div id="AN-sObj-val-34989"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-34990" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-34990"><div id="AN-sObj-val-34990"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-34991" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-34991"><div id="AN-sObj-val-34991"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-1"><div class="AN-sObj-stage" id="ext-gen6783"><div class="AN-Object" id="AN-sObj-34999"><div id="AN-sObj-val-34999"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35000"><div id="AN-sObj-val-35000"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35001"><div id="AN-sObj-val-35001"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35002"></div><a id="AN-sObj-link-35003" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35003"><div id="AN-sObj-val-35003"><img src="../assets/womensFIT_J22.png"></div></div></a><a id="AN-sObj-link-35004" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35004"><div id="AN-sObj-val-35004"><img src="../assets/womensFIT_J11.png"></div></div></a><a id="AN-sObj-link-35005" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35005"><div id="AN-sObj-val-35005"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35006" href="javascript:goToSceneID(14)" target="_self"> <div class="AN-Object" id="AN-sObj-35006"><div id="AN-sObj-val-35006"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35007" href="javascript:goToSceneID(16)" target="_self"> <div class="AN-Object" id="AN-sObj-35007"><div id="AN-sObj-val-35007"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35008"><div id="AN-sObj-val-35008"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35009" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35009"><div id="AN-sObj-val-35009"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35010" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35010"><div id="AN-sObj-val-35010"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35011" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35011"><div id="AN-sObj-val-35011"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-2"><div class="AN-sObj-stage" id="ext-gen6899"><div class="AN-Object" id="AN-sObj-35015"><div id="AN-sObj-val-35015"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35016"><div id="AN-sObj-val-35016"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35017"><div id="AN-sObj-val-35017"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35018"></div><a id="AN-sObj-link-35019" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35019"><div id="AN-sObj-val-35019"><img src="../assets/womensFIT_J22.png"></div></div></a><a id="AN-sObj-link-35020" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35020"><div id="AN-sObj-val-35020"><img src="../assets/womensFIT_J11.png"></div></div></a><a id="AN-sObj-link-35021" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35021"><div id="AN-sObj-val-35021"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35022" href="javascript:goToSceneID(9)" target="_self"> <div class="AN-Object" id="AN-sObj-35022"><div id="AN-sObj-val-35022"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35023" href="javascript:goToSceneID(35)" target="_self"> <div class="AN-Object" id="AN-sObj-35023"><div id="AN-sObj-val-35023"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35024"><div id="AN-sObj-val-35024"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35025" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35025"><div id="AN-sObj-val-35025"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35026" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35026"><div id="AN-sObj-val-35026"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35027" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35027"><div id="AN-sObj-val-35027"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-3"><div class="AN-sObj-stage" id="ext-gen7015"><div class="AN-Object" id="AN-sObj-35031"><div id="AN-sObj-val-35031"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35032"><div id="AN-sObj-val-35032"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35033"><div id="AN-sObj-val-35033"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35034"></div><a id="AN-sObj-link-35035" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35035"><div id="AN-sObj-val-35035"><img src="../assets/womensFIT_J57.png"></div></div></a><a id="AN-sObj-link-35036" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35036"><div id="AN-sObj-val-35036"><img src="../assets/womensFIT_J11.png"></div></div></a><a id="AN-sObj-link-35037" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35037"><div id="AN-sObj-val-35037"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35038" href="javascript:goToSceneID(7)" target="_self"> <div class="AN-Object" id="AN-sObj-35038"><div id="AN-sObj-val-35038"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35039" href="javascript:goToSceneID(10)" target="_self"> <div class="AN-Object" id="AN-sObj-35039"><div id="AN-sObj-val-35039"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35040"><div id="AN-sObj-val-35040"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35041" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35041"><div id="AN-sObj-val-35041"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35042" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35042"><div id="AN-sObj-val-35042"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35043" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35043"><div id="AN-sObj-val-35043"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-4"><div class="AN-sObj-stage" id="ext-gen7131"><div class="AN-Object" id="AN-sObj-35047"><div id="AN-sObj-val-35047"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35048"><div id="AN-sObj-val-35048"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35049"><div id="AN-sObj-val-35049"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35050"></div><a id="AN-sObj-link-35051" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35051"><div id="AN-sObj-val-35051"><img src="../assets/womensFIT_J57.png"></div></div></a><a id="AN-sObj-link-35052" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35052"><div id="AN-sObj-val-35052"><img src="../assets/womensFIT_J11.png"></div></div></a><a id="AN-sObj-link-35053" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35053"><div id="AN-sObj-val-35053"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35054" href="javascript:goToSceneID(14)" target="_self"> <div class="AN-Object" id="AN-sObj-35054"><div id="AN-sObj-val-35054"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35055" href="javascript:goToSceneID(16)" target="_self"> <div class="AN-Object" id="AN-sObj-35055"><div id="AN-sObj-val-35055"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35056"><div id="AN-sObj-val-35056"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35057" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35057"><div id="AN-sObj-val-35057"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35058" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35058"><div id="AN-sObj-val-35058"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35059" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35059"><div id="AN-sObj-val-35059"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-5"><div class="AN-sObj-stage" id="ext-gen7247"><div class="AN-Object" id="AN-sObj-35063"><div id="AN-sObj-val-35063"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35064"><div id="AN-sObj-val-35064"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35065"><div id="AN-sObj-val-35065"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35066"></div><a id="AN-sObj-link-35067" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35067"><div id="AN-sObj-val-35067"><img src="../assets/womensFIT_J24.png"></div></div></a><a id="AN-sObj-link-35068" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35068"><div id="AN-sObj-val-35068"><img src="../assets/womensFIT_J57.png"></div></div></a><a id="AN-sObj-link-35069" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35069"><div id="AN-sObj-val-35069"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35070" href="javascript:goToSceneID(8)" target="_self"> <div class="AN-Object" id="AN-sObj-35070"><div id="AN-sObj-val-35070"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35071" href="javascript:goToSceneID(11)" target="_self"> <div class="AN-Object" id="AN-sObj-35071"><div id="AN-sObj-val-35071"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35072"><div id="AN-sObj-val-35072"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35073" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35073"><div id="AN-sObj-val-35073"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35074" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35074"><div id="AN-sObj-val-35074"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35075" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35075"><div id="AN-sObj-val-35075"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-6"><div class="AN-sObj-stage" id="ext-gen7363"><div class="AN-Object" id="AN-sObj-35079"><div id="AN-sObj-val-35079"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35080"><div id="AN-sObj-val-35080"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35081"><div id="AN-sObj-val-35081"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35082"></div><a id="AN-sObj-link-35083" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35083"><div id="AN-sObj-val-35083"><img src="../assets/womensFIT_J24.png"></div></div></a><a id="AN-sObj-link-35084" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35084"><div id="AN-sObj-val-35084"><img src="../assets/womensFIT_J57.png"></div></div></a><a id="AN-sObj-link-35085" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35085"><div id="AN-sObj-val-35085"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35086" href="javascript:goToSceneID(7)" target="_self"> <div class="AN-Object" id="AN-sObj-35086"><div id="AN-sObj-val-35086"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35087" href="javascript:goToSceneID(10)" target="_self"> <div class="AN-Object" id="AN-sObj-35087"><div id="AN-sObj-val-35087"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35088"><div id="AN-sObj-val-35088"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35089" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35089"><div id="AN-sObj-val-35089"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35090" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35090"><div id="AN-sObj-val-35090"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35091" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35091"><div id="AN-sObj-val-35091"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-7"><div class="AN-sObj-stage" id="ext-gen7479"><div class="AN-Object" id="AN-sObj-35095"><div id="AN-sObj-val-35095"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35096"><div id="AN-sObj-val-35096"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35097"><div id="AN-sObj-val-35097"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35098"></div><a id="AN-sObj-link-35099" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35099"><div id="AN-sObj-val-35099"><img src="../assets/womensFIT_J70.png"></div></div></a><a id="AN-sObj-link-35100" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35100"><div id="AN-sObj-val-35100"><img src="../assets/womensFIT_J24.png"></div></div></a><a id="AN-sObj-link-35101" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35101"><div id="AN-sObj-val-35101"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35102" href="javascript:goToSceneID(34)" target="_self"> <div class="AN-Object" id="AN-sObj-35102"><div id="AN-sObj-val-35102"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35103" href="javascript:goToSceneID(12)" target="_self"> <div class="AN-Object" id="AN-sObj-35103"><div id="AN-sObj-val-35103"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35104"><div id="AN-sObj-val-35104"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35105" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35105"><div id="AN-sObj-val-35105"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35106" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35106"><div id="AN-sObj-val-35106"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35107" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35107"><div id="AN-sObj-val-35107"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-8"><div class="AN-sObj-stage" id="ext-gen7595"><div class="AN-Object" id="AN-sObj-35111"><div id="AN-sObj-val-35111"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35112"><div id="AN-sObj-val-35112"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35113"><div id="AN-sObj-val-35113"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35114"></div><a id="AN-sObj-link-35115" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35115"><div id="AN-sObj-val-35115"><img src="../assets/womensFIT_J70.png"></div></div></a><a id="AN-sObj-link-35116" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35116"><div id="AN-sObj-val-35116"><img src="../assets/womensFIT_J24.png"></div></div></a><a id="AN-sObj-link-35117" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35117"><div id="AN-sObj-val-35117"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35118" href="javascript:goToSceneID(8)" target="_self"> <div class="AN-Object" id="AN-sObj-35118"><div id="AN-sObj-val-35118"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35119" href="javascript:goToSceneID(11)" target="_self"> <div class="AN-Object" id="AN-sObj-35119"><div id="AN-sObj-val-35119"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35120"><div id="AN-sObj-val-35120"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35121" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35121"><div id="AN-sObj-val-35121"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35122" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35122"><div id="AN-sObj-val-35122"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35123" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35123"><div id="AN-sObj-val-35123"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-9"><div class="AN-sObj-stage" id="ext-gen7711"><div class="AN-Object" id="AN-sObj-35127"><div id="AN-sObj-val-35127"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35128"><div id="AN-sObj-val-35128"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35129"><div id="AN-sObj-val-35129"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35130"></div><a id="AN-sObj-link-35131" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35131"><div id="AN-sObj-val-35131"><img src="../assets/womensFIT_J22.png"></div></div></a><a id="AN-sObj-link-35132" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35132"><div id="AN-sObj-val-35132"><img src="../assets/womensFIT_J70.png"></div></div></a><a id="AN-sObj-link-35133" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35133"><div id="AN-sObj-val-35133"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35134" href="javascript:goToSceneID(9)" target="_self"> <div class="AN-Object" id="AN-sObj-35134"><div id="AN-sObj-val-35134"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35135" href="javascript:goToSceneID(35)" target="_self"> <div class="AN-Object" id="AN-sObj-35135"><div id="AN-sObj-val-35135"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35136"><div id="AN-sObj-val-35136"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35137" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35137"><div id="AN-sObj-val-35137"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35138" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35138"><div id="AN-sObj-val-35138"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35139" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35139"><div id="AN-sObj-val-35139"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-10"><div class="AN-sObj-stage" id="ext-gen7827"><div class="AN-Object" id="AN-sObj-35143"><div id="AN-sObj-val-35143"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35144"><div id="AN-sObj-val-35144"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35145"><div id="AN-sObj-val-35145"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35146"></div><a id="AN-sObj-link-35147" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35147"><div id="AN-sObj-val-35147"><img src="../assets/womensFIT_J22.png"></div></div></a><a id="AN-sObj-link-35148" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35148"><div id="AN-sObj-val-35148"><img src="../assets/womensFIT_J70.png"></div></div></a><a id="AN-sObj-link-35149" href="http://www.armaniexchange.com/category/mobile/womens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35149"><div id="AN-sObj-val-35149"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35150" href="javascript:goToSceneID(34)" target="_self"> <div class="AN-Object" id="AN-sObj-35150"><div id="AN-sObj-val-35150"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35151" href="javascript:goToSceneID(12)" target="_self"> <div class="AN-Object" id="AN-sObj-35151"><div id="AN-sObj-val-35151"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35152"><div id="AN-sObj-val-35152"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35153" href="how_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35153"><div id="AN-sObj-val-35153"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35154" href="measure_w.html" target="_self"> <div class="AN-Object" id="AN-sObj-35154"><div id="AN-sObj-val-35154"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35155" href="javascript:goToSceneID(17)" target="_self"> <div class="AN-Object" id="AN-sObj-35155"><div id="AN-sObj-val-35155"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+</ol>
+
+</body>
+</html>

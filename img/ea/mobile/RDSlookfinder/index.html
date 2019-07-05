@@ -1,0 +1,1110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"  type="text/cache-manifest" manifest="lookfinder_EMPTY.appcache">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"  type="text/cache-manifest" manifest="lookfinder_SHORT.appcache">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"  type="text/cache-manifest" manifest="lookfinder_FULL.appcache">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"  type="text/cache-manifest" manifest="cache.manifest">-->
+
+<head>
+	
+	<title>CR_7610_RED_DOOR_SPA_IPAD - 16 MAR 15 - shigimcp.com 07 FEB 16</title>
+
+
+
+	<!--/* ========================= ICONS & STARTUP IMG ========================= */-->
+
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/app_icon.png">
+	<link rel="apple-touch-startup-image" href="img/app_splash.jpg">
+
+
+
+	<!--/* ========================= META TAGS ========================= */-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta http-equiv="Cache-control" content="max-age=31536000, s-maxage=31536000, public">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<!--/* ------------------------- REF: http://taylor.fausak.me/2015/01/27/ios-8-web-apps/ ------------------------- */-->
+	<meta name="apple-mobile-web-app-title" content="RDSlookfinder_2015">
+	<meta name="format-detection" content="telephone=no">
+
+
+
+	<!--/* ========================= IMPORTS - CSS ========================= */-->
+
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/0Futura.css" />
+
+	<!--<link rel="stylesheet" type="text/css" href="../RDSlookfinder/css/alertify.core.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/alertify.core.css" />
+	<link rel="stylesheet" type="text/css" href="css/alertify.default.css" />
+
+<!--
+	<link rel="stylesheet" type="text/css" href="scripts/d.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/typekit.css" />
+-->
+
+
+
+	<!--/* ========================= IMPORTS - JAVASCRIPT ========================= */-->
+
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>-->
+	<!--<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="js/alertify.min.js"></script>
+
+	<!--<script type="text/javascript" src="scripts/jquery.lazyload.js"></script>-->
+
+	<script type="application/javascript" src="js/fastclick.js"></script>
+
+	<!--/* ------------------------- WEINRE DEBUG ------------------------- */-->
+	<!--<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>-->
+
+
+
+	<!--/* ========================= TYPEKIT ========================= */-->
+<!--
+	<script type="text/javascript" src="//use.typekit.net/wog3ggl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+
+
+
+	<!--/* ========================= JAVASCRIPT - LOCAL ========================= */-->
+
+	<script type="text/javascript">
+
+//		<!--/* ========================= FASTCLICK ========================= */-->
+
+		$(function() {
+			FastClick.attach(document.body);
+		});
+
+
+//		<!--/* ========================= SWIPE LOOKS ========================= */-->
+
+//		console.log('');
+//		console.log('==============================');
+//		console.log('SWIPE LOOKS');
+//		console.log('==============================');
+
+		var IMG_WIDTH = 1536/2;
+//		var IMG_WIDTH = 1550/2;
+//		var IMG_WIDTH = 1472/2;
+		var currentImg = 0;
+		var maxImages = 0;
+		var speed = 500/2;
+
+
+//		<!--/* ------------------------- FUNCTION - getMaxImages ------------------------- */-->
+
+		function getMaxImages(numLooks) {
+
+//			console.log('');
+//			console.log('==============================');
+//			console.log('getMaxImages');
+//			console.log('==============================');
+
+//			console.log('PING!!! getMaxImages triggered!');
+//			console.log('PING!!! getMaxImages triggered from loadLooksNProds() in main.js! numLooks = ' + numLooks);
+			maxImages = numLooks;
+			console.log('maxImages = ' + maxImages);
+		}
+
+		var swipeOptions = {
+			triggerOnTouchEnd : true,	
+			swipeStatus : swipeStatus,
+			allowPageScroll:"vertical",
+			threshold:75			
+		}
+		
+		var imgs;
+		var hair;
+		var swipeMe;
+
+		$(function() {
+			swipeMe = $("#swipeMe");
+			swipeMe.swipe(swipeOptions);
+		});
+
+
+//		<!--/* ------------------------- FUNCTION - swipeStatus ------------------------- */-->
+
+		var lookPosition = 0;
+
+		/**
+		* Catch each phase of the swipe.
+		* move : we drag the div.
+		* cancel : we animate back to where we were
+		* end : we animate to the next image
+		*/
+
+		function swipeStatus(event, phase, direction, distance) {
+
+//			console.log('');
+//			console.log('==============================');
+//			console.log('SWIPE LOOKS - swipeStatus');
+//			console.log('==============================');
+//
+//			console.log('PING!!! maxImages = ' + maxImages);
+
+			//If we are moving before swipe, and we are going Lor R in X mode, or U or D in Y mode then drag.
+			if (phase == "move" && (direction == "left" || direction == "right")) {
+				var duration = 0;
+				
+				if (direction == "left")
+					scrollImages((IMG_WIDTH * currentImg) + distance, duration);
+				
+				else if (direction == "right")
+					scrollImages((IMG_WIDTH * currentImg) - distance, duration);
+				
+			} else if ( phase == "cancel") {
+				scrollImages(IMG_WIDTH * currentImg, speed);
+
+			} else if ( phase == "end" ) {
+				if (direction == "right")
+					previousImage()
+				else if (direction == "left")			
+					nextImage()
+			}
+
+
+//			<!--/* ------------------------- LOOK POSITION (COUNT) FOR RESET FUNCTION: swipeBack ------------------------- */-->
+
+			var str = "Direction from inital touch: " + direction;
+
+			if (direction === "left" && phase ==="end" && lookPosition < thisLookArray.length-1) {
+				lookPosition++;
+			}
+
+			if (direction === "right" && phase==="end" && lookPosition > 0) {
+				lookPosition--;
+			}
+
+//			console.log("thisLookArray.length = " + thisLookArray.length);
+//			console.log(str + "  lookPosition = " + lookPosition);
+
+
+//			<!--/* ------------------------- LOOKS ARROWS - visibility based on LOOK POSITION above ------------------------- */-->
+
+			if (lookPosition === 0) {
+				$("#arrow_lf").fadeOut();
+			} else {
+				$("#arrow_lf").fadeIn();
+			}
+
+			if (lookPosition === thisLookArray.length-1) {
+				$("#arrow_rt").fadeOut();
+			} else {
+				$("#arrow_rt").fadeIn();
+			}
+		}
+
+
+//		<!--/* ------------------------- FUNCTION - previousImage ------------------------- */-->
+
+		function previousImage() {
+
+//			console.log('');
+//			console.log('==============================');
+//			console.log('SWIPE LOOKS - previousImage');
+//			console.log('==============================');
+
+//			checksToList();
+
+			currentImg = Math.max(currentImg-1, 0);
+			scrollImages(IMG_WIDTH * currentImg, speed);
+
+//			console.log('');
+//			console.log('PRE-clearProdMenu');
+//			console.log('thisLookArray = ' + thisLookArray);
+//			console.log('thisLookArray[currentImg] = ' + thisLookArray[currentImg]);
+//			console.log('thisEyeArray = ' + thisEyeArray);
+//			console.log('thisLipArray = ' + thisLipArray);
+//			console.log('thisBaseArray = ' + thisBaseArray);
+
+//			clearProdMenu();
+//			clearProdMenu('previousImage');
+
+//			console.log('');
+//			console.log('POST-clearProdMenu');
+//			console.log('thisLookArray = ' + thisLookArray);
+//			console.log('thisLookArray[currentImg] = ' + thisLookArray[currentImg]);
+//			console.log('thisEyeArray = ' + thisEyeArray);
+//			console.log('thisLipArray = ' + thisLipArray);
+//			console.log('thisBaseArray = ' + thisBaseArray);
+
+			$("#thisLookNum").text(thisLookArray[currentImg]);
+			getProducts(filteredLooks, thisLookArray, currentImg);
+
+//			listToChecks();
+		}
+
+
+//		<!--/* ------------------------- FUNCTION - nextImage ------------------------- */-->
+
+		function nextImage() {
+
+//			console.log('');
+//			console.log('==============================');
+//			console.log('SWIPE LOOKS - nextImage');
+//			console.log('==============================');
+
+//			checksToList();
+
+			currentImg = Math.min(currentImg+1, maxImages-1);
+			scrollImages(IMG_WIDTH * currentImg, speed);
+
+//			console.log('');
+//			console.log('PRE-clearProdMenu');
+//			console.log('thisLookArray = ' + thisLookArray);
+//			console.log('thisLookArray[currentImg] = ' + thisLookArray[currentImg]);
+//			console.log('thisEyeArray = ' + thisEyeArray);
+//			console.log('thisLipArray = ' + thisLipArray);
+//			console.log('thisBaseArray = ' + thisBaseArray);
+
+//			clearProdMenu();
+//			clearProdMenu('nextImage');
+
+//			console.log('');
+//			console.log('POST-clearProdMenu');
+//			console.log('thisLookArray = ' + thisLookArray);
+//			console.log('thisLookArray[currentImg] = ' + thisLookArray[currentImg]);
+//			console.log('thisEyeArray = ' + thisEyeArray);
+//			console.log('thisLipArray = ' + thisLipArray);
+//			console.log('thisBaseArray = ' + thisBaseArray);
+
+			$("#thisLookNum").text(thisLookArray[currentImg]);
+			getProducts(filteredLooks, thisLookArray, currentImg);
+
+//			listToChecks();
+		}
+
+
+//		<!--/* ------------------------- FUNCTION - scrollImages (Manuallt update the position of the imgs on drag) ------------------------- */-->
+
+		function scrollImages(distance, duration) {
+
+//			console.log('');
+//			console.log('==============================');
+//			console.log('SWIPE LOOKS - scrollImages');
+//			console.log('==============================');
+
+//			checksToList();
+
+			$(".swipeCTA").animate({
+				opacity: 0.0,
+				}, 500, function() {
+				// Animation complete.
+			});
+
+
+			swipeMe.css("-webkit-transition-duration", (duration/1000).toFixed(1) + "s");
+
+			//inverse the number we set in the css
+			var value = (distance<0 ? "" : "-") + Math.abs(distance).toString();
+//			console.log('value = ' + value);
+
+			swipeMe.css("-webkit-transform", "translate3d("+ value +"px,0px,0px)");
+
+//			clearProdMenu();
+//			clearProdMenu('scrollImages');
+		}
+
+
+//		<!--/* ========================= PRELOAD/APPCACHE - CHECK FOR CACHE MANIFEST UPDATE ========================= */-->
+
+//		function onUpdateReady() {
+////			alert('found new manifest!');
+//			console.log('found new manifest!');
+//		}
+//
+//		window.applicationCache.addEventListener('updateready', onUpdateReady);
+//
+//		if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+//			onUpdateReady();
+//		}
+//
+//		if (window.applicationCache.status === window.applicationCache.CACHED) {
+//			onUpdateReady();
+//		}
+
+
+
+
+
+
+//		console.log('PING! something is happening!');
+
+		function onCached() {
+			console.log('PING! appcache loaded!');
+
+			window.applicationCache.removeEventListener('cached', onCached);
+//			loadLookArray();
+			pageInit();
+//			$('#resetBtn')[0].click();
+		}
+
+		window.applicationCache.addEventListener('cached', onCached);
+
+
+//		loadLookArray();
+//		pageInit();
+//		$('#resetBtn')[0].click();
+
+
+
+
+
+
+
+
+//		function logEvent(event) {
+//			console.log(event.type);
+//			pageInit();
+//
+//			if (event.type === 'cached' || event.type === 'noupdate') {
+////				pageInit();
+//			}
+//		}
+//
+//		window.applicationCache.addEventListener('checking',logEvent,false);
+//		window.applicationCache.addEventListener('noupdate',logEvent,false);
+//		window.applicationCache.addEventListener('downloading',logEvent,false);
+//		window.applicationCache.addEventListener('cached',logEvent,false);
+//		window.applicationCache.addEventListener('updateready',logEvent,false);
+//		window.applicationCache.addEventListener('obsolete',logEvent,false);
+//		window.applicationCache.addEventListener('error',logEvent,false);
+
+
+//		<!--/* ========================= GOOGLE *UNIVERSAL* ANALYTICS ========================= */-->
+//
+//		<!--/* ------------------------- added 11 JUN 14 - webmaster@elizabetharden.com ------------------------- */-->
+//
+////		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+////		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+////		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+////		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+////
+////		ga('create', 'UA-51478859-3', 'arden-online.com');
+////		ga('require', 'linkid', 'linkid.js');
+////		ga('require', 'displayfeatures');
+////		ga('send', 'pageview');
+//
+//		<!--/* ------------------------- added 17 JUN 14 - shigerumcpherson.freelance@gmail.com ------------------------- */-->
+//
+//		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//
+//		ga('create', 'UA-51991716-1', 'arden-online.com');
+//		ga('require', 'displayfeatures');
+//		ga('require', 'linkid', 'linkid.js');
+//		ga('set', '&uid', 'ADMIN_TEST_061714'); // Set the user ID using signed-in user_id.
+//		ga('send', 'pageview');
+//		ga('send', 'pageview');
+
+
+
+
+
+
+
+
+	</script>
+
+</head>
+
+
+<!--<body onload="pageInit()">-->
+<body>
+
+
+<!--/* ------------------------- LOOKS ------------------------- */-->
+
+	<div id="content">
+	    <!--<div id="contentBG"></div>-->
+	<!--
+			<div class="clearFix" id="swipeMe">
+				<div class="clearFix" id="imgs">
+	-->
+			<div id="swipeMe">
+				<div id="imgs">
+		<!--
+					<img src="img/look/look_000.png" id="look01" />
+					<img src="img/look/look_000.png" id="look02" />
+					<img src="img/look/look_000.png" id="look03" />
+					<img src="img/look/look_000.png" id="look04" />
+					<img src="img/look/look_000.png" id="look05" />
+		-->
+
+	<!--
+					<img src="img/app_splash.jpg" id="app_splash" />
+					<img src="img/bg.jpg" id="bg" />
+
+					<img src="img/look/look_000.jpg" id="look_000" />
+					<img src="img/look/look_001.jpg" id="look_001" />
+					<img src="img/look/look_002.jpg" id="look_002" />
+					<img src="img/look/look_003.jpg" id="look_003" />
+					<img src="img/look/look_005.jpg" id="look_005" />
+					<img src="img/look/look_006.jpg" id="look_006" />
+					<img src="img/look/look_007.jpg" id="look_007" />
+					<img src="img/look/look_009.jpg" id="look_009" />
+					<img src="img/look/look_010.jpg" id="look_010" />
+					<img src="img/look/look_011.jpg" id="look_011" />
+					<img src="img/look/look_013.jpg" id="look_013" />
+					<img src="img/look/look_014.jpg" id="look_014" />
+					<img src="img/look/look_015.jpg" id="look_015" />
+					<img src="img/look/look_017.jpg" id="look_017" />
+					<img src="img/look/look_018.jpg" id="look_018" />
+					<img src="img/look/look_019.jpg" id="look_019" />
+					<img src="img/look/look_021.jpg" id="look_021" />
+					<img src="img/look/look_022.jpg" id="look_022" />
+					<img src="img/look/look_023.jpg" id="look_023" />
+					<img src="img/look/look_025.jpg" id="look_025" />
+					<img src="img/look/look_026.jpg" id="look_026" />
+					<img src="img/look/look_027.jpg" id="look_027" />
+					<img src="img/look/look_029.jpg" id="look_029" />
+					<img src="img/look/look_030.jpg" id="look_030" />
+					<img src="img/look/look_031.jpg" id="look_031" />
+					<img src="img/look/look_033.jpg" id="look_033" />
+					<img src="img/look/look_034.jpg" id="look_034" />
+					<img src="img/look/look_035.jpg" id="look_035" />
+					<img src="img/look/look_037.jpg" id="look_037" />
+					<img src="img/look/look_038.jpg" id="look_038" />
+					<img src="img/look/look_039.jpg" id="look_039" />
+					<img src="img/look/look_041.jpg" id="look_041" />
+					<img src="img/look/look_042.jpg" id="look_042" />
+					<img src="img/look/look_043.jpg" id="look_043" />
+					<img src="img/look/look_045.jpg" id="look_045" />
+					<img src="img/look/look_046.jpg" id="look_046" />
+					<img src="img/look/look_047.jpg" id="look_047" />
+					<img src="img/look/look_049.jpg" id="look_049" />
+					<img src="img/look/look_050.jpg" id="look_050" />
+					<img src="img/look/look_051.jpg" id="look_051" />
+					<img src="img/look/look_053.jpg" id="look_053" />
+					<img src="img/look/look_054.jpg" id="look_054" />
+					<img src="img/look/look_055.jpg" id="look_055" />
+					<img src="img/look/look_057.jpg" id="look_057" />
+					<img src="img/look/look_058.jpg" id="look_058" />
+					<img src="img/look/look_059.jpg" id="look_059" />
+					<img src="img/look/look_061.jpg" id="look_061" />
+					<img src="img/look/look_062.jpg" id="look_062" />
+					<img src="img/look/look_063.jpg" id="look_063" />
+					<img src="img/look/look_065.jpg" id="look_065" />
+					<img src="img/look/look_066.jpg" id="look_066" />
+					<img src="img/look/look_067.jpg" id="look_067" />
+					<img src="img/look/look_069.jpg" id="look_069" />
+					<img src="img/look/look_070.jpg" id="look_070" />
+					<img src="img/look/look_071.jpg" id="look_071" />
+					<img src="img/look/look_072.jpg" id="look_072" />
+					<img src="img/look/look_073.jpg" id="look_073" />
+					<img src="img/look/look_074.jpg" id="look_074" />
+					<img src="img/look/look_075.jpg" id="look_075" />
+					<img src="img/look/look_076.jpg" id="look_076" />
+					<img src="img/look/look_077.jpg" id="look_077" />
+					<img src="img/look/look_078.jpg" id="look_078" />
+					<img src="img/look/look_079.jpg" id="look_079" />
+					<img src="img/look/look_080.jpg" id="look_080" />
+					<img src="img/look/look_081.jpg" id="look_081" />
+					<img src="img/look/look_082.jpg" id="look_082" />
+					<img src="img/look/look_083.jpg" id="look_083" />
+					<img src="img/look/look_084.jpg" id="look_084" />
+					<img src="img/look/look_085.jpg" id="look_085" />
+					<img src="img/look/look_086.jpg" id="look_086" />
+					<img src="img/look/look_087.jpg" id="look_087" />
+					<img src="img/look/look_088.jpg" id="look_088" />
+					<img src="img/look/look_089.jpg" id="look_089" />
+					<img src="img/look/look_090.jpg" id="look_090" />
+					<img src="img/look/look_091.jpg" id="look_091" />
+					<img src="img/look/look_092.jpg" id="look_092" />
+					<img src="img/look/look_093.jpg" id="look_093" />
+					<img src="img/look/look_094.jpg" id="look_094" />
+					<img src="img/look/look_095.jpg" id="look_095" />
+					<img src="img/look/look_096.jpg" id="look_096" />
+					<img src="img/look/look_097.jpg" id="look_097" />
+					<img src="img/look/look_098.jpg" id="look_098" />
+					<img src="img/look/look_099.jpg" id="look_099" />
+					<img src="img/look/look_100.jpg" id="look_100" />
+					<img src="img/look/look_101.jpg" id="look_101" />
+					<img src="img/look/look_102.jpg" id="look_102" />
+					<img src="img/look/look_103.jpg" id="look_103" />
+					<img src="img/look/look_104.jpg" id="look_104" />
+					<img src="img/look/look_105.jpg" id="look_105" />
+					<img src="img/look/look_106.jpg" id="look_106" />
+					<img src="img/look/look_107.jpg" id="look_107" />
+					<img src="img/look/look_108.jpg" id="look_108" />
+					<img src="img/look/look_109.jpg" id="look_109" />
+					<img src="img/look/look_110.jpg" id="look_110" />
+					<img src="img/look/look_111.jpg" id="look_111" />
+					<img src="img/look/look_112.jpg" id="look_112" />
+					<img src="img/look/look_113.jpg" id="look_113" />
+					<img src="img/look/look_114.jpg" id="look_114" />
+					<img src="img/look/look_115.jpg" id="look_115" />
+					<img src="img/look/look_116.jpg" id="look_116" />
+					<img src="img/look/look_117.jpg" id="look_117" />
+					<img src="img/look/look_118.jpg" id="look_118" />
+					<img src="img/look/look_119.jpg" id="look_119" />
+					<img src="img/look/look_120.jpg" id="look_120" />
+					<img src="img/look/look_121.jpg" id="look_121" />
+					<img src="img/look/look_122.jpg" id="look_122" />
+					<img src="img/look/look_123.jpg" id="look_123" />
+					<img src="img/look/look_124.jpg" id="look_124" />
+					<img src="img/look/look_125.jpg" id="look_125" />
+	-->
+				</div>
+	<!--
+				<div class="clearFix" id="hair">
+	-->
+				<div id="hair">
+		<!--
+					<img src="img/hair/hair_000.jpg" id="hair_000" />
+					<img src="img/hair/hair_black.jpg" id="hair_black" />
+					<img src="img/hair/hair_blonde.jpg" id="hair_blonde" />
+					<img src="img/hair/hair_dkbrown.jpg" id="hair_dkbrown" />
+					<img src="img/hair/hair_ltbrown.jpg" id="hair_ltbrown" />
+					<img src="img/hair/hair_red.jpg" id="hair_red" />
+		-->
+				</div>
+			</div>
+
+			<div class="arrow" id="arrow_lf" onClick="swipeStatus(event, 'end', 'right', IMG_WIDTH)"><img src="img/look/arrow_lf.gif" alt="arrow_lf" /></div>
+			<div class="arrow" id="arrow_rt" onClick="swipeStatus(event, 'end', 'left', IMG_WIDTH)"><img src="img/look/arrow_rt.gif" alt="arrow_rt" /></div>
+	<!--
+		</div>
+	-->
+
+	<!--/* ------------------------- AUDIO & TOP NAV ------------------------- */-->
+
+	    <!--<audio controls>-->
+	<!--
+	    <audio preload="auto" id="alertAudio">
+		   <source src="audio/dodo.m4a" type="audio/m4a">
+		   <source src="audio/dodo.mp3" type="audio/mpeg">
+		   <source src="audio/dodo.ogg" type="audio/ogg">
+		   <source src="audio/dodo.wav" type="audio/wav">
+		   <source src="audio/dodo.wma" type="audio/wma">
+		   Your browser does not support the audio element.
+	    </audio>
+
+	    <a href="#" id="ringBtn"><button type="button" class="ringBtn" id="ringAssoc">Ring Associate<br />For Assistance</button></a>
+	-->
+
+		<a href="#myList" id="shopListBtn" onClick="openList()"><button type="button" class="shopListBtn">My Shopping List</button></a>
+
+
+	<!--/* ------------------------- NAV - LOOKS ------------------------- */-->
+
+		<div class="lookNav">
+			<!--<div class="lookHed clearFix">Daring</div>-->
+			<div class="lookHed clearFix">Minimalist</div>
+			<div class="lookDescr">
+				<div class="lookDescrQuote">"This fresh and simple look only takes a few minutes to apply, but makes you confident to face the day."</div>
+				<div class="lookDescrAuthor">- Global Makeup Artist, Rebecca Restrepo</div>
+		   </div>
+			<!--<div class="lookHed clearFix">Polished</div>-->
+			<!--<div class="lookHed clearFix">Seasonal</div>-->
+
+			<form>
+	<!--
+				<fieldset>
+					<legend>Choose Your Skin Tone</legend>
+					<label></label>
+					<select id = "toneList" onchange="getSelectedLooks(this)">
+						<option value = "Choose">Please choose your TONE...</option>
+						<option value = "Level1">Fair</option>
+						<option value = "Level2">Light</option>
+						<option value = "Level3">Medium</option>
+						<option value = "Level4">Medium Deep</option>
+						<option value = "Level5">Deep</option>
+					</select>
+				</fieldset>
+	-->
+				<fieldset>
+					<legend>Choose Your Look</legend>
+					<label></label>
+					<select id = "lookList" onchange="getSelectedLooks(this)">
+					<!--<select id = "lookList" onClick="getSelectedLooks(this)">-->
+					<!--<select id = "lookList">-->
+						<!--<option value = "Choose">Please choose your LOOK...</option>-->
+						<option value = "Minimalist">Minimalist</option>
+						<option value = "Polished">Polished</option>
+						<option value = "Daring">Daring</option>
+						<!--<option value = "Seasonal">Seasonal</option>-->
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Choose Your Lip Shade</legend>
+					<label></label>
+					<select id = "lipList" onchange="getSelectedLooks(this)">
+					<!--<select id = "lipList" onClick="getSelectedLooks(this)">-->
+					<!--<select id = "lipList">-->
+						<option value = "ALL">ALL Lip Shades</option>
+						<option value = "Neutral">Neutral</option>
+						<option value = "Coral">Coral</option>
+						<option value = "Pink">Pink</option>
+						<option value = "Plum">Plum</option>
+						<option value = "Red">Red</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Choose Your Hair Color</legend>
+					<label></label>
+					<select id = "hairList" onchange="hairColor()">
+					<!--<select id = "hairList" onClick="hairColor()">-->
+					<!--<select id = "hairList">-->
+						<!--<option value = "Choose">Please choose your HAIR COLOR...</option>-->
+						<option value = "blonde">Blonde</option>
+						<option value = "red">Red</option>
+						<option value = "ltbrown">Brown</option>
+						<option value = "dkbrown">Dark Brown</option>
+						<option value = "black">Black</option>
+					</select>
+				</fieldset>
+
+				<!--<button type="reset" class="reset" id="resetBtn" onClick="resetLooks()">Reset Looks</button>-->
+				<button type="reset" class="reset" id="resetBtn" onClick="resetLooks(this.id)">Reset Looks</button>
+				<!--<button type="reset" class="reset" id="resetBtn">Reset Looks</button>-->
+			</form>
+
+			<div class="lookNum">
+				<div class="clearFix">Look</div>
+				<div class="clearFix" id="thisLookNum"></div>
+			</div>
+
+			<div class="swipeCTA clearFix">
+				Swipe for more looks
+	<!--
+				<div class="swipeCTA_arrows clearFix">
+					<img src="img/arrow_sm_lf.gif" id="swipeCTA_lf" />
+					<img src="img/arrow_sm_rt.gif" id="swipeCTA_rt" />
+				</div>
+	-->
+			</div>
+
+		</div>
+
+
+	<!--/* ------------------------- NAV - PRODUCTS ------------------------- */-->
+
+		<div class="prodMenu clearFix" id="products">
+
+			<div class="prodContainer clearFix">
+
+				<div class="sectContainer">
+					<div class="sectHed">
+						Eyes
+					</div>
+					<div class="sectProdContainer clearFix" id="eyeContainer">
+						<!--[ INSERT EYE PRODUCTS HERE ]-->
+
+	<!--
+						<img src="img/prod/1002bcmc400_000000.jpg" id="1002bcmc400_000000" />
+						<img src="img/prod/1002bcmc400_2e2526.jpg" id="1002bcmc400_2e2526" />
+						<img src="img/prod/1002bcrc400_5c423b.jpg" id="1002bcrc400_5c423b" />
+						<img src="img/prod/1002bcrc400_7b474a.jpg" id="1002bcrc400_7b474a" />
+						<img src="img/prod/1002bcrc400_9d3e42.jpg" id="1002bcrc400_9d3e42" />
+						<img src="img/prod/1002bcrc400_9d6257.jpg" id="1002bcrc400_9d6257" />
+						<img src="img/prod/1002bcrc400_673c3a.jpg" id="1002bcrc400_673c3a" />
+						<img src="img/prod/1002bcrc400_784b62.jpg" id="1002bcrc400_784b62" />
+						<img src="img/prod/1002bcrc400_a36f52.jpg" id="1002bcrc400_a36f52" />
+						<img src="img/prod/1002bcrc400_a3543c.jpg" id="1002bcrc400_a3543c" />
+						<img src="img/prod/1002bcrc400_a32234.jpg" id="1002bcrc400_a32234" />
+						<img src="img/prod/1002bcrc400_af6360.jpg" id="1002bcrc400_af6360" />
+						<img src="img/prod/1002bfbc400_a5503b.jpg" id="1002bfbc400_a5503b" />
+						<img src="img/prod/1002bfbc400_b55d42.jpg" id="1002bfbc400_b55d42" />
+						<img src="img/prod/1002bfbc400_c97782.jpg" id="1002bfbc400_c97782" />
+						<img src="img/prod/1002bfbc400_cf6a73.jpg" id="1002bfbc400_cf6a73" />
+						<img src="img/prod/1002bfbc400_d4877f.jpg" id="1002bfbc400_d4877f" />
+						<img src="img/prod/1002bfbc400_d45350.jpg" id="1002bfbc400_d45350" />
+						<img src="img/prod/1002bfbc400_e0858a.jpg" id="1002bfbc400_e0858a" />
+						<img src="img/prod/1002bfbc400_ea9381.jpg" id="1002bfbc400_ea9381" />
+						<img src="img/prod/1002bfbc400_f6b0ce.jpg" id="1002bfbc400_f6b0ce" />
+						<img src="img/prod/1002bfbc400_f29f9a.jpg" id="1002bfbc400_f29f9a" />
+						<img src="img/prod/1002bflc400_9d554b.jpg" id="1002bflc400_9d554b" />
+						<img src="img/prod/1002bflc400_914a44.jpg" id="1002bflc400_914a44" />
+						<img src="img/prod/1002bflc400_a25556.jpg" id="1002bflc400_a25556" />
+						<img src="img/prod/1002bflc400_b0664d.jpg" id="1002bflc400_b0664d" />
+						<img src="img/prod/1002bflc400_b7655a.jpg" id="1002bflc400_b7655a" />
+						<img src="img/prod/1002bflc400_cf3580.jpg" id="1002bflc400_cf3580" />
+						<img src="img/prod/1002bflc400_d3836b.jpg" id="1002bflc400_d3836b" />
+						<img src="img/prod/1002bflc400_d66278.jpg" id="1002bflc400_d66278" />
+						<img src="img/prod/1002bflc400_e2dacd.jpg" id="1002bflc400_e2dacd" />
+						<img src="img/prod/1002bflc400_e45f62.jpg" id="1002bflc400_e45f62" />
+						<img src="img/prod/1002bflc400_e48575.jpg" id="1002bflc400_e48575" />
+						<img src="img/prod/1002bflc400_ed8172.jpg" id="1002bflc400_ed8172" />
+						<img src="img/prod/1002bflc400_f9b3a4.jpg" id="1002bflc400_f9b3a4" />
+						<img src="img/prod/1002blsc400_6d3337.jpg" id="1002blsc400_6d3337" />
+						<img src="img/prod/1002blsc400_7a4d48.jpg" id="1002blsc400_7a4d48" />
+						<img src="img/prod/1002blsc400_7e3c40.jpg" id="1002blsc400_7e3c40" />
+						<img src="img/prod/1002blsc400_8c525b.jpg" id="1002blsc400_8c525b" />
+						<img src="img/prod/1002blsc400_9f5950.jpg" id="1002blsc400_9f5950" />
+						<img src="img/prod/1002blsc400_874f4.jpg" id="1002blsc400_874f4" />
+						<img src="img/prod/1002blsc400_991d5c.jpg" id="1002blsc400_991d5c" />
+						<img src="img/prod/1002blsc400_90525e.jpg" id="1002blsc400_90525e" />
+						<img src="img/prod/1002blsc400_96584b.jpg" id="1002blsc400_96584b" />
+						<img src="img/prod/1002blsc400_855345.jpg" id="1002blsc400_855345" />
+						<img src="img/prod/1002blsc400_983029.jpg" id="1002blsc400_983029" />
+						<img src="img/prod/1002blsc400_a33d42.jpg" id="1002blsc400_a33d42" />
+						<img src="img/prod/1002blsc400_a35f56.jpg" id="1002blsc400_a35f56" />
+						<img src="img/prod/1002blsc400_a6546c.jpg" id="1002blsc400_a6546c" />
+						<img src="img/prod/1002blsc400_ab5a66.jpg" id="1002blsc400_ab5a66" />
+						<img src="img/prod/1002blsc400_ab2020.jpg" id="1002blsc400_ab2020" />
+						<img src="img/prod/1002blsc400_ab6266.jpg" id="1002blsc400_ab6266" />
+						<img src="img/prod/1002blsc400_af6a61.jpg" id="1002blsc400_af6a61" />
+						<img src="img/prod/1002blsc400_af6e57.jpg" id="1002blsc400_af6e57" />
+						<img src="img/prod/1002blsc400_b77e6c.jpg" id="1002blsc400_b77e6c" />
+						<img src="img/prod/1002blsc400_b87776.jpg" id="1002blsc400_b87776" />
+						<img src="img/prod/1002blsc400_ba806d.jpg" id="1002blsc400_ba806d" />
+						<img src="img/prod/1002blsc400_c64c44.jpg" id="1002blsc400_c64c44" />
+						<img src="img/prod/1002blsc400_c1747a.jpg" id="1002blsc400_c1747a" />
+						<img src="img/prod/1002blsc400_cd7974.jpg" id="1002blsc400_cd7974" />
+						<img src="img/prod/1002cpcc400_bb8377.jpg" id="1002cpcc400_bb8377" />
+						<img src="img/prod/1002cpcc400_bc866b.jpg" id="1002cpcc400_bc866b" />
+						<img src="img/prod/1002cpcc400_d18a78.jpg" id="1002cpcc400_d18a78" />
+						<img src="img/prod/1002cpcc400_e7998e.jpg" id="1002cpcc400_e7998e" />
+						<img src="img/prod/1002cppc400_ad5156.jpg" id="1002cppc400_ad5156" />
+						<img src="img/prod/1002cppc400_b9686f.jpg" id="1002cppc400_b9686f" />
+						<img src="img/prod/1002cppc400_b97970_a.jpg" id="1002cppc400_b97970_a" />
+						<img src="img/prod/1002cppc400_b97970.jpg" id="1002cppc400_b97970" />
+						<img src="img/prod/1002cppc400_bb665f.jpg" id="1002cppc400_bb665f" />
+						<img src="img/prod/1002cppc400_c3796c_a.jpg" id="1002cppc400_c3796c_a" />
+						<img src="img/prod/1002cppc400_c3796c.jpg" id="1002cppc400_c3796c" />
+						<img src="img/prod/1002cppc400_c78272_a.jpg" id="1002cppc400_c78272_a" />
+						<img src="img/prod/1002cppc400_c78272.jpg" id="1002cppc400_c78272" />
+						<img src="img/prod/1002cppc400_c89083.jpg" id="1002cppc400_c89083" />
+						<img src="img/prod/1002cppc400_ce6758.jpg" id="1002cppc400_ce6758" />
+						<img src="img/prod/1002cppc400_e4a292.jpg" id="1002cppc400_e4a292" />
+						<img src="img/prod/1002cppc400_f8a698.jpg" id="1002cppc400_f8a698" />
+						<img src="img/prod/1002ffcc400_c3a581.jpg" id="1002ffcc400_c3a581" />
+						<img src="img/prod/1002ffcc400_d5b896.jpg" id="1002ffcc400_d5b896" />
+						<img src="img/prod/1002ffmc400_996d48.jpg" id="1002ffmc400_996d48" />
+						<img src="img/prod/1002ffmc400_ab734e.jpg" id="1002ffmc400_ab734e" />
+						<img src="img/prod/1002ffmc400_fcc8a0.jpg" id="1002ffmc400_fcc8a0" />
+						<img src="img/prod/1002ffsc400_d89d77.jpg" id="1002ffsc400_d89d77" />
+						<img src="img/prod/1002ffsc400_db9e68.jpg" id="1002ffsc400_db9e68" />
+						<img src="img/prod/1002ffsc400_e2ab89.jpg" id="1002ffsc400_e2ab89" />
+						<img src="img/prod/1002ffsc400_e7a47b.jpg" id="1002ffsc400_e7a47b" />
+						<img src="img/prod/1002invc400_ac8856.jpg" id="1002invc400_ac8856" />
+						<img src="img/prod/1002invc400_cdae85.jpg" id="1002invc400_cdae85" />
+						<img src="img/prod/1002invc400_ceab87.jpg" id="1002invc400_ceab87" />
+						<img src="img/prod/1002invc400_d8b892.jpg" id="1002invc400_d8b892" />
+						<img src="img/prod/1002invc400_e1c39c.jpg" id="1002invc400_e1c39c" />
+						<img src="img/prod/1002mffc000_976e4d.jpg" id="1002mffc000_976e4d" />
+						<img src="img/prod/1002mffc000_b78151.jpg" id="1002mffc000_b78151" />
+						<img src="img/prod/1002mffc000_cd9d6a.jpg" id="1002mffc000_cd9d6a" />
+						<img src="img/prod/1002mffc000_cea272.jpg" id="1002mffc000_cea272" />
+						<img src="img/prod/1002mffc000_d0a87c.jpg" id="1002mffc000_d0a87c" />
+						<img src="img/prod/1002mffc000_e1c1a9.jpg" id="1002mffc000_e1c1a9" />
+						<img src="img/prod/1002pufc401_caa17c.jpg" id="1002pufc401_caa17c" />
+						<img src="img/prod/1002vd2c400_b5a495.jpg" id="1002vd2c400_b5a495" />
+						<img src="img/prod/1002vd2c400_b89e9f.jpg" id="1002vd2c400_b89e9f" />
+						<img src="img/prod/1002vd2c400_e0bba6.jpg" id="1002vd2c400_e0bba6" />
+						<img src="img/prod/1002vd2c400_ece2cf.jpg" id="1002vd2c400_ece2cf" />
+						<img src="img/prod/1002vd2c400_f0cfa3.jpg" id="1002vd2c400_f0cfa3" />
+						<img src="img/prod/1002vd2c400_fee0d4.jpg" id="1002vd2c400_fee0d4" />
+						<img src="img/prod/1002vd2c400_ffe9d0.jpg" id="1002vd2c400_ffe9d0" />
+						<img src="img/prod/1002vdsc400_4c7967.jpg" id="1002vdsc400_4c7967" />
+						<img src="img/prod/1002vdsc400_5e6060.jpg" id="1002vdsc400_5e6060" />
+						<img src="img/prod/1002vdsc400_6f6065.jpg" id="1002vdsc400_6f6065" />
+						<img src="img/prod/1002vdsc400_9b7861.jpg" id="1002vdsc400_9b7861" />
+						<img src="img/prod/1002vdsc400_9c7767.jpg" id="1002vdsc400_9c7767" />
+						<img src="img/prod/1002vdsc400_88a0b7.jpg" id="1002vdsc400_88a0b7" />
+						<img src="img/prod/1002vdsc400_726a58.jpg" id="1002vdsc400_726a58" />
+						<img src="img/prod/1002vdsc400_836a5c.jpg" id="1002vdsc400_836a5c" />
+						<img src="img/prod/1002vdsc400_866e93.jpg" id="1002vdsc400_866e93" />
+						<img src="img/prod/1002vdsc400_41574f.jpg" id="1002vdsc400_41574f" />
+						<img src="img/prod/1002vdsc400_75889a.jpg" id="1002vdsc400_75889a" />
+						<img src="img/prod/1002vdsc400_654541.jpg" id="1002vdsc400_654541" />
+						<img src="img/prod/1002vdsc400_767590.jpg" id="1002vdsc400_767590" />
+						<img src="img/prod/1002vdsc400_785249.jpg" id="1002vdsc400_785249" />
+						<img src="img/prod/1002vdsc400_836057a.jpg" id="1002vdsc400_836057a" />
+						<img src="img/prod/1002vdsc400_a48b7e.jpg" id="1002vdsc400_a48b7e" />
+						<img src="img/prod/1002vdsc400_a98d86.jpg" id="1002vdsc400_a98d86" />
+						<img src="img/prod/1002vdsc400_a66275.jpg" id="1002vdsc400_a66275" />
+						<img src="img/prod/1002vdsc400_a87052.jpg" id="1002vdsc400_a87052" />
+						<img src="img/prod/1002vdsc400_c0bfc2.jpg" id="1002vdsc400_c0bfc2" />
+						<img src="img/prod/1002vdsc400_c58a70.jpg" id="1002vdsc400_c58a70" />
+						<img src="img/prod/1002vdsc400_c88f9e.jpg" id="1002vdsc400_c88f9e" />
+						<img src="img/prod/1002vdsc400_c5897a.jpg" id="1002vdsc400_c5897a" />
+						<img src="img/prod/1002vdsc400_d3aeb8.jpg" id="1002vdsc400_d3aeb8" />
+						<img src="img/prod/1002vdsc400_d4b299.jpg" id="1002vdsc400_d4b299" />
+						<img src="img/prod/1002vdsc400_d8aa73.jpg" id="1002vdsc400_d8aa73" />
+						<img src="img/prod/1002vdsc400_e0cab7.jpg" id="1002vdsc400_e0cab7" />
+						<img src="img/prod/1002vdsc400_e1bbab.jpg" id="1002vdsc400_e1bbab" />
+						<img src="img/prod/1002vdsc400_f1b595.jpg" id="1002vdsc400_f1b595" />
+						<img src="img/prod/1002vdsc400_f5eeea.jpg" id="1002vdsc400_f5eeea" />
+						<img src="img/prod/1002vdsc400_f9ceda.jpg" id="1002vdsc400_f9ceda" />
+						<img src="img/prod/1002vdsc400_fce0bd.jpg" id="1002vdsc400_fce0bd" />
+						<img src="img/prod/299698_FF_BarePerf_SPF_Sienna_Index_007.jpg" id="299698_FF_BarePerf_SPF_Sienna_Index_007" />
+						<img src="img/prod/299699_FF_Cream_Chestnut_Index_015.jpg" id="299699_FF_Cream_Chestnut_Index_015" />
+						<img src="img/prod/305003_FF_BarePerf_SPF_Spice_Index_008.jpg" id="305003_FF_BarePerf_SPF_Spice_Index_008" />
+						<img src="img/prod/1002206c400_5c1921.jpg" id="1002206c400_5c1921" />
+						<img src="img/prod/1002206c400_8c274a.jpg" id="1002206c400_8c274a" />
+						<img src="img/prod/1002206c400_a65a45.jpg" id="1002206c400_a65a45" />
+						<img src="img/prod/1002206c400_e67a8b.jpg" id="1002206c400_e67a8b" />
+						<img src="img/prod/1002232c400_1b1d1e.jpg" id="1002232c400_1b1d1e" />
+						<img src="img/prod/1002232c400_2d2625.jpg" id="1002232c400_2d2625" />
+						<img src="img/prod/1002232c400_5b221e.jpg" id="1002232c400_5b221e" />
+						<img src="img/prod/1002232c400_66665f.jpg" id="1002232c400_66665f" />
+						<img src="img/prod/1002232c400_80695c.jpg" id="1002232c400_80695c" />
+						<img src="img/prod/1002232c400_272821.jpg" id="1002232c400_272821" />
+						<img src="img/prod/1002244c401.jpg" id="1002244c401" />
+						<img src="img/prod/1002275c400_bd8f77.jpg" id="1002275c400_bd8f77" />
+						<img src="img/prod/1002275c400_c98367.jpg" id="1002275c400_c98367" />
+						<img src="img/prod/1002275c400_d7a275.jpg" id="1002275c400_d7a275" />
+						<img src="img/prod/1002275c400_f6e2be.jpg" id="1002275c400_f6e2be" />
+						<img src="img/prod/1002276c400_c98367.jpg" id="1002276c400_c98367" />
+						<img src="img/prod/1002276c400_d7a275.jpg" id="1002276c400_d7a275" />
+						<img src="img/prod/10021028401.jpg" id="10021028401" />
+						<img src="img/prod/10021042400_1a1115.jpg" id="10021042400_1a1115" />
+						<img src="img/prod/10021042400_5c3f48.jpg" id="10021042400_5c3f48" />
+						<img src="img/prod/10021042400_051a41.jpg" id="10021042400_051a41" />
+						<img src="img/prod/10021042400_070c09.jpg" id="10021042400_070c09" />
+						<img src="img/prod/10021042400_868cb1.jpg" id="10021042400_868cb1" />
+						<img src="img/prod/10021042400_192318.jpg" id="10021042400_192318" />
+						<img src="img/prod/10021042400_252526.jpg" id="10021042400_252526" />
+						<img src="img/prod/10021279400_d5af8f.jpg" id="10021279400_d5af8f" />
+						<img src="img/prod/10021279400_d79a69.jpg" id="10021279400_d79a69" />
+						<img src="img/prod/10021279400_e9c697.jpg" id="10021279400_e9c697" />
+						<img src="img/prod/10023971400_c5a581.jpg" id="10023971400_c5a581" />
+						<img src="img/prod/10023971400_dcc19a.jpg" id="10023971400_dcc19a" />
+						<img src="img/prod/BC_Lipstick_fig_Index_104.jpg" id="BC_Lipstick_fig_Index_104" />
+						<img src="img/prod/BC_Lipstick_pink_honey_Index_115.jpg" id="BC_Lipstick_pink_honey_Index_115" />
+						<img src="img/prod/BC_SmLineLip_09_CocoaRose_Index_159.jpg" id="BC_SmLineLip_09_CocoaRose_Index_159" />
+						<img src="img/prod/FBPC055_FFBP_WarmMahogany_Index_009.jpg" id="FBPC055_FFBP_WarmMahogany_Index_009" />
+						<img src="img/prod/prod_000.jpg" id="prod_000" />
+	-->
+					</div>
+				</div>
+
+				<div class="sectContainer">
+					<div class="sectHed">
+						Lips
+					</div>
+					<div class="sectProdContainer clearFix" id="lipContainer">
+						<!--[ INSERT LIP PRODUCTS HERE ]-->
+					</div>
+				</div>
+
+				<div class="sectContainer">
+					<div class="sectHed">
+						Base
+					</div>
+					<div class="sectProdContainer clearFix" id="baseContainer">
+						<!--[ INSERT BASE PRODUCTS HERE ]-->
+					</div>
+				</div>
+
+	<!--
+				<div class="sectContainer">
+					<div class="sectHed">
+						Eyes (sectHed)
+					</div>
+					<div class="sectProdContainer clearFix" id="">
+
+						<div class="sectProd">
+							<a href="#thisProduct"><div class="sectProdHed" onClick="openProduct(PRODUCT, SHADE)">i'm a sectProdHed - PRODUCT</div></a>
+							<a href="#thisProduct"><img src="img/prod/prod_000.jpg" onClick="openProduct(PRODUCT, SHADE)" /></a>
+							<input type="checkbox" id="PRODUCT SHADE" name="PRODUCT" value="SHADE" onClick="toggleCheck(this)">
+							<label for="PRODUCT SHADE" onClick="toggleCheck(this)">SHADE</label>
+						</div>
+
+						<div class="sectProd">
+							<a href="#thisProduct"><div class="sectProdHed" onClick="openProduct(PRODUCT, SHADE)">i'm a sectProdHed - PRODUCT</div></a>
+							<a href="#thisProduct"><img src="img/prod/prod_000.jpg" onClick="openProduct(PRODUCT, SHADE)" /></a>
+							<input type="checkbox" id="PRODUCT SHADE" name="PRODUCT" value="SHADE" onClick="toggleCheck(this)">
+							<label for="PRODUCT SHADE" onClick="toggleCheck(this)">SHADE</label>
+						</div>
+
+						<div class="sectProd">
+							<a href="#thisProduct"><div class="sectProdHed" onClick="openProduct(PRODUCT, SHADE)">i'm a sectProdHed - PRODUCT</div></a>
+							<a href="#thisProduct"><img src="img/prod/prod_000.jpg" onClick="openProduct(PRODUCT, SHADE)" /></a>
+							<input type="checkbox" id="PRODUCT SHADE" name="PRODUCT" value="SHADE" onClick="toggleCheck(this)">
+							<label for="PRODUCT SHADE" onClick="toggleCheck(this)">SHADE</label>
+						</div>
+
+						<div class="sectProd">
+							<a href="#thisProduct"><div class="sectProdHed" onClick="openProduct(PRODUCT, SHADE)">i'm a sectProdHed - PRODUCT</div></a>
+							<a href="#thisProduct"><img src="img/prod/prod_000.jpg" onClick="openProduct(PRODUCT, SHADE)" /></a>
+							<input type="checkbox" id="PRODUCT SHADE" name="PRODUCT" value="SHADE" onClick="toggleCheck(this)">
+							<label for="PRODUCT SHADE" onClick="toggleCheck(this)">SHADE</label>
+						</div>
+
+
+
+
+						----- * FOR JAVASCRIPT main.js - FUNCTION: loadProdMenu * -----
+
+						sectProdContainer.append('
+							<div class="sectProd">
+								<a href="#thisProduct"><div class="sectProdHed" onClick="openProduct(\'' + tempProd['product'] + '\', \'' + tempProd['shade'] + '\')">' + tempProd['product'] + '</div></a>
+								<a href="#thisProduct"><img src="img/prod/' + value + '" id="' + tempProd['product'] + ' - ' + tempProd['shade'] + '" onClick="openProduct(\'' + tempProd['product'] + '\', \'' + tempProd['shade'] + '\')" /></a>
+								<input type="checkbox" id="' + tempProd['product'] + ' ' + tempProd['shade'] + '" name="' + tempProd['product'] + '" value="' + tempProd['shade'] + '" onClick="toggleCheck(this)">
+								<label for="' + tempProd['product'] + ' ' + tempProd['shade'] + '" onClick="toggleCheck(this)">' + tempProd['shade'] + '</label>
+							</div>'
+						);
+
+
+					</div>
+				</div>
+	-->
+
+			</div>
+		</div>
+
+		<!--<a href="#" onClick="alert('Hello world! I\'m trying to ADD STUFF to my shopping list!')" class="addToList">Add checked items to my list</a>-->
+		<!--<button type="button" class="addToList">TAP check boxes to add items to your shopping list</button>-->
+		<!--<a href="#" id="addToList"><button type="button" class="addToList">Check boxes to add items to your shopping list</button></a>-->
+		<!--<a href="#myList" onClick="checksToList()" id="addToList"><button type="button" class="addToList">Check boxes to add items to your shopping list</button></a>-->
+		<div id="addToList" class="addToList">Check boxes to add items to your shopping list</div>
+
+
+	<!--/* ------------------------- PRODUCT DETAIL ------------------------- */-->
+
+		<div class="modalWindow" id="thisProduct">
+
+			<a href="#close"><img src="img/spacer.gif" style="border:0; background:none; opacity:0; width:100%; height:100%; margin:0; padding:0; position:absolute" /></a>
+
+			<div class="modalHed"></div>
+
+			<div class="modalContent" id="thisProductContent">
+				<a href="#close" title="Close" class="close" id="closeModal">X CLOSE</a>
+
+				<!--<a href="#myList" id="shopListBtn" onClick="openList()"><button type="button" class="shopListBtn">My Shopping List</button></a>-->
+				<a href="#myList" id="prodDetailListBtn" onClick="openList()"><button type="button" class="prodDetailListBtn">My Shopping List</button></a>
+				<!--<a href="#myList" onClick="checkList()"><button type="button" class="prodDetailBtn">Add To List</button></a>-->
+				<a href="#myList" onClick="checkList($('.prodDetailName > h1').text(), $('.prodDetailName > h2').text())"><button type="button" class="prodDetailBtn">Add To List</button></a>
+
+				<div class="prodDetail clearFix">
+					<div class="prodDetailImage">
+						<!--<img src="img/prod/prod_000.jpg" />-->
+					</div>
+
+					<div class="prodDetailName">
+						<h1></h1>
+						<h2></h2>
+						<p></p>
+					</div>
+
+					<div class="prodRec clearFix">
+						<h2>Also recommended for you...</h2><br />
+
+						<div class="prodRecProd" id="prodRecProd01">
+							<img src="img/prod/prod_000.jpg" onClick="swapProduct(event.target)" />
+							<h3></h3>
+							<p></p>
+						</div>
+
+						<div class="prodRecProd" id="prodRecProd02">
+							<img src="img/prod/prod_000.jpg" onClick="swapProduct(event.target)" />
+							<h3></h3>
+							<p></p>
+						</div>
+
+						<div class="prodRecProd" id="prodRecProd03">
+							<img src="img/prod/prod_000.jpg" onClick="swapProduct(event.target)" />
+							<h3></h3>
+							<p></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!--/* ------------------------- SHOPPING LIST ------------------------- */-->
+
+		<div class="modalWindow" id="myList">
+
+			<a href="#close"><img src="img/spacer.gif" style="border:0; background:none; opacity:0; width:100%; height:100%; margin:0; padding:0; position:absolute" /></a>
+
+			<a href="#close" />
+				<div class="modalHed">
+					My Shopping List
+					<a href="#myList" onClick="emptyList(event)" id="emptyListBtn"><button type="button" class="emptyListBtn">Empty Shopping List</button></a>
+				</div>
+			</a>
+
+			<div class="modalContent">
+				<a href="#close" title="Close" class="close" id="closeModal">X CLOSE</a>
+
+				<div class="modalList" id="shoppingList">
+					<div class="listContainer clearFix">
+	<!--
+						<div class="prodList">
+							<div class="prodListImg">
+								<a href="#thisProduct"><img src="img/prod/prod_000.jpg" /></a>
+								<button type="button" class="prodListBtn" id="removeMe" onClick="removeFromList(event)">Remove From List</button>
+							</div>
+
+							<div class="prodListDescr clearFix">
+								<h1>Beautiful Color Eye Shadow</h1>
+								<h2>Periwinkle</h2>
+								<p>Rooted in NYC with more than 100 years of beauty expertise, Beautiful Color Eye Shadows were developed in shades that are trend driven and in a formula that is good for your skin. The outcome: smooth, crease-free shadows that combine long-lasting color with luxurious skin care benefits. Vitamin enriched. Oil-Free.</p>
+
+								<div class="listRec">
+									<h2>Also recommended for you...</h2><br />
+									<a href="#thisProduct"><img src="img/prod/prod_000.jpg" class="listRecProd" /></a><a href="#thisProduct"><img src="img/prod/prod_000.jpg" class="listRecProd" /></a>
+								</div>
+							</div>
+						</div>
+	-->
+					</div>
+			  </div>
+			</div>
+		</div>
+
+
+	<!--/* ------------------------- SPLASH SCREEN ------------------------- */-->
+
+		<!--<div class="modalWindow clearFix" id="splash">-->
+		<div class="modalWindow" id="splash">
+
+			<a href="#splash" id="splashBtn" onClick="newSession(this.id)" class="modalContent splashAnim clearFix">
+				<!--<img src="img/app_splash.jpg" width="100%" height="100%" />-->
+				<!--<object id="EdgeID" type="text/html" width="100%" height="100%" border="0" data-dw-widget="Edge" data="edgeanimate_assets/splash_anim/Assets/splash_anim.html"></object>-->
+				<!--<embed id="EdgeID" type="text/html" width="100%" height="100%" border="0" data-dw-widget="Edge" data="edgeanimate_assets/splash_anim/Assets/splash_anim.html"></embed>-->
+				<!--<div id="EdgeID" type="text/html" width="100%" height="100%" border="0" data-dw-widget="Edge" data="edgeanimate_assets/splash_anim/Assets/splash_anim.html"></div>-->
+			</a>
+
+			<a href="#close" id="newSessionBtn" onClick="newSession(this.id)"><img src="img/spacer.gif" /></a>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+
+//		setTimeout(function () {
+//			$('#resetBtn')[0].click();
+//		}, 1000);
+
+		splashScreen();
+//		setTimeout(pageInit, 500);
+
+//		$('#resetBtn')[0].click();
+	</script>
+
+
+
+
+</body>
+</html>

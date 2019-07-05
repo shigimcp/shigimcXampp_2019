@@ -1,0 +1,292 @@
+/* ========== REF: MICRO-CLEARFIX (ref: http://themergency.com/css-clearfix-demystified/) ========== */
+
+.clearFix:before, .clearFix:after {
+	content: "";
+	display: table;
+}
+
+.clearFix:after {
+	clear: both;
+}
+
+.clearFix {
+	zoom: 1;
+}
+
+
+
+/* ========== FONTS ========== */
+
+@font-face {
+	font-family: 'Didot';
+	src: url("../fonts/Didot.otf") format("opentype");
+	src: url('../fonts/Didot.eot');
+	src: url('../fonts/Didot.woff') format('woff'),
+	url('../fonts/Didot.svg#-Didot') format('svg');
+	
+}
+
+/*
+@font-face {
+	font-family: 'DidotItalic';
+	src: url("../fonts/DidotItalic.otf") format("opentype");
+	src: url('../fonts/DidotItalic.eot');
+	src: url('../fonts/DidotItalic.woff') format('woff'),
+	url('../fonts/DidotItalic.svg#Didot-Italic') format('svg');
+}
+
+@font-face {
+	font-family: 'DidotBold';
+	src: url("../fonts/DidotBold.otf") format("opentype");
+	src: url('../fonts/DidotBold.eot');
+	src: url('../fonts/DidotBold.woff') format('woff'),
+	url('../fonts/DidotBold.svg#Didot-Bold') format('svg');
+}
+
+@font-face {
+	font-family: 'DidotBoldItalic';
+	src: url("../fonts/DidotBoldItalic.otf") format("opentype");
+	src: url('../fonts/DidotBoldItalic.eot');
+	src: url('../fonts/DidotBoldItalic.woff') format('woff'),
+	url('../fonts/DidotBoldItalic.svg#Didot-BoldItalic') format('svg');
+}
+*/
+
+
+/* ========================= GLOBAL ======================== */
+
+html, body {
+	/*border: 3px #FF0000 inset;*/
+
+	font-family: "Didot", serif;
+	/*font-weight: 900;*/
+	font-size: 1em;
+
+	width: 100%;
+	/*height: 100%;*/
+
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+html {
+	/*border: 3px #FF0000 inset;*/
+
+	/*background-color: #000000;*/
+
+	background-image: url(../img/wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment:fixed;
+	/*background-size: cover;*/
+	/*background-size: auto;*/
+
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+
+
+/* ========================= HED / GLOBAL NAV ========================= */
+
+.hed {
+	/*border: 5px #FF00FF inset;*/
+
+	/*background-color: transparent;*/
+
+	background-image: url(../img/hed.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment:fixed;
+
+	color: #FFFFFF;
+
+	width: 100%;
+	/*width: 1024px;*/
+	height: 70px;
+
+	margin: 0 auto;
+	padding: 0 auto;
+
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+
+.hed img {
+	/*border: 5px #FF00FF inset;*/
+
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.globalNAV {
+	/*border: 2px #FF00FF inset;*/
+
+	background-color: transparent;
+
+	color: #FFFFFF;
+	text-align: right;
+
+	width: 1000px;
+	/*width: 1024px;
+	height: 70px;*/
+
+	margin: 0 auto;
+	padding: 0 1.25% 0 0;
+
+	position: relative;
+	top: 30px;
+}
+
+.globalNAV a, .globalNAV a:visited {
+	/*border: 2px #FFFF00 inset;*/
+
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+
+	width: 1024px;
+	height: 70px;
+
+	margin: 0;
+	padding: 0 0 0 1.75%;
+}
+
+.globalNAV a:hover {
+	/*border: 2px #FFFF00 inset;*/
+
+	color: #999999;
+}
+
+
+/* ========================= CONTENT ========================= */
+
+.content {
+	/*border: 5px #FF00FF inset;*/
+
+	background-color: #FFFFFF;
+/*
+	background-image: url(../img/content.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+*/
+	width: 1024px;
+	height: 100%;
+
+	margin: 0 auto;
+	padding: 0 auto;
+
+	position: relative;
+	top: 70px;
+}
+
+
+/* ------------------------- LEADERBOARD ------------------------- */
+
+.leaderboard {
+	/*border: 2px #00FFFF inset;*/
+
+	background-color: #333333;
+	/*background-color: transparent;*/
+
+	width: 100%;
+	height: 100px;
+
+	margin: auto;
+	padding: 15px 0 0 0;
+}
+
+.leaderboard .banner {
+	/*border: 2px #FFFF00 inset;*/
+
+	width: 728px;
+	height: 90px;
+
+	margin: auto;
+	padding: auto;
+	/*padding: 15px 0 30px 0;*/
+}
+
+
+/* ------------------------- SLIDER ------------------------- */
+
+.slider {
+	/*border: 2px #00FFFF inset;*/
+
+	/*background-color: #333333;*/
+	background-color: transparent;
+
+	width: 100%;
+	height: 530px;
+
+	margin: auto;
+	padding: auto;
+}
+
+
+/* ------------------------- ARTICLES ------------------------- */
+
+.articles {
+	/*border: 2px #00FFFF inset;*/
+
+	/*background-color: #333333;*/
+	background-color: transparent;
+
+	width: 1024px;
+	/*width: 100%;*/
+	/*height: 530px;*/
+
+	margin: 0;
+	padding: 0;
+}
+
+.articleRow {
+	/*border: 2px #0000FF inset;*/
+
+	/*background-color: #333333;*/
+	background-color: transparent;
+
+	/*width: 1024px !important;*/
+	width: 100%;
+	/*height: 530px;*/
+
+	margin: 0 auto;
+	padding: 0 auto;
+
+	margin-left: 10px;
+}
+
+.article {
+	/*border: 2px #FF0000 inset;*/
+
+	/*background-color: #333333;*/
+	background-color: transparent;
+
+	/*color: #FF0000;*/
+	line-height: 1em;
+
+	/*width: 33.333%;*/
+	width: 300px;
+	/*height: 250px;*/
+
+	/*margin: 20px 10px -10px 20px;*/
+	margin: 20px 12.5px -5px 20px;
+	padding: 0;
+
+	float: left;
+}
+
+.article h1 {
+	/*border: 2px #FF0000 inset;*/
+
+	font-size: 1.5em;
+	line-height: .15em;
+}
+
+.article p {
+	/*border: 2px #FF0000 inset;*/
+
+	font-size: 1em;
+}

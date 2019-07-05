@@ -1,0 +1,19 @@
+ul.navlist li { 
+    float: left;
+    display: block;
+}
+ul#nav_sub li {
+    margin-top: 0px;
+}
+#nav_main #n_home { margin-left: 200px; }
+#s_fragrance { margin-left: 300px; }
+#nav_sub a#s_lc_ribbon { margin-left: 90px; }
+div.item { float: left; }
+div#fragrancebox_nav div { float: left; }
+div#fragrancebox p { clear: both; }
+
+/* hide shop now - hack to adjust navigation bar positioning */
+
+#nav_main #n_home { margin-left: 235px; }
+#s_fragrance { margin-left: 357px; }
+#nav_sub a#s_lc_ribbon { margin-left: 125px; }

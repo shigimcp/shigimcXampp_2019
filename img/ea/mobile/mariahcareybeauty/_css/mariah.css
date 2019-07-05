@@ -1,0 +1,503 @@
+body { 
+    background: #fff url("../_images/bg.jpg") no-repeat center top; 
+    margin: 0;
+    margin-top: 61px;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #5f6ab0;
+    font-size: 10px;
+    vertical-align: top;
+}
+strong, h1, h2, h3 { font-weight: bold; }
+em { font-style: italic; }
+#container { 
+    width: 920px;
+    margin: 0 auto;
+}
+
+/* header */
+h1#header {
+}
+h1#header a {
+	background: url("../_images/logo.png") no-repeat;
+	display: block;
+	width: 598px;
+	height: 51px;
+	margin: 0 auto;
+}
+h1#header a span { display: none; }
+/* navigation */
+#nav { 
+    background: transparent url("../_images/navbg.png") no-repeat center top;
+    width: 920px;
+    height: 66px;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+ul.navlist {
+    width: 920px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul.navlist span { display: none; }
+ul.navlist li { 
+    margin: 1px 13px 0 0;
+    padding: 0;
+    display: inline-block;
+}
+ul.navlist li a { 
+    margin: 0;
+    padding: 0;
+    display: block; 
+}
+
+/* main nav */
+#nav_main li a { height: 25px; /* margin: 0; padding: 0; display: block; */ }
+#nav_main a#n_home { 
+    width: 37px;
+    background: url("../_images/nav_main/home.png") no-repeat;
+}
+#nav_main a#n_dreams {
+    width: 131px;
+    background: url("../_images/nav_main/dreams.png") no-repeat;
+}
+/*#nav_main a#n_dreams:hover, #dreams #nav_main a#n_dreams {*/
+#nav_main a#n_dreams:hover, #dreams #nav_main a#n_dreams, #home #nav_main a#n_dreams {
+    background: url("../_images/nav_main/dreams_on.png") no-repeat;
+}
+#nav_main a#n_lollipop {
+    width: 113px;
+    background: url("../_images/nav_main/lollipop.png") no-repeat;
+}
+/*#nav_main a:hover#n_lollipop, #lollipop #nav_main a#n_lollipop, #home #nav_main a#n_lollipop {*/
+#nav_main a:hover#n_lollipop, #lollipop #nav_main a#n_lollipop {
+    background: url("../_images/nav_main/lollipop_on.png") no-repeat;
+}
+#nav_main a#n_forever {
+    width: 48px;
+    background: url("../_images/nav_main/forever.png") no-repeat;
+}
+#nav_main a#n_forever:hover, #forever #nav_main a#n_forever {
+    background: url("../_images/nav_main/forever_on.png") no-repeat;
+}
+#nav_main a#n_luscious {
+    width: 85px;
+    background: url("../_images/nav_main/luscious.png") no-repeat;
+}
+#nav_main a:hover#n_luscious, #luscious #nav_main a#n_luscious {
+    background: url("../_images/nav_main/luscious_on.png") no-repeat;
+}
+#nav_main a#n_mbrand {
+    width: 28px;
+    background: url("../_images/nav_main/mbrand.png") no-repeat;
+}
+#nav_main a:hover#n_mbrand, #mbrand #nav_main a#n_mbrand  {
+    background: url("../_images/nav_main/mbrand_on.png") no-repeat;
+}
+#nav_main a#n_ultra {
+    width: 60px;
+    background: url("../_images/nav_main/ultra.png") no-repeat;
+}
+#nav_main a:hover#n_ultra, #ultra #nav_main a#n_ultra {
+    background: url("../_images/nav_main/ultra_on.png") no-repeat;
+}
+#nav_main a#n_shop {
+    /*width: 77px;*/
+    width: 180px;
+    background: url("../_images/nav_main/shop.png") no-repeat;
+}
+
+/* subnav */
+ul#nav_sub li {
+    margin: -1px 14px 0 0;
+}
+#nav_sub li a { height: 24px; }
+#nav_sub a#s_fragrance {
+    width: 87px;
+    background: url("../_images/nav_sub/s_fragrance.png") no-repeat top; 
+}
+#nav_sub a:hover#s_fragrance, .fragrance #nav_sub a#s_fragrance {
+    width: 87px;
+    background: url("../_images/nav_sub/s_fragrance_on.png") no-repeat top; 
+}
+#nav_sub a#s_collection {
+    width: 87px;
+    background: url("../_images/nav_sub/s_collection.png") no-repeat top; 
+}
+#nav_sub a:hover#s_collection {
+    background: url("../_images/nav_sub/s_collection_on.png") no-repeat top; 
+}
+#nav_sub a#s_shopnow {
+    width: 64px;
+    background: url("../_images/nav_sub/s_shopnow.png") no-repeat top; 
+}
+#nav_sub a#s_lc_ribbon {
+    width: 43px;
+    background: url("../_images/nav_sub/s_lc_ribbon.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_ribbon, .lc_ribbon #nav_sub a#s_lc_ribbon {
+    width: 43px;
+    background: url("../_images/nav_sub/s_lc_ribbon_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_inseparable {
+    width: 69px;
+    background: url("../_images/nav_sub/s_lc_inseparable.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_inseparable, .lc_inseparable #nav_sub a#s_lc_inseparable {
+    width: 69px;
+    background: url("../_images/nav_sub/s_lc_inseparable_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_vision {
+    width: 86px;
+    background: url("../_images/nav_sub/s_lc_vision.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_vision, .lc_vision #nav_sub a#s_lc_vision {
+    width: 86px;
+    background: url("../_images/nav_sub/s_lc_vision_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_never {
+    width: 105px;
+    background: url("../_images/nav_sub/s_lc_never.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_never, .lc_never #nav_sub a#s_lc_never {
+    width: 105px;
+    background: url("../_images/nav_sub/s_lc_never_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_mine {
+    width: 70px;
+    background: url("../_images/nav_sub/s_lc_mine.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_mine, .lc_mine #nav_sub a#s_lc_mine {
+    width: 70px;
+    background: url("../_images/nav_sub/s_lc_mine_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_honey {
+    width: 42px;
+    background: url("../_images/nav_sub/s_lc_honey.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_honey, .lc_honey #nav_sub a#s_lc_honey {
+    width: 42px;
+    background: url("../_images/nav_sub/s_lc_honey_on.png") no-repeat top;
+}
+#nav_sub a#s_lc_thatchick {
+    width: 65px;
+    background: url("../_images/nav_sub/s_lc_thatchick.png") no-repeat top;
+}
+#nav_sub a:hover#s_lc_thatchick, .lc_thatchick #nav_sub a#s_lc_thatchick {
+    width: 65px;
+    background: url("../_images/nav_sub/s_lc_thatchick_on.png") no-repeat top;
+}
+/* content */
+#contentbox {
+    background: transparent url("../_images/contentbox.png") no-repeat;
+    width: 920px;
+    height: 535px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#content { 
+    padding: 1px 30px 30px 30px;
+    margin: 0;
+    white-space: nowrap;
+}
+/* sign up buttons */
+#signup_btns {
+    position: absolute;
+    right: 30px;
+    top: 521px;
+}
+#signup_btns span { display: none; }
+#signup_btns #signup { 
+    margin: 0 5px 0 0;
+    width: 53px;
+    height: 17px;
+    background: transparent url("../_images/signup.png") no-repeat;
+    float: left;
+}
+#signup_btns a#btn_facebook { 
+    width: 17px;
+    height: 17px;
+    display: block;
+    background: url("../_images/btn_facebook.gif") no-repeat;
+    float: left;
+    margin: 0 4px 0 0;
+}
+#signup_btns a#btn_twitter { 
+    width: 17px;
+    height: 17px;
+    display: block;
+    background: url("../_images/btn_twitter.gif") no-repeat;
+    float: left;
+}
+
+#form_msg {font-weight: normal !important;  color: #5f6ab0 !important; font-size: 13px !important; }
+
+/* footer */
+#footer a {
+    color: #5f6ab0;
+    text-decoration: none;
+	line-height: 15px;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer span { display: none; }
+#footer p { 
+    margin: 13px 0 10px 0; 
+    padding: 0;
+    text-align: center;
+}
+#footer i { 
+	font-style: italic;
+}
+/* Forever: The Collection */
+.collection #nav_sub a#s_collection {
+    width: 87px;
+    background: url("../_images/nav_sub/s_collection_on.png") no-repeat top; 
+}
+.collection #content {
+    position: relative;
+}
+.collection #collectionwrapper { 
+    position: absolute;
+    top: 18px;
+    left: 46px;
+    width: 827px;
+    height: 469px;
+    border: 1px solid #f7cfe4;
+}
+.collection #items { 
+    margin: 14px auto 0 auto; 
+}
+div.item { 
+    width: 268px; 
+    float: left;
+    margin-right: 3px; 
+    position: relative;
+    height: 446px;
+}
+div.description { 
+    width: 268px;
+    height: 130px;
+    background: #f9ebf2;
+    color: #270337;
+    font-size: 12px;
+    white-space: normal;
+    line-height: 110%;
+}
+.description h2, .description h3, .description p {
+    padding-left: 14px; 
+    padding-right: 5px;
+}
+.description h2 { padding-top: 14px; }
+.description h3 {
+    padding-top: 12px;
+}
+div.btn_shopnow {
+    position: absolute;
+    bottom: 125px;
+    right: 14px;
+}
+.btn_shopnow a {
+    display: block;
+    width: 69px;
+    height: 59px;
+    background: url("../_images/btn_shopnow.png") no-repeat;
+}
+.btn_shopnow a:hover {
+    background: url("../_images/btn_shopnow_on.png") no-repeat;
+}
+.btn_shopnow a span {
+    display: none;
+}
+div#fragrancebox {
+    width: 378px;
+    height: 436px;
+    background: #f9ebf2;
+    white-space: normal;
+    color: #270337;
+    font-size: 12px;
+    margin-top: 34px;
+}
+.fragrance div#fragrancebox p {
+    margin: 12px 24px 0 24px ;
+    line-height: 125%;
+}
+div#fragrancebox_nav { padding-top: 24px; padding-left: 24px;   }
+div#fragrancebox_nav div { display: inline-block; }
+div#fragrancebox a {
+    color: #b293b4;
+    text-decoration: underline;
+}
+div#fragrancebox a:hover {
+    color: #270337;
+    text-decoration: underline;
+}
+.notes #fragrancebox_nav #hdr_fragrance a:hover, .fragrance #fragrancebox_nav #hdr_fragrance {
+    background: url("../_images/hdr_fragrance_on.gif") no-repeat;
+    width: 109px;
+    height: 17px;
+}
+.notes #fragrancebox_nav #hdr_fragrance { background: none; }
+.notes #fragrancebox_nav #hdr_fragrance a {
+    display: block;
+    background: url("../_images/hdr_fragrance.gif") no-repeat;
+    width: 109px;
+    height: 17px;
+}
+.fragrance #fragrancebox_nav #hdr_notes a {
+    display: block;
+    background: url("../_images/hdr_notes.gif") no-repeat;
+    width: 109px;
+    height: 17px;
+}
+.fragrance #fragrancebox_nav #hdr_notes a:hover, .notes #fragrancebox_nav #hdr_notes {
+    background: url("../_images/hdr_notes_on.gif") no-repeat;
+    width: 109px;
+    height: 17px;
+}
+.fragrance #fragrancebox_nav #hdr_divider {
+    width: 22px;
+    height: 17px;
+    background: url("../_images/hdr_divider.gif") no-repeat;
+
+}
+.fragrance #fragrancebox, .fragrance #fragranceimg { float: left; }
+#fragrancebox_nav span { display: none; }
+.notes #fragrancebox table { 
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.notes #fragrancebox td img { 
+    border: 5px solid white;
+    margin-right: 13px;
+    margin-bottom: 16px; 
+}
+.notes #fragrancebox td {
+    vertical-align: top;
+    line-height: 150%;
+    font-size: 11px;
+}
+.notes #fragrancebox strong {
+    font-size: 12px;
+}
+/* Collection with scrollbar */
+.scrollbar #contentbox {
+    background: transparent url("../_images/contentbox_lc.png") no-repeat;
+}
+.scrollbar div.btn_shopnow {
+    position: absolute;
+    bottom: 109px;
+    right: 14px;
+}
+#collectionwrapper.flexcroll { 
+    overflow: auto;
+    white-space: nowrap;
+    border: none;
+    padding-bottom: 10px;
+    top: 16px;
+    height: 464px;
+    width: 826px;
+}
+#collectionwrapper.flexcroll #items { 
+    height: 435px;
+    margin: 4px 3px 0 3px;
+    white-space: nowrap;
+}
+/* Collection page formatting */
+#items.items01 { width: 268px; }
+#items.items02 { width: 542px; }
+#items.items03 { 
+	width: inherit;
+	margin-left: 8px;
+}
+#items.items04 { 
+    width: 1100px;
+}
+#items.items04 { 
+    width: 1100px;
+}
+#items.items05 { 
+	width: 1378px;
+}
+#items.items06 { 
+    width: 1650px;
+}
+#items.items07 { 
+    width: 1925px;
+}
+#items.items08 { 
+    width: 2198px;
+}
+#items.items09 { 
+    width: 2473px;
+}
+#items.items10 { 
+    width: 2747px;
+}
+#items.items11 { 
+    width: 3020px;
+}
+#items.items12 { 
+    width: 3295px;
+}
+#collectionwrapper.flexcroll #items div.item { 
+    height: 432px;
+    display: inline;
+    margin: 0 3px;
+    float: left;
+    white-space: nowrap;
+}
+div.image { white-space: nowrap; }
+.fragrance #content { position: relative; }
+.fragrance #fragrance_shopnow a {
+    display: block;
+    position: absolute;
+    left: 420px;
+    top: 400px;
+    width: 69px;
+    height: 37px;
+    background: transparent url("../_images/btn_f_shopnow.png") no-repeat;
+}
+.fragrance #fragrance_shopnow a:hover {
+    background: transparent url("../_images/btn_f_shopnow_on.png") no-repeat;
+}
+.fragrance #fragrance_shopnow a span {
+    display: none;
+}
+
+/* HIDE SIGN UP BUTTON */
+#signup { }
+
+/* HIDE SHOP NOW LINKS */
+/* main nav */
+/*#n_shop { display: none; }*/
+/* subnav */
+#s_shopnow { display: none; }
+/* Dreams */
+body#dreams #fragrance_shopnow a { display: none; }
+body#dreams div.btn_shopnow { display: none; }
+/* Forever */
+body#forever #fragrance_shopnow a { display: none; }
+body#forever div.btn_shopnow { display: none; }
+/* Lollipop Collection */
+body#lollipop #fragrance_shopnow a { display: none; }
+body#lollipop div.btn_shopnow { display: none; }
+/* Luscious Pink */
+body#luscious #fragrance_shopnow a { display: none; }
+body#luscious div.btn_shopnow { display: none; }
+/* Ultra Pink */
+body#ultra #fragrance_shopnow a { display: none; }
+body#ultra div.btn_shopnow { display: none; }
+/* M */
+body#mbrand #fragrance_shopnow a { display: none; }
+body#mbrand div.btn_shopnow { display: none; }
+
+
+
+img[usemap], map area{
+    outline: none;
+}

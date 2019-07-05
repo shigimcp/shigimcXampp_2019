@@ -1,0 +1,18 @@
+body.popup {
+    background: #f9ebf2 url("../_images/popup_hdr.png") no-repeat top center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #270337;
+    font-size: 12px;
+    margin: 95px 20px 20px 22px;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #6d1b89;
+	margin-bottom: 24px;
+}
+p { 
+    margin-bottom: 14px;
+    line-height: 105%; 
+}

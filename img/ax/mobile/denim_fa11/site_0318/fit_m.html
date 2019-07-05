@@ -1,0 +1,2264 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+<title>A|X DENIM - FIND YOUR FIT</title>
+
+
+<!-- ======================================================= -->
+<!-- Meta Tags -->
+<!-- ======================================================= -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!--<meta name="viewport" content="width=device-width; initial-scale=1.0;" />-->
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- Meta Tags - FACEBOOK Open Graph Protocol -->
+<!--
+<meta property="og:title" content="A|XX - Celebrating 20 Years of Style in 2011" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.axx2011.com/mobile.html" />
+<meta property="og:image" content="http://www.axx2011.com/img/AXX_badge.jpg" />
+<meta property="og:site_name" content="A|XX 2011" />
+<meta property="fb:app_id" content="151938061528481" />
+
+<meta property="og:description" content="A|XX - Celebrating 20 Years of Style in 2011"/>
+<meta property="og:video" content="http://www.youtube.com/watch?v=b2wRjPR6Ogs"/>
+-->    
+
+
+
+<!-- ======================================================= -->
+<!-- IMPORTS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript" src="../javascript/prototype.js"></script>
+<script type="text/javascript" src="../javascript/effects.js"></script>
+<script type="text/javascript" src="../javascript/accordion.js"></script>
+<script type="text/javascript" src="../javascript/code_highlighter.js"></script>
+<script type="text/javascript" src="../javascript/javascript.js"></script>
+<script type="text/javascript" src="../javascript/html.js"></script>
+
+<link rel="stylesheet" type="text/css" href="00site_0318.css" />
+
+<script type="application/x-javascript">
+
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    
+    function hideURLbar(){
+        window.scrollTo(0,0);
+//        document.getElementById("topSlides").className = "slides";
+    }
+
+    function moveMe(newY){
+        window.scrollTo(0,newY);
+    }
+
+</script>
+
+
+<!-- ======================================================= -->
+<!-- BROWSER SNIFFER -->
+<!-- ======================================================= -->
+
+<!--
+<script language="javascript">
+
+    if (navigator.userAgent && navigator.userAgent.indexOf("iPhone") == -1 && navigator.userAgent.indexOf("Mobile") == -1 && navigator.userAgent.indexOf("BlackBerry") == -1 ) {
+ 		   window.location.replace("http://www.armaniexchange.com/category/denim.do?");
+    }
+
+</script>
+-->
+
+
+<script type="text/javascript">
+function setConfig(configObject) {
+	config = configObject;
+	
+	//get ol list and children
+    var ol = document.body.getElementsByTagName('ol')[0];
+    scenes = ol.children;
+
+	currentSceneIndex = -1;
+}
+
+
+function start() {	
+	goToScene(0);
+}
+
+function goToSceneID(id) {
+	for (var i=0; i < config.length; i++) {
+		if (config[i].id === id) {
+			goToScene(i);
+			return;
+		}
+	}
+}
+
+
+//function to go directly to any scene
+function goToScene(index) {
+    
+    //go to scene
+    startScene(index);
+
+	//set up timer if jumping on done
+	if (config[index].jump !== -1) {
+		applyTimeout(config[index].jump, config[index].duration);
+	}
+	
+}
+
+function startScene(index) {
+    
+	//restart current scene without flicker
+	if (index === currentSceneIndex) {
+		scenes[index].setAttribute('class','run restart');
+		setTimeout(function(){
+	        scenes[index].setAttribute('class','run');
+			},0);
+		return;
+	}
+
+    //add the class "run" to the scene currently running and remove it from anybody else
+    var scene;
+    for (var i=0; i < scenes.length; i++) {
+        scene = scenes[i];
+        if (i === index) {
+            scene.setAttribute('class','run');
+        } else {
+            scene.setAttribute('class','');
+        }
+        
+    }
+
+	currentSceneIndex = index;
+    
+}
+
+//set timeout
+function applyTimeout(index,time) {
+    setTimeout(function(){
+        goToScene(index);
+    },time);
+}
+</script>
+
+
+<script type="text/javascript">
+window.onload=setup;
+function setup() {
+setConfig([{"jump":-1,"duration":1500,"id":23},{"jump":-1,"duration":1250.0000000000002,"id":24},{"jump":-1,"duration":1259.9999999999998,"id":25},{"jump":-1,"duration":1250.0000000000002,"id":26},{"jump":-1,"duration":1259.9999999999998,"id":27},{"jump":-1,"duration":1250.0000000000002,"id":28},{"jump":-1,"duration":1259.9999999999998,"id":29},{"jump":-1,"duration":1250.0000000000002,"id":30},{"jump":-1,"duration":1259.9999999999998,"id":31},{"jump":-1,"duration":1250.0000000000002,"id":32},{"jump":-1,"duration":1259.9999999999998,"id":33}]);
+start();
+}
+</script>
+
+
+<style type="text/css">
+
+.AN-sObj-stage {
+ border:0px solid #000;
+ position: relative;
+ overflow:hidden;
+ -webkit-perspective: 600;
+ -webkit-transform-style:preserve-3d;
+ }
+
+ .AN-sObj-stage div {
+ position: absolute;
+ }
+
+ .AN-sObj-stage a {
+color: inherit;
+ text-decoration:none;
+}
+
+ .AN-sObj-stage * {
+margin:0;
+ padding:0;
+ -webkit-font-smoothing: antialiased;
+}
+
+ body,.AN-sObj-stage,ol,li {
+margin:0;
+ padding:0;
+}
+
+ ol {
+list-style:none;
+ position:relative;
+}
+
+ li {
+position:absolute;
+ top:0;
+ left:0;
+}
+
+li {
+ display:none;
+ }
+
+li.run {
+display:block;
+ }
+
+.restart * {
+ -webkit-animation-name: none !important;
+ }
+
+.AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+display:block;
+ }
+
+#AN-sObj-35267{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35268{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35269{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35270{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35271{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35272{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35273{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35274{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35275{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35276{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35277{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35278{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35286{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35287{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35288{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35289{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35290{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35291{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35292{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35293{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35294{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35295{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35296{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35297{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35298{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35302{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35303{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35304{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35305{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35306{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35307{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35308{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35309{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35310{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35311{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35312{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35313{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35314{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35318{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35319{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35320{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35321{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35322{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35323{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35324{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35325{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35326{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35327{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35328{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35329{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35330{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35334{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35335{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35336{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35337{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35338{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35339{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35340{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35341{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35342{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35343{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35344{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35345{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35346{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35350{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35351{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35352{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35353{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35354{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35355{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35356{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35357{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35358{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35359{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35360{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35361{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35362{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35366{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35367{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35368{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35369{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35370{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35371{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35372{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35373{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35374{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35375{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35376{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35377{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35378{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35382{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35383{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35384{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35385{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35386{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35387{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35388{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35389{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35390{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35391{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35392{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35393{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35394{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35398{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35399{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35400{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35401{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35402{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35403{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35404{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35405{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35406{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35407{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35408{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35409{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35410{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35414{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35415{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35416{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35417{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35418{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35419{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35420{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35421{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35422{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35423{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35424{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35425{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35426{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-stage{
+ height: 415px;
+width: 320px;
+background-color: rgba(38,38,38,1);
+border:0px solid rgba(38,38,38,0);
+ }
+
+#AN-sObj-35430{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35431{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 30px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35432{
+ -webkit-transform: translate3d(175px, 285px, 0px);
+width: 115px;
+height: 20px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35433{
+ -webkit-transform: translate3d(145px, 255px, 0px);
+width: 175px;
+height: 20px;
+border-top: 0px solid rgba(1,14,13,1);
+border-right: 0px solid rgba(1,14,13,1);
+border-bottom: 0px solid rgba(1,14,13,1);
+border-left: 0px solid rgba(1,14,13,1);
+-webkit-border-radius: 0px;
+background-color: rgba(0,174,255,1);
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35434{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35435{
+ -webkit-transform: translate3d(0px, 35px, 0px);
+width: 320px;
+height: 345px;
+top:0;
+ left:0;
+overflow: visible;
+ }
+
+#AN-sObj-35436{
+ -webkit-transform: translate3d(205px, 345px, 0px);
+width: 115px;
+height: 15px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35437{
+ -webkit-transform: translate3d(270px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_next.png");
+ }
+
+#AN-sObj-35438{
+ -webkit-transform: translate3d(0px, 125px, 0px);
+width: 50px;
+height: 110px;
+top:0;
+ left:0;
+background-image: url("../assets/btn_prev.png");
+ }
+
+#AN-sObj-35439{
+ -webkit-transform: translate3d(0px, 380px, 0px);
+width: 320px;
+height: 35px;
+top:0;
+ left:0;
+ }
+
+#AN-sObj-35440{
+ -webkit-transform: translate3d(170px, 0px, 0px);
+width: 150px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35441{
+ -webkit-transform: translate3d(55px, 0px, 0px);
+width: 115px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+#AN-sObj-35442{
+ -webkit-transform: translate3d(0px, 0px, 0px);
+width: 55px;
+height: 35px;
+top:0;
+ left:0;
+border-top: 0px solid rgba(127,127,127,1);
+border-right: 0px solid rgba(127,127,127,1);
+border-bottom: 0px solid rgba(127,127,127,1);
+border-left: 0px solid rgba(127,127,127,1);
+ }
+
+@-webkit-keyframes AN-ani-35279 {
+0% {
+-webkit-transform: translate3d(195px, 285px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(175px, 285px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35269 {
+-webkit-animation-name: AN-ani-35279;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35269 {
+-webkit-transform: translate3d(195px, 285px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35280 {
+0% {
+-webkit-transform: translate3d(165px, 255px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(145px, 255px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35270 {
+-webkit-animation-name: AN-ani-35280;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35270 {
+-webkit-transform: translate3d(165px, 255px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35281 {
+0% {
+-webkit-transform: translate3d(20px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35272 {
+-webkit-animation-name: AN-ani-35281;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35272 {
+-webkit-transform: translate3d(20px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35282 {
+0% {
+-webkit-transform: translate3d(225px, 345px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(205px, 345px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35273 {
+-webkit-animation-name: AN-ani-35282;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35273 {
+-webkit-transform: translate3d(225px, 345px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35283 {
+0% {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(270px, 125px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35274 {
+-webkit-animation-name: AN-ani-35283;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 0.75s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35274 {
+-webkit-transform: translate3d(265px, 125px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35284 {
+0% {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 125px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35275 {
+-webkit-animation-name: AN-ani-35284;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 0.75s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35275 {
+-webkit-transform: translate3d(5px, 125px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35299 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35290 {
+-webkit-animation-name: AN-ani-35299;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35290 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35300 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35291 {
+-webkit-animation-name: AN-ani-35300;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35291 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35315 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35306 {
+-webkit-animation-name: AN-ani-35315;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35306 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35316 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35307 {
+-webkit-animation-name: AN-ani-35316;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35307 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35331 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35322 {
+-webkit-animation-name: AN-ani-35331;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35322 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35332 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35323 {
+-webkit-animation-name: AN-ani-35332;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35323 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35347 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35338 {
+-webkit-animation-name: AN-ani-35347;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35338 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35348 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35339 {
+-webkit-animation-name: AN-ani-35348;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35339 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35363 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35354 {
+-webkit-animation-name: AN-ani-35363;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35354 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35364 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35355 {
+-webkit-animation-name: AN-ani-35364;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35355 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35379 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35370 {
+-webkit-animation-name: AN-ani-35379;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35370 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35380 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35371 {
+-webkit-animation-name: AN-ani-35380;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35371 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35395 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35386 {
+-webkit-animation-name: AN-ani-35395;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35386 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35396 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35387 {
+-webkit-animation-name: AN-ani-35396;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35387 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35411 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35402 {
+-webkit-animation-name: AN-ani-35411;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35402 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35412 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35403 {
+-webkit-animation-name: AN-ani-35412;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35403 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35427 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35418 {
+-webkit-animation-name: AN-ani-35427;
+-webkit-animation-duration: 1s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35418 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+@-webkit-keyframes AN-ani-35428 {
+0% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35419 {
+-webkit-animation-name: AN-ani-35428;
+-webkit-animation-duration: 1.0000000000000002s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35419 {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35443 {
+0% {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+}
+
+.run #AN-sObj-35434 {
+-webkit-animation-name: AN-ani-35443;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35434 {
+-webkit-transform: translate3d(-320px, 35px, 0px);
+opacity: 0;
+}
+@-webkit-keyframes AN-ani-35444 {
+0% {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+100% {
+-webkit-transform: translate3d(320px, 35px, 0px);
+opacity: 0;
+}
+}
+
+.run #AN-sObj-35435 {
+-webkit-animation-name: AN-ani-35444;
+-webkit-animation-duration: 1.0099999999999998s;
+-webkit-animation-delay: 0s;
+-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-35435 {
+-webkit-transform: translate3d(0px, 35px, 0px);
+opacity: 1;
+}
+</style>
+
+
+<!-- ======================================================= -->
+<!-- GOOGLE ANALYTICS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21017831-6']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+</head>
+<body>
+<ol>
+
+<li id="scene-0"><div class="AN-sObj-stage" id="ext-gen3947"><div class="AN-Object" id="AN-sObj-35267"><div id="AN-sObj-val-35267"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35268"><div id="AN-sObj-val-35268"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35269"><div id="AN-sObj-val-35269"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35270"></div><div class="AN-Object" id="AN-sObj-35271"><div id="AN-sObj-val-35271"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35272" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35272"><div id="AN-sObj-val-35272"><img src="../assets/mensFIT_J130.png"></div></div></a><a id="AN-sObj-link-35273" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35273"><div id="AN-sObj-val-35273"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35274" href="javascript:goToSceneID(24)" target="_self"> <div class="AN-Object" id="AN-sObj-35274"><div id="AN-sObj-val-35274"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35275" href="javascript:goToSceneID(33)" target="_self"> <div class="AN-Object" id="AN-sObj-35275"><div id="AN-sObj-val-35275"><img src="../assets/btn_prev.png"></div></div></a><a id="AN-sObj-link-35276" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35276"><div id="AN-sObj-val-35276"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35277" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35277"><div id="AN-sObj-val-35277"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35278" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35278"><div id="AN-sObj-val-35278"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-1"><div class="AN-sObj-stage" id="ext-gen4056"><div class="AN-Object" id="AN-sObj-35286"><div id="AN-sObj-val-35286"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35287"><div id="AN-sObj-val-35287"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35288"><div id="AN-sObj-val-35288"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35289"></div><a id="AN-sObj-link-35290" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35290"><div id="AN-sObj-val-35290"><img src="../assets/mensFIT_J130.png"></div></div></a><a id="AN-sObj-link-35291" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35291"><div id="AN-sObj-val-35291"><img src="../assets/mensFIT_J66.png"></div></div></a><a id="AN-sObj-link-35292" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35292"><div id="AN-sObj-val-35292"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35293" href="javascript:goToSceneID(26)" target="_self"> <div class="AN-Object" id="AN-sObj-35293"><div id="AN-sObj-val-35293"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35294" href="javascript:goToSceneID(25)" target="_self"> <div class="AN-Object" id="AN-sObj-35294"><div id="AN-sObj-val-35294"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35295"><div id="AN-sObj-val-35295"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35296" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35296"><div id="AN-sObj-val-35296"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35297" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35297"><div id="AN-sObj-val-35297"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35298" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35298"><div id="AN-sObj-val-35298"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-2"><div class="AN-sObj-stage" id="ext-gen4172"><div class="AN-Object" id="AN-sObj-35302"><div id="AN-sObj-val-35302"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35303"><div id="AN-sObj-val-35303"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35304"><div id="AN-sObj-val-35304"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35305"></div><a id="AN-sObj-link-35306" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35306"><div id="AN-sObj-val-35306"><img src="../assets/mensFIT_J130.png"></div></div></a><a id="AN-sObj-link-35307" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35307"><div id="AN-sObj-val-35307"><img src="../assets/mensFIT_J66.png"></div></div></a><a id="AN-sObj-link-35308" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35308"><div id="AN-sObj-val-35308"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35309" href="javascript:goToSceneID(24)" target="_self"> <div class="AN-Object" id="AN-sObj-35309"><div id="AN-sObj-val-35309"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35310" href="javascript:goToSceneID(33)" target="_self"> <div class="AN-Object" id="AN-sObj-35310"><div id="AN-sObj-val-35310"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35311"><div id="AN-sObj-val-35311"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35312" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35312"><div id="AN-sObj-val-35312"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35313" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35313"><div id="AN-sObj-val-35313"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35314" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35314"><div id="AN-sObj-val-35314"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-3"><div class="AN-sObj-stage" id="ext-gen4288"><div class="AN-Object" id="AN-sObj-35318"><div id="AN-sObj-val-35318"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35319"><div id="AN-sObj-val-35319"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35320"><div id="AN-sObj-val-35320"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35321"></div><a id="AN-sObj-link-35322" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35322"><div id="AN-sObj-val-35322"><img src="../assets/mensFIT_J66.png"></div></div></a><a id="AN-sObj-link-35323" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35323"><div id="AN-sObj-val-35323"><img src="../assets/mensFIT_J65.png"></div></div></a><a id="AN-sObj-link-35324" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35324"><div id="AN-sObj-val-35324"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35325" href="javascript:goToSceneID(28)" target="_self"> <div class="AN-Object" id="AN-sObj-35325"><div id="AN-sObj-val-35325"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35326" href="javascript:goToSceneID(27)" target="_self"> <div class="AN-Object" id="AN-sObj-35326"><div id="AN-sObj-val-35326"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35327"><div id="AN-sObj-val-35327"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35328" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35328"><div id="AN-sObj-val-35328"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35329" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35329"><div id="AN-sObj-val-35329"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35330" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35330"><div id="AN-sObj-val-35330"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-4"><div class="AN-sObj-stage" id="ext-gen4404"><div class="AN-Object" id="AN-sObj-35334"><div id="AN-sObj-val-35334"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35335"><div id="AN-sObj-val-35335"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35336"><div id="AN-sObj-val-35336"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35337"></div><a id="AN-sObj-link-35338" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35338"><div id="AN-sObj-val-35338"><img src="../assets/mensFIT_J66.png"></div></div></a><a id="AN-sObj-link-35339" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35339"><div id="AN-sObj-val-35339"><img src="../assets/mensFIT_J65.png"></div></div></a><a id="AN-sObj-link-35340" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35340"><div id="AN-sObj-val-35340"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35341" href="javascript:goToSceneID(26)" target="_self"> <div class="AN-Object" id="AN-sObj-35341"><div id="AN-sObj-val-35341"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35342" href="javascript:goToSceneID(25)" target="_self"> <div class="AN-Object" id="AN-sObj-35342"><div id="AN-sObj-val-35342"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35343"><div id="AN-sObj-val-35343"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35344" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35344"><div id="AN-sObj-val-35344"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35345" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35345"><div id="AN-sObj-val-35345"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35346" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35346"><div id="AN-sObj-val-35346"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-5"><div class="AN-sObj-stage" id="ext-gen4520"><div class="AN-Object" id="AN-sObj-35350"><div id="AN-sObj-val-35350"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35351"><div id="AN-sObj-val-35351"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35352"><div id="AN-sObj-val-35352"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35353"></div><a id="AN-sObj-link-35354" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35354"><div id="AN-sObj-val-35354"><img src="../assets/mensFIT_J65.png"></div></div></a><a id="AN-sObj-link-35355" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35355"><div id="AN-sObj-val-35355"><img src="../assets/mensFIT_J101.png"></div></div></a><a id="AN-sObj-link-35356" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35356"><div id="AN-sObj-val-35356"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35357" href="javascript:goToSceneID(30)" target="_self"> <div class="AN-Object" id="AN-sObj-35357"><div id="AN-sObj-val-35357"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35358" href="javascript:goToSceneID(29)" target="_self"> <div class="AN-Object" id="AN-sObj-35358"><div id="AN-sObj-val-35358"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35359"><div id="AN-sObj-val-35359"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35360" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35360"><div id="AN-sObj-val-35360"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35361" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35361"><div id="AN-sObj-val-35361"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35362" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35362"><div id="AN-sObj-val-35362"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-6"><div class="AN-sObj-stage" id="ext-gen4636"><div class="AN-Object" id="AN-sObj-35366"><div id="AN-sObj-val-35366"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35367"><div id="AN-sObj-val-35367"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35368"><div id="AN-sObj-val-35368"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35369"></div><a id="AN-sObj-link-35370" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35370"><div id="AN-sObj-val-35370"><img src="../assets/mensFIT_J65.png"></div></div></a><a id="AN-sObj-link-35371" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35371"><div id="AN-sObj-val-35371"><img src="../assets/mensFIT_J101.png"></div></div></a><a id="AN-sObj-link-35372" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35372"><div id="AN-sObj-val-35372"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35373" href="javascript:goToSceneID(28)" target="_self"> <div class="AN-Object" id="AN-sObj-35373"><div id="AN-sObj-val-35373"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35374" href="javascript:goToSceneID(27)" target="_self"> <div class="AN-Object" id="AN-sObj-35374"><div id="AN-sObj-val-35374"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35375"><div id="AN-sObj-val-35375"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35376" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35376"><div id="AN-sObj-val-35376"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35377" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35377"><div id="AN-sObj-val-35377"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35378" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35378"><div id="AN-sObj-val-35378"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-7"><div class="AN-sObj-stage" id="ext-gen4752"><div class="AN-Object" id="AN-sObj-35382"><div id="AN-sObj-val-35382"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35383"><div id="AN-sObj-val-35383"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35384"><div id="AN-sObj-val-35384"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35385"></div><a id="AN-sObj-link-35386" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35386"><div id="AN-sObj-val-35386"><img src="../assets/mensFIT_J101.png"></div></div></a><a id="AN-sObj-link-35387" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35387"><div id="AN-sObj-val-35387"><img src="../assets/mensFIT_J102.png"></div></div></a><a id="AN-sObj-link-35388" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35388"><div id="AN-sObj-val-35388"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35389" href="javascript:goToSceneID(32)" target="_self"> <div class="AN-Object" id="AN-sObj-35389"><div id="AN-sObj-val-35389"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35390" href="javascript:goToSceneID(31)" target="_self"> <div class="AN-Object" id="AN-sObj-35390"><div id="AN-sObj-val-35390"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35391"><div id="AN-sObj-val-35391"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35392" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35392"><div id="AN-sObj-val-35392"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35393" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35393"><div id="AN-sObj-val-35393"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35394" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35394"><div id="AN-sObj-val-35394"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-8"><div class="AN-sObj-stage" id="ext-gen4868"><div class="AN-Object" id="AN-sObj-35398"><div id="AN-sObj-val-35398"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35399"><div id="AN-sObj-val-35399"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35400"><div id="AN-sObj-val-35400"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35401"></div><a id="AN-sObj-link-35402" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35402"><div id="AN-sObj-val-35402"><img src="../assets/mensFIT_J101.png"></div></div></a><a id="AN-sObj-link-35403" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35403"><div id="AN-sObj-val-35403"><img src="../assets/mensFIT_J102.png"></div></div></a><a id="AN-sObj-link-35404" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35404"><div id="AN-sObj-val-35404"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35405" href="javascript:goToSceneID(30)" target="_self"> <div class="AN-Object" id="AN-sObj-35405"><div id="AN-sObj-val-35405"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35406" href="javascript:goToSceneID(29)" target="_self"> <div class="AN-Object" id="AN-sObj-35406"><div id="AN-sObj-val-35406"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35407"><div id="AN-sObj-val-35407"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35408" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35408"><div id="AN-sObj-val-35408"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35409" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35409"><div id="AN-sObj-val-35409"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35410" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35410"><div id="AN-sObj-val-35410"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-9"><div class="AN-sObj-stage" id="ext-gen4984"><div class="AN-Object" id="AN-sObj-35414"><div id="AN-sObj-val-35414"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35415"><div id="AN-sObj-val-35415"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35416"><div id="AN-sObj-val-35416"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35417"></div><a id="AN-sObj-link-35418" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35418"><div id="AN-sObj-val-35418"><img src="../assets/mensFIT_J102.png"></div></div></a><a id="AN-sObj-link-35419" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35419"><div id="AN-sObj-val-35419"><img src="../assets/mensFIT_J130.png"></div></div></a><a id="AN-sObj-link-35420" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35420"><div id="AN-sObj-val-35420"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35421" href="javascript:goToSceneID(24)" target="_self"> <div class="AN-Object" id="AN-sObj-35421"><div id="AN-sObj-val-35421"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35422" href="javascript:goToSceneID(33)" target="_self"> <div class="AN-Object" id="AN-sObj-35422"><div id="AN-sObj-val-35422"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35423"><div id="AN-sObj-val-35423"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35424" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35424"><div id="AN-sObj-val-35424"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35425" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35425"><div id="AN-sObj-val-35425"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35426" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35426"><div id="AN-sObj-val-35426"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+<li id="scene-10"><div class="AN-sObj-stage" id="ext-gen5100"><div class="AN-Object" id="AN-sObj-35430"><div id="AN-sObj-val-35430"><img src="../assets/bg_light.jpg"></div></div><div class="AN-Object" id="AN-sObj-35431"><div id="AN-sObj-val-35431"><img src="../assets/womensFIT_hed.jpg"></div></div><div class="AN-Object" id="AN-sObj-35432"><div id="AN-sObj-val-35432"><img src="../assets/cta.png"></div></div><div id="AN-sObj-35433"></div><a id="AN-sObj-link-35434" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35434"><div id="AN-sObj-val-35434"><img src="../assets/mensFIT_J102.png"></div></div></a><a id="AN-sObj-link-35435" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35435"><div id="AN-sObj-val-35435"><img src="../assets/mensFIT_J130.png"></div></div></a><a id="AN-sObj-link-35436" href="http://www.armaniexchange.com/category/mobile/mens+/denim.do" target="_self"> <div class="AN-Object" id="AN-sObj-35436"><div id="AN-sObj-val-35436"><img src="../assets/btn_denim.jpg"></div></div></a><a id="AN-sObj-link-35437" href="javascript:goToSceneID(32)" target="_self"> <div class="AN-Object" id="AN-sObj-35437"><div id="AN-sObj-val-35437"><img src="../assets/btn_next.png"></div></div></a><a id="AN-sObj-link-35438" href="javascript:goToSceneID(31)" target="_self"> <div class="AN-Object" id="AN-sObj-35438"><div id="AN-sObj-val-35438"><img src="../assets/btn_prev.png"></div></div></a><div class="AN-Object" id="AN-sObj-35439"><div id="AN-sObj-val-35439"><img src="../assets/ax_bar.jpg"></div></div><a id="AN-sObj-link-35440" href="how_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35440"><div id="AN-sObj-val-35440"><img src="../assets/NAV_how.jpg"></div></div></a><a id="AN-sObj-link-35441" href="measure_m.html" target="_self"> <div class="AN-Object" id="AN-sObj-35441"><div id="AN-sObj-val-35441"><img src="../assets/NAV_measure.jpg"></div></div></a><a id="AN-sObj-link-35442" href="javascript:goToSceneID(22)" target="_self"> <div class="AN-Object" id="AN-sObj-35442"><div id="AN-sObj-val-35442"><img src="../assets/NAV_ax.jpg"></div></div></a></div></li>
+
+</ol>
+
+</body>
+</html>

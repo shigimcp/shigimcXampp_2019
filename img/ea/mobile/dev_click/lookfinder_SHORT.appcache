@@ -1,0 +1,45 @@
+CACHE MANIFEST
+
+# Version 1.6
+# 2015-02-27
+# This is a comment
+
+
+
+# Explicitly cached entries
+# lookfinder_SHORT.appcache
+
+
+# Additional resources to cache
+CACHE:
+scripts/alertify.core.css
+scripts/alertify.default.css
+scripts/default.css
+scripts/iscroll.js
+scripts/jquery-2.1.0.min.js
+scripts/jquery.touchSwipe.js
+scripts/jquery.touchSwipe.min.js
+scripts/main.js
+
+# audio/dodo.mp3
+
+img/bg.jpg
+
+img/hair/hair_black.jpg
+img/hair/hair_blonde.jpg
+
+img/look/look_001.jpg
+img/look/look_002.jpg
+
+img/prod/1002bcmc400_2e2526.jpg
+img/prod/1002bcrc400_5c423b.jpg
+
+
+FALLBACK:
+# img/app_splash.jpg
+
+
+
+NETWORK:
+# Defines resources that will not be cached.
+# *

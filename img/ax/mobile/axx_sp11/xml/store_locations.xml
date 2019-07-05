@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<store_locations>
+
+	<!--  TEMPLATE NODE -->
+	<!--
+	<country name="">
+		<location>
+			<name><![CDATA[Name of location]]></name>
+			<info><![CDATA[Address, phone, and hours info]]></info>
+		</location>
+	</country>
+	-->
+	<country name="AUSTRALIA">
+		<location>
+			<name><![CDATA[Chadstone Shopping Center]]></name>
+			<info><![CDATA[Shop 473
+1341 Dandendong Road
+Chadstone, 3148
+Victoria
+AU
+61.3.9563.1232]]></info>
+		</location>
+		<location>
+			<name><![CDATA[King Street]]></name>
+			<info><![CDATA[97-107 King Street
+Sydney, NSW 2000
+AU
+61.2.9231.0047]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Bondi Junction]]></name>
+			<info><![CDATA[Shop 3056
+Westfield Bondi Junction
+Sydney, NSW 2022
+AU
+61.2.9387.7762]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Melbourne Central]]></name>
+			<info><![CDATA[L01, Shop 115
+300 Lonsdale Street
+Melbourne, Victoria
+AU
+61.3.9650.2340]]></info>
+		</location>
+	</country>
+	
+	<country name="BRAZIL">
+		<location>
+			<name><![CDATA[Rio De Janeiro]]></name>
+			<info><![CDATA[Loja 204A/B/C, Piso 2
+Shopping Leblon
+Av. Afrânio de Melo Franco 290
+Rio de Janeiro
+RJ-Cep, 22430-060
+BR
+5521.2294.2290]]></info>
+		</location>
+				<location>
+			<name><![CDATA[Rio de Janeiro]]></name>
+			<info><![CDATA[Loja 242/243/244, Piso 2
+Rio Design Barra
+Avenida das Americas 7777,
+Barra de Tijuca
+Rio de Janeiro
+RJ-Cep, 22793081
+BR
+5521.3328.1718]]></info>
+		</location>
+				<location>
+			<name><![CDATA[Salvador]]></name>
+			<info><![CDATA[Loja 2147/2148, Piso 2
+Salvador Shopping
+Av. Tancredo Neves 2915
+Salvador, BA, 41820-910
+BR
+5571.3878.2670]]></info>
+		</location>
+		<location>
+			<name><![CDATA[São Paulo]]></name>
+			<info><![CDATA[Loja 443B, 444, 445, 448 & 449A 
+Piso Vilaboim, 
+Shopping Patio Higienopolis
+Av. Higienopolis 618
+Shopping Center Morumbi
+Av. Roque Petroni Junior 1089
+Sao Paolo, 
+SP-Cep 01238-0000
+BR
+5511.3323.3515]]></info>
+		</location>
+		<location>
+			<name><![CDATA[São Paulo]]></name>
+			<info><![CDATA[Loja 108/109/110
+Bourbon Shopping Pompeia
+Rua Turiassu 2100, Perdizes
+Sao Paolo, 
+SP-Cep 0500-5900
+BR
+5511.3323.3565]]></info>
+		</location>
+		<location>
+			<name><![CDATA[São Paulo]]></name>
+			<info><![CDATA[Loja Arco 3005/6/7, 
+Ala Nova do Piso Paulista
+Shopping Patio Paulista
+Rua Treze de Maio 1947, 
+Bela Vista
+Sao Paolo, 
+SP-Cep 01327-900
+BR
+5511.3323.3570]]></info>
+		</location>
+		<location>
+			<name><![CDATA[São Paulo]]></name>
+			<info><![CDATA[Rua Treze de Maio 1947, Bela Vista
+Shopping Pátio Paulista
+Piso Paulista
+São Paulo – SP, 01327-900
+BR
+55. 11. 3323. 3570]]></info>
+		</location>
+		
+	</country>
+	<country name="CANADA">
+		<location>
+			<name><![CDATA[Metropolis at Metrotown]]></name>
+			<info><![CDATA[324-4800 Kings Way
+Burnaby, BC V5H4J2
+CA
+604.433.1668
+Mon - Fri 10:00am-9:00pm
+Sat 9:30am-9:00pm
+Sunday 11:00am-6:00pm]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Vancouver]]></name>
+			<info><![CDATA[1070 Robson Street
+Vancouver, BC V6E1A7
+CA
+604.488.1668
+Mon-Sat 10:00am-9:00pm,
+Sunday 11:00am-8:00pm]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Eaton Centre]]></name>
+			<info><![CDATA[218 Yonge Street
+Space #2120A
+Toronto, ON M5B 2H1
+CA
+416.260.5559
+Mon-Fri 10:00am-9:00pm,
+Saturday 9:30am-7:00pm,
+Sunday 12:00pm-6:00pm]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Vaughan Mills]]></name>
+			<info><![CDATA[1 Bass Pro Mills Drive
+Toronto, ON L4K 5W4
+CA
+905.738.5749
+Mon-Sat 10:00am-9:00pm,
+Sunday 11:00am-7:00pm]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Yorkdale Centre]]></name>
+			<info><![CDATA[3401 Dufferin Street
+Space #116
+Toronto, ON M6A 2T9
+CA
+416.783.1608
+Mon-Fri 10:00am-9:00pm,
+Saturday 9:30am-9:00pm,
+Sunday 11:00am-7:00pm]]></info>
+		</location>
+		
+	</country>
+	
+	<country name="CHILE">
+		<location>
+			<name><![CDATA[Parque Arauco Shopping Centre]]></name>
+			<info><![CDATA[Local 211, Piso 2
+Parque Arauco Shopping Centre
+Avenida Kennedy 5413
+Santiago de Chile, 
+CL
+562.365.9898]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Alto Las Condes]]></name>
+			<info><![CDATA[Local 1037, Piso 1
+Alto Las Condes
+Avenida Kennedy 9001
+Santiago de Chile, 
+CL
+562.364.1402]]></info>
+		</location>
+	</country>
+	
+	<country name="CHINA">
+		<location>
+			<name><![CDATA[China World Shopping Mall]]></name>
+			<info><![CDATA[1 Jian Guo Men Wai Avenue
+Shop NB120-NB122
+Level B1F
+Beijing 100004,
+CN
+86.10.6505.9188]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Citic Square]]></name>
+			<info><![CDATA[1168 Nanjing West Road
+Shop LG09-10
+Citic Square
+Shanghai 200041, 
+CN
+86.21.5116.5911]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Grand Gateway]]></name>
+			<info><![CDATA[1 Hong Qiao Road
+Shop 215-216
+Level 2
+Shanghai 200030, 
+CN
+86.21.6448.1119]]></info>
+		</location> 
+				<location>
+			<name><![CDATA[Oriental Plaza]]></name>
+			<info><![CDATA[1 East Change An Avenue
+BB27A & B, The Towers 
+Oriental Plaza
+DongCheng District
+Beijing 100738,
+CN
+86.10.8518.5627]]></info>
+		</location>
+				<location>
+			<name><![CDATA[TeeMall]]></name>
+			<info><![CDATA[Shop 196, Ground Floor
+TeeMall
+Guangzhou
+CN]]></info>
+		</location>
+	</country>	
+	
+	<country name="COSTA RICA">
+		<location>
+			<name><![CDATA[Centro Comercial
+Multiplaza Escazu]]></name>
+			<info><![CDATA[Locale 78 & 79
+San Jose
+CR
+506.2201.5813]]></info>
+		</location>
+	</country>
+	
+	<country name="CURACAO">
+		<location>
+			<name><![CDATA[Renaissance Resort Shopping]]></name>
+			<info><![CDATA[Shop 203
+Wilemstadt
+CUR]]></info>
+		</location>
+	</country>
+	
+	<country name="DOMINICAN REPUBLIC">
+		<location>
+			<name><![CDATA[Palma Real Shopping Village]]></name>
+			<info><![CDATA[Loja 18
+Carretera Melia
+Punta Cana-Bavaro
+DR
+1.809.552.6042]]></info>
+		</location>
+	</country>
+	
+	<country name="HONG KONG">
+		<location>
+			<name><![CDATA[Canton Road]]></name>
+			<info><![CDATA[54-66 Canton Road
+Ground Floor
+Imperial Building
+Tsim Sha Tsui, Kowloon
+HK
+852.2730.9682]]></info>
+		</location>
+		<location>
+			<name><![CDATA[City Plaza]]></name>
+			<info><![CDATA[18 Taikoo Shing Road
+Shop 239
+City Plaza 
+Taikoo Shing,
+HK
+852.2967.6632]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Elements]]></name>
+			<info><![CDATA[Shop 1049
+First Level at Elements
+1 Austin Road West
+Kowloon,
+HK
+852.2196.8272]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Entertainment Building]]></name>
+			<info><![CDATA[30 Queens Road
+Shop C, G/F
+Entertainment Building
+Central,
+HK
+852.2521.8422]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Fashion Island]]></name>
+			<info><![CDATA[18 Great George Street
+Shop 6, 7 & 20
+Causeway Bay,
+HK
+852.2881.8200]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Festival Walk]]></name>
+			<info><![CDATA[80 Tat Chee Avenue
+Shop UG-10, Festival Walk
+Kowloon Tong
+Kowloon,
+HK
+852.2265.8233]]></info>
+		</location>
+		<location>
+			<name><![CDATA[IFC Mall]]></name>
+			<info><![CDATA[8 Finance Street
+Shop 1052B
+Podium Level 1
+International Finance Center
+Central,
+HK
+852.2234.7462]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Langham Place]]></name>
+			<info><![CDATA[8 Argyle Street, mongkok
+Shop L107-108, L1/F
+Langham Place
+Kowloon,
+HK
+852.3514.4202]]></info>
+		</location>
+		<location>
+			<name><![CDATA[New Town Plaza]]></name>
+			<info><![CDATA[Shop 301, Level 3, Phase 1
+New Town Plaza, Shatin
+New Territories,
+HK
+852.2681.0883]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Pacific Place]]></name>
+			<info><![CDATA[88 Queensway
+Shop 101 Pacific Place
+Admiralty,
+HK
+852.2537.3118]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Times Square]]></name>
+			<info><![CDATA[Shop 428-429
+Level 4
+1 Matheson Street
+Causeway Bay,
+HK
+852.2506.1688]]></info>
+		</location>
+	</country>
+	
+	<country name="INDONESIA">
+		<location>
+			<name><![CDATA[Plaza Indonesia]]></name>
+			<info><![CDATA[Jalan M.H. Thamrin
+Kav 28-30
+Level 1
+Lot 86-88B
+Jakarta Pusat, 10350
+ID
+62.21.3983.8231]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Senayan City]]></name>
+			<info><![CDATA[Jalan Asia Afrika
+Lot 19
+Lot L1-02
+Jakarta, 10270
+ID
+62.21.7278.1607]]></info>
+		</location>
+	</country>
+	
+	<country name="JAPAN">
+		<location>
+			<name><![CDATA[Koshigaya AEON Laketown]]></name>
+			<info><![CDATA[2nd Floor, KAZE 4-21-1
+Azuma-cho, Koshigaya-shi
+Saltama 343-0826
+JP
+81.48.990.1231]]></info>
+		</location>
+		<location>
+			<name><![CDATA[LaLaport Tokyo Bay]]></name>
+			<info><![CDATA[Hama-cho, Funabachi-shi
+1st Floor, 2-1-1, South Wing
+Chiba 273-8530
+JP
+81.47.495.5015]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Lalaport Mall]]></name>
+			<info><![CDATA[Ikonobe-cho, Tsuzuki-ku
+2nd Floor, 4035-1
+Yokohama CIty, Kanagawa
+224-0053
+JP
+81.45.929.2650]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Otakanomori Shopping Center]]></name>
+			<info><![CDATA[6 Chome, 185-2, 
+Nishi, Hatsuishi
+1st Floor
+Nagerayama City,
+Chiba 270-0121
+JP
+81.4.7178.2030]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Parkway Square 1]]></name>
+			<info><![CDATA[1-16-7, Shibuya-ku
+Tokyo, 150-0041
+JP
+81.3.5457.5031]]></info>
+		</location>
+	</country>
+	
+	<country name="KOREA">
+		<location>
+			<name><![CDATA[A|X Lotte Chamsil]]></name>
+			<info><![CDATA[Lotte Dept. Store
+4th Floor
+40-1 Chansil-Dong
+Songpa-gu
+Seoul
+KR
+82.2.411.6244]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Lotte Main]]></name>
+			<info><![CDATA[Lotte Dept. Store
+2nd Floor
+1 Sogong-Dong
+Chung-gu
+Seoul
+KR
+82.2.772.3231]]></info>
+		</location>
+			<location>
+			<name><![CDATA[A|X Lotte Daegu]]></name>
+			<info><![CDATA[Lotte Dept. Store
+2nd Floor
+702-746 Buk-gu 302-155
+Chil-sung-dong
+Seoul
+KR
+82.53.660.3455]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Hyundai COEX]]></name>
+			<info><![CDATA[Hyundai Dept. Store
+6th Floor
+19-7 Kangnam-gu
+Samsung-dong
+Seoul
+KR
+82.2.3467.8660]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X AK Plaza]]></name>
+			<info><![CDATA[Galleria Timeworld
+4th Floor
+1036 Seo gu
+Dunsan 2 dong
+Daejeon
+KR
+82.42.720.6022]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Galleria Daejun]]></name>
+			<info><![CDATA[Samsung Plaza
+3rd Floor
+263 Bundang-gu
+Seohyun-dong
+Sungnam City
+KR
+82.42.720.6022]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Shinsegae Gyeonggi]]></name>
+			<info><![CDATA[Jukjeon Shinsegae 
+Dept. Store, 4th Floor
+1285 Suji gu
+Jukjeon dong
+Yong In
+KR
+82.31.695.1745]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Shinsegae Centum]]></name>
+			<info><![CDATA[Shinsegae Centum City
+4th Floor
+1495, Haeundae-gu
+U-dong 
+Busan
+KR
+82.51.745-2660]]></info>
+		</location>
+		<location>
+			<name><![CDATA[A|X Shinsegae Yeoungdeungpo]]></name>
+			<info><![CDATA[434-5, 4-ga
+Yeoungdeungpo-dong, 
+Yeoungdeungpo-gu
+Seoul
+KR
+82.2.2639.4377]]></info>
+		</location>
+	</country>
+	
+	<country name="LEBANON">
+		<location>
+			<name><![CDATA[City Mall]]></name>
+			<info><![CDATA[Lot FF10
+Beirut
+LB
+961.1.880.844]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Souk of Beirut]]></name>
+			<info><![CDATA[Souk Ayass
+Beirut
+LB
+961.996.020]]></info>
+		</location>
+	</country>
+	
+	<country name="MACAU">
+		<location>
+			<name><![CDATA[The Grand Canal Shoppes]]></name>
+			<info><![CDATA[Shop 2442A
+The Venetian
+MC
+853.2857.6362]]></info>
+		</location>
+	</country>
+	
+	<country name="MALAYSIA">
+		<location>
+			<name><![CDATA[Lumpur City Center]]></name>
+			<info><![CDATA[Lot 111c, 1st Floor
+50088 Kuala Lumpur
+MY
+6.03.2163.2658]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Utama Shopping Center]]></name>
+			<info><![CDATA[1 Utama Shopping Center
+No. 1
+Lebuh Bandar Utama
+Lot G309
+Ground Floor Highstreet
+47800 Petaling Jaya
+Selangor
+MY
+6.03.7726.8620]]></info>
+		</location>
+		<location>
+			<name><![CDATA[The Gardens]]></name>
+			<info><![CDATA[Lot F245A, First Floor
+Mid Valley City
+Lingkaran Syed Putra
+59200 Kuala Lumpur
+MY
+6.03.2287.6171]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Pavilion]]></name>
+			<info><![CDATA[Lot 2.11, Level 2
+168 Jalan Bukit Bintang
+55100 Kuala Lumpur
+MY
+6.03.2148-3448]]></info>
+		</location>
+	</country>	
+	
+	<country name="MEXICO">
+		<location>
+			<name><![CDATA[Antaro Polanco Mall]]></name>
+			<info><![CDATA[Local C-106, 107 & 108
+Avenida Ejercito National
+843-B. Col. Granada
+Mexico D.F., C.P. 11520
+MX
+52.828.193]]></info>
+		</location>
+	</country>
+	
+	<country name="PANAMA">
+		<location>
+			<name><![CDATA[Mall Multiplaza Pacifico]]></name>
+			<info><![CDATA[Local 184-185, Piso 2
+Panama City,
+PA
+507.301.0811]]></info>
+		</location>
+	</country>
+	
+	<country name="PHILIPPINES">
+		<location>
+			<name><![CDATA[Alabang Town Center]]></name>
+			<info><![CDATA[7 Corte De Las Palmas
+Muntinlupa City,
+PH 
+6.32.842.8004]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Glorietta IV]]></name>
+			<info><![CDATA[Ayala Center, 
+Ground Floor
+Intercon Hotel Drive
+Makati City,
+PH 
+6.32.812.7509]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Power Plant Mall]]></name>
+			<info><![CDATA[Lot 103, Level 1
+Power Plant Mall
+Rockwell, 
+PH
+6.32.898.2401 ]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Shangri-La Plaza Mall]]></name>
+			<info><![CDATA[Third Level
+EDSA Mandaluyong City, 
+PH
+6.32.638.6794]]></info>
+		</location>
+	</country>	
+	
+	<country name="SAUDI ARABIA">
+		<location>
+			<name><![CDATA[Al Rashid Mall]]></name>
+			<info><![CDATA[Shop GC23, Gate 4
+Ground Floor
+Al Kobhar
+SA
+966.3.897.5587]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Thalia Street]]></name>
+			<info><![CDATA[Shop G7, Localizer Mall
+Riyadh
+SA
+966.1.465.3606]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Thalia Shopping Centre]]></name>
+			<info><![CDATA[Shop G39-40, Ground Floor
+Jeddah
+SA
+966.2.263.5101]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Red Sea Mall]]></name>
+			<info><![CDATA[Shop G263-264, Ground Floor
+Dhahran
+SA
+966.2.215.0831]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Mall of Dhahran]]></name>
+			<info><![CDATA[Shop E60
+Dhahran
+SA
+966.3.868.4493]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Al Rashid Megamall]]></name>
+			<info><![CDATA[Shop G86 & 87
+Madina
+SA
+966.4.835.8464]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Mall of Arabia]]></name>
+			<info><![CDATA[Medina Road
+Shop 11, Ground Floor
+Gate 1
+Jeddah
+SA
+966.2.612.2616]]></info>
+		</location>
+	</country>
+	
+	<country name="SINGAPORE">
+		<location>
+			<name><![CDATA[ION Orchard]]></name>
+			<info><![CDATA[2 Orchard Turn
+#B1-03
+ION Orchard, 238801
+SG
+65.6304.1369]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Ngee Ann City]]></name>
+			<info><![CDATA[391 Orchard Road
+#B1-03/4
+Ngee Ann City, 238872
+SG
+65.736.4741]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Paragon]]></name>
+			<info><![CDATA[290 Orchard Road
+#02-13
+Paragon 238859
+SG 
+65.6732.5726]]></info>
+		</location>
+		<location>
+			<name><![CDATA[VivoCity]]></name>
+			<info><![CDATA[1 Harbour Front Walk
+#01-202
+VivoCity, 098585
+SG
+65.6376.9646]]></info>
+		</location>
+	</country>
+	
+	<country name="TAIWAN">
+		<location>
+			<name><![CDATA[Breeze Center]]></name>
+			<info><![CDATA[39 Fu Hsin South Road
+2nd Floor, Section 1
+Taipei,
+TW
+886.2.8772.5648]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Breeze II]]></name>
+			<info><![CDATA[Zhongxiao East Road
+1/F, No. 219, Section 4
+Da-An District
+Taipei,
+TW
+886.2.8771.0297]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Core Pacific]]></name>
+			<info><![CDATA[138 Section 4,
+Pateh Road
+Shop 24-25, 2nd Floor
+Taipei,
+TW
+886.2.3762.1662]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Kaosiung City]]></name>
+			<info><![CDATA[21 Sanduo 4th Road
+Far Eastern 21
+3rd Floor
+Kaohsiung City,
+TW
+886.7.537.8133]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Taipei 101]]></name>
+			<info><![CDATA[1/F, No. 45
+Shihfu Road
+Xinyi District
+Taipei,
+TW
+886.2.8101.8662]]></info>
+		</location>
+	</country>
+		
+	<country name="THAILAND">
+		<location>
+			<name><![CDATA[Siam Discovery Center]]></name>
+			<info><![CDATA[1st Floor
+622 Sukhumvit 24 Road
+Klongtoey
+Bangkok 10110
+TH
+662.658.0260/1]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Emporium]]></name>
+			<info><![CDATA[Shop 120-1, 1st Floor
+989 Rama 1 Road
+Phatumwan
+Bangkok 10330
+TH
+662.664.8646/7]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Central Festival Phuket]]></name>
+			<info><![CDATA[1st Floor
+74 Moo 5
+Tambol Vichit amphur Muang
+Phuket 83000
+TH
+667.620.9097]]></info>
+		</location>
+	</country>
+		
+	<country name="UAE">
+		<location>
+			<name><![CDATA[Marina Mall]]></name>
+			<info><![CDATA[Shop GF66, Level 1
+P.O. Box 27538
+Abu Dhabi
+UAE
+971.2.681.1464]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Al Wahda Mall]]></name>
+			<info><![CDATA[Shop 137, Ground Floor
+P.O. Box 27538
+Abu Dhabi
+UAE
+971.2.443.7123]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Deira City Centre]]></name>
+			<info><![CDATA[Shop B63, 2nd Floor
+P.O. Box 2623
+Dubai
+UAE
+971.4.294.3057]]></info>
+		</location>
+		<location>
+			<name><![CDATA[The Dubai Mall]]></name>
+			<info><![CDATA[Shop G006, Ground Floor
+Financial Centre Road
+Dubai
+UAE
+971.4.339.9472]]></info>
+		</location>
+	</country>
+	
+	<country name="UNITED KINGDOM">
+		<location>
+			<name><![CDATA[Upper Thames Walk]]></name>
+			<info><![CDATA[Unit UO99
+Bluewater
+Greenhithe
+Kent DA9 9ST
+UK
+44.13.22.388.911]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Metquarter]]></name>
+			<info><![CDATA[Unit 47
+35 Whitechapel
+Liverpool L1 6DA
+UK
+44.151.242.0777]]></info>
+		</location>
+		<location>
+			<name><![CDATA[The Trafford Centre]]></name>
+			<info><![CDATA[Unit L36
+4 Peel Avenue
+Manchester M17 8BL
+UK
+44.161.749.2590]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Upper Mall East]]></name>
+			<info><![CDATA[Unit SU715B
+Bullring
+Birmingham B5 4BF
+UK
+44.121.616.0080]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Regent Street]]></name>
+			<info><![CDATA[244 Regent Street
+London W1B 3BR
+UK
+444.20.7479.7760]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Westfield London]]></name>
+			<info><![CDATA[Unit 1053
+Ariel Way
+London W12 7GD
+UK
+44.20.8735.0050]]></info>
+		</location>
+	</country>
+	
+	<country name="VENEZUELA">
+		<location>
+			<name><![CDATA[Centro Commercial Sambil]]></name>
+			<info><![CDATA[Nivel Libertador Plaza Jardin
+Locales LR2 y LR3
+Caracas 1060
+VE
+582.265.3777]]></info>
+		</location>
+		<location>
+			<name><![CDATA[Centro Commercial La Vela]]></name>
+			<info><![CDATA[Nivel Arena, Locale 5
+Calle Los Uveros
+Avenida Bolivar con
+Avenida Guayacan
+Costa Azul Pampatar
+Isla Margarita
+VE
+]]></info>
+		</location>
+	</country>
+	
+</store_locations>

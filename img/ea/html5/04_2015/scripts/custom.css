@@ -1,0 +1,65 @@
+#Stage {
+/*	background-color: #0E1527; e41f0d*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+#Stage_copy01 > div, #Stage_copy02 > div {
+	display: inline-block !important;
+/*
+	 IE hack 
+	*zoom: 1 !important;
+	*display: inline !important;
+*/
+}
+
+/*
+#Stage_flare {
+	background: url(http://www.greensock.com/_img/codepen/bezierCreature/creature_red.png);
+	width: 27px;
+	height: 29px;
+	position: absolute;
+}
+*/
+
+.container {
+	overflow: hidden !important;
+}
+
+/*
+.container div {
+	position: absolute;
+	background: #FFFFFF;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	box-shadow: "0px 0px 4px 0px #000000";
+}
+*/
+
+.particle {
+/*
+	background: none;
+	background-color: transparent;
+*/
+	width: 10px;
+	height: 10px;
+
+	/*opacity: inherit !important;*/
+	mix-blend-mode: screen;
+
+	position:absolute;
+	/*z-index:2;*/
+}
+
+#Stage_bg_lt {
+/*
+	background-color: rgba(255, 255, 255, 0);
+	background-image: -moz-radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), #ff2b2b 50%);
+	background-image: -webkit-radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), #ff2b2b 50%);
+	background-image: -o-radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), #ff2b2b 50%);
+	background-image: -ms-radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), #ff2b2b 50%);
+	background-image: radial-gradient(50% 50%, circle cover, rgba(255, 255, 255, 0), #ff2b2b 50%);
+*/
+	mask: url(#Mask);
+}

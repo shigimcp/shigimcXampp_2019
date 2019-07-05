@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>I LOVE JUICY COUTURE - 4A</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!--	<script type="text/javascript" src="scripts/swfobject.js"></script>-->
+	<script type="text/javascript" src="img/ea/email_gif/scripts/swfobject.js"></script>
+
+    <script type="text/javascript">
+
+		var swapImage;
+
+		function swapMe(thisImage, thisLabel) {
+//			swapImage = "img/" + thisImage;
+			swapImage = "img/ea/email_gif/gif/ILJC_4A_Animated_GIF_stage/img/" + thisImage;
+			console.log("swapImage = " + swapImage);
+
+			$('#image').attr("src", swapImage);
+			$('#dimensions').empty();
+//			$('#dimensions').append(thisLabel);
+		}
+
+    </script>
+
+<!--    <link rel="stylesheet" type="text/css" href="scripts/stage.css">-->
+    <link rel="stylesheet" type="text/css" href="img/ea/email_gif/scripts/stage.css">
+</head>
+
+
+<body onload="swapMe('CR_24069_ILJC_4A_Animated_GIF_300x300.gif', '300 x 300')" class="stageContainer">
+
+<navContainer>
+	<hed>
+		I LOVE JUICY COUTURE<br />
+		4A
+	</hed>
+
+	<nav>
+
+<!--
+		<br /><br />
+		<b>ANIMATED GIF</b>
+		<hr />
+-->
+
+		<ul>
+			<li><a href="#" onclick="swapMe('CR_24069_ILJC_4A_Animated_GIF_300x300.gif', '300 x 300'); return false;">300 x 300</a></li>
+			<li><a href="#" onclick="swapMe('CR_24069_ILJC_4A_Animated_GIF_600x600.gif', '600 x 600'); return false;">600 x 600</a></li>
+<!--			<li><a href="#" onclick="swapMe('CR_24069_ILJC_4A_Animated_GIF_1200x1200.gif', '1200 x 1200'); return false;">1200 x 1200</a></li>-->
+		</ul>
+
+	</nav>
+
+</navContainer>
+
+<!--<div><img id="image" src="#"></div>-->
+<div><img id="image" src="img/ea/email_gif/gif/ILJC_4A_Animated_GIF_stage/img/CR_24069_ILJC_4A_Animated_GIF_300x300.gif"></div>
+<div id="dimensions"></div>
+
+</body>
+</html>

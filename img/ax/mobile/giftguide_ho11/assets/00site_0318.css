@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	border: 02px solid #FF0000 !important;
+
+	background-color: transparent;
+
+	width: 450px;
+	height: 770px;
+}
+
+body {
+/*	border: 02px solid #00FF00 !important;*/
+
+	background-image: url(../assets/bg_iPhone_3GS.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	position: relative;
+	margin: auto;
+}
+

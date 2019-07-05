@@ -1,0 +1,306 @@
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="www.mariahcareybeauty.com" resolutions="1x" timestamp="1457061465905">
+  <folder name="css">
+    <file name="site_global.css" crc="3889785280"/>
+    <file name="master_global.css" crc="267939148" ref="inseparable:index:ultra_pink:luscious_pink:forever:vision_of_love:honey:mine_again:never_forget_you:ribbon:dreams:m:that_chick"/>
+    <file name="inseparable.css" crc="4146666523" ref="inseparable"/>
+    <file name="index.css" crc="530340197" ref="index"/>
+    <file name="ultra_pink.css" crc="23806237" ref="ultra_pink"/>
+    <file name="luscious_pink.css" crc="3844040518" ref="luscious_pink"/>
+    <file name="forever.css" crc="400128860" ref="forever"/>
+    <file name="vision_of_love.css" crc="3797468429" ref="vision_of_love"/>
+    <file name="honey.css" crc="4286259805" ref="honey"/>
+    <file name="mine_again.css" crc="291767410" ref="mine_again"/>
+    <file name="never_forget_you.css" crc="3768089700" ref="never_forget_you"/>
+    <file name="ribbon.css" crc="4013542121" ref="ribbon"/>
+    <file name="dreams.css" crc="3841524102" ref="dreams"/>
+    <file name="m.css" crc="232189558" ref="m"/>
+    <file name="that_chick.css" crc="4109807720" ref="that_chick"/>
+  </folder>
+  <folder name="assets">
+    <folder name="visionoflove_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431978003000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431978003000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431978003000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431978003000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431978003000"/>
+        <file name="Poster.png" crc="3891234428" mt="1431978003000"/>
+        <file name="visionoflove_bottle.png" crc="4026345360" mt="1431978003000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431978003000"/>
+      </folder>
+      <file name="visionoflove_hed_edge.js" crc="4274298349" mt="1431978003000"/>
+      <file name="visionoflove_hed.html" crc="4100491212" mt="1431978003000"/>
+    </folder>
+    <folder name="neverforgetyou_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431967707000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431967707000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431967707000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431967707000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431967707000"/>
+        <file name="neverforgetyou_bottle.png" crc="3860962994" mt="1431967707000"/>
+        <file name="Poster.png" crc="3864133228" mt="1431967707000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431967707000"/>
+      </folder>
+      <file name="neverforgetyou_hed_edge.js" crc="34855324" mt="1431967707000"/>
+      <file name="neverforgetyou_hed.html" crc="3818250926" mt="1431967707000"/>
+    </folder>
+    <folder name="inseparable_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431967735000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431967735000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431967735000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431967735000"/>
+        <file name="inseparable_bottle.png" crc="4019367344" mt="1431967735000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431967735000"/>
+        <file name="Poster.png" crc="3775563734" mt="1431967735000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431967735000"/>
+      </folder>
+      <file name="inseparable_hed_edge.js" crc="4220877726" mt="1431967735000"/>
+      <file name="inseparable_hed.html" crc="3864109147" mt="1431967735000"/>
+    </folder>
+    <folder name="mineagain_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966613000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966613000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966613000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966613000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431966613000"/>
+        <file name="mineagain_bottle.png" crc="262599582" mt="1431966613000"/>
+        <file name="Poster.png" crc="202716155" mt="1431966613000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966613000"/>
+      </folder>
+      <file name="mineagain_hed_edge.js" crc="385005616" mt="1431966613000"/>
+      <file name="mineagain_hed.html" crc="450630404" mt="1431966613000"/>
+    </folder>
+    <folder name="honey_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966533000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966533000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966533000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966533000"/>
+        <file name="honey_bottle.png" crc="155669610" mt="1431966533000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431966533000"/>
+        <file name="Poster.png" crc="4121226750" mt="1431966533000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966533000"/>
+      </folder>
+      <file name="honey_hed_edge.js" crc="85933689" mt="1431966533000"/>
+      <file name="honey_hed.html" crc="3989589400" mt="1431966533000"/>
+    </folder>
+    <folder name="thatchick_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966673000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966673000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966673000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966673000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431966673000"/>
+        <file name="Poster.png" crc="4282479039" mt="1431966673000"/>
+        <file name="thatchick_bottle.png" crc="103254784" mt="1431966673000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966673000"/>
+      </folder>
+      <file name="thatchick_hed_edge.js" crc="121144878" mt="1431966673000"/>
+      <file name="thatchick_hed.html" crc="4104262385" mt="1431966673000"/>
+    </folder>
+    <folder name="forever_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966483000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_gold.png" crc="131905775" mt="1431966483000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966483000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966483000"/>
+        <file name="forever_bottle.png" crc="3992355970" mt="1431966483000"/>
+        <file name="forever_logo.png" crc="4096764465" mt="1431966483000"/>
+        <file name="Poster.png" crc="3864740278" mt="1431966483000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966483000"/>
+      </folder>
+      <file name="forever_hed_edge.js" crc="387781580" mt="1431966483000"/>
+      <file name="forever_hed.html" crc="4127030772" mt="1431966483000"/>
+    </folder>
+    <folder name="m_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966582000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966582000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966582000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966582000"/>
+        <file name="m_bottle.png" crc="147765542" mt="1431966582000"/>
+        <file name="m_logo.png" crc="3985569816" mt="1431966582000"/>
+        <file name="Poster.png" crc="428462623" mt="1431966582000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966582000"/>
+      </folder>
+      <file name="m_hed_edge.js" crc="3922684343" mt="1431966582000"/>
+      <file name="m_hed.html" crc="366866782" mt="1431966582000"/>
+    </folder>
+    <folder name="ultrapink_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966703000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966703000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966703000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966703000"/>
+        <file name="Poster.png" crc="174390573" mt="1431966703000"/>
+        <file name="ultrapink_bottle.png" crc="3797830588" mt="1431966703000"/>
+        <file name="ultrapink_logo.png" crc="3963988493" mt="1431966703000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966703000"/>
+      </folder>
+      <file name="ultrapink_hed_edge.js" crc="228288128" mt="1431966703000"/>
+      <file name="ultrapink_hed.html" crc="317369113" mt="1431966703000"/>
+    </folder>
+    <folder name="lusciouspink_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966558000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966558000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966558000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966558000"/>
+        <file name="lusciouspink_bottle.png" crc="280778277" mt="1431966558000"/>
+        <file name="lusciouspink_logo.png" crc="41041347" mt="1431966558000"/>
+        <file name="Poster.png" crc="10560426" mt="1431966558000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966558000"/>
+      </folder>
+      <file name="lusciouspink_hed_edge.js" crc="303367837" mt="1431966558000"/>
+      <file name="lusciouspink_hed.html" crc="17666639" mt="1431966558000"/>
+    </folder>
+    <folder name="dreams_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966463000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_butterflies.png" crc="4045170711" mt="1431966463000"/>
+        <file name="dreams_bottle.png" crc="4133374934" mt="1431966463000"/>
+        <file name="dreams_logo.png" crc="4056350976" mt="1431966463000"/>
+        <file name="dummy_01.jpg" crc="3794069437" mt="1431966463000"/>
+        <file name="dummy_02.jpg" crc="118623424" mt="1431966463000"/>
+        <file name="Poster.png" crc="69690717" mt="1431966463000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966463000"/>
+      </folder>
+      <file name="dreams_hed_edge.js" crc="3807727316" mt="1431966463000"/>
+      <file name="dreams_hed.html" crc="3902450711" mt="1431966463000"/>
+    </folder>
+    <folder name="ribbon_hed">
+      <folder name="edge_includes">
+        <file name="edge.5.0.1.min.js" crc="3758894637" mt="1431966658000"/>
+      </folder>
+      <folder name="images">
+        <file name="btn_shop_pink.png" crc="124477716" mt="1431966658000"/>
+        <file name="dummy_01.jpg" crc="345647077" mt="1431966658000"/>
+        <file name="dummy_02.jpg" crc="531315307" mt="1431966658000"/>
+        <file name="lollipop_logo.png" crc="252582059" mt="1431966658000"/>
+        <file name="Poster.png" crc="4103366187" mt="1431966658000"/>
+        <file name="ribbon_bottle.png" crc="517894693" mt="1431966658000"/>
+        <file name="spacer.gif" crc="3994797219" mt="1431966658000"/>
+      </folder>
+      <file name="ribbon_hed_edge.js" crc="22937556" mt="1431966658000"/>
+      <file name="ribbon_hed.html" crc="3817458570" mt="1431966658000"/>
+    </folder>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="museutils.js" crc="275725342" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="jquery.scrolleffects.js" crc="206645848" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="webpro.js" crc="3883484123" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="musewpdisclosure.js" crc="404074387" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="bg.jpg" crc="3809083320" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="logo.png" crc="4044462138" ref="index"/>
+    <file name="icon_menu.gif" crc="3785398145" ref="index"/>
+    <file name="bg-u7237-fr.png" crc="528373355" ref="index"/>
+    <file name="nav_dreams.png" crc="4212446550" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_ribbon.png" crc="183513378" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_inseparable.png" crc="3937588099" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_visionoflove.png" crc="6038438" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_neverforgetyou.png" crc="4037767483" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_mineagain.png" crc="4101052428" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_honey.png" crc="24658941" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_thatchick.png" crc="4080215082" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_forever.png" crc="4293940607" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_lusciouspink.png" crc="17116002" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_ultrapink.png" crc="4067811651" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="nav_m.png" crc="3999958846" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="slide_01.jpg" crc="503699461" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="slide_02.png" crc="446001544" seo="true" ref="index"/>
+    <file name="slide_03.png" crc="4040625488" seo="true" ref="index"/>
+    <file name="slide_04.png" crc="4193264656" seo="true" ref="index"/>
+    <file name="slide_05.png" crc="4008996578" seo="true" ref="index"/>
+    <file name="slide_06.png" crc="251351563" seo="true" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="bg_header.jpg" crc="167364102" ref="index"/>
+    <file name="infinity.png" crc="417944952" seo="true" ref="index:dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="bg_footer.jpg" crc="512952544" ref="index"/>
+    <file name="scroll_ko_top.png" crc="4049403394" ref="dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="arrows_dn.png" crc="418916163" seo="true" ref="dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="arrows_up.png" crc="3995359068" seo="true" ref="dreams:ribbon:inseparable:vision_of_love:never_forget_you:mine_again:honey:that_chick:forever:luscious_pink:ultra_pink:m"/>
+    <file name="dreams_notes_base.jpg" crc="348852459" seo="true" ref="dreams"/>
+    <file name="dreams_notes_mid.jpg" crc="388046037" seo="true" ref="dreams"/>
+    <file name="dreams_notes_top.jpg" crc="96696826" seo="true" ref="dreams"/>
+    <file name="ribbon_notes_base.jpg" crc="4088272643" seo="true" ref="ribbon"/>
+    <file name="ribbon_notes_mid.jpg" crc="193010609" seo="true" ref="ribbon"/>
+    <file name="ribbon_notes_top.jpg" crc="200285219" seo="true" ref="ribbon"/>
+    <file name="inseparable_notes_base.jpg" crc="3959381325" seo="true" ref="inseparable"/>
+    <file name="inseparable_notes_mid.jpg" crc="3792254959" seo="true" ref="inseparable"/>
+    <file name="inseparable_notes_top.jpg" crc="4283437694" seo="true" ref="inseparable"/>
+    <file name="visionoflove_notes_base.jpg" crc="3897019930" seo="true" ref="vision_of_love"/>
+    <file name="visionoflove_notes_mid.jpg" crc="307177318" seo="true" ref="vision_of_love"/>
+    <file name="visionoflove_notes_top.jpg" crc="3799784358" seo="true" ref="vision_of_love"/>
+    <file name="neverforgetyou_notes_base.jpg" crc="3963460782" seo="true" ref="never_forget_you"/>
+    <file name="neverforgetyou_notes_mid.jpg" crc="13579289" seo="true" ref="never_forget_you"/>
+    <file name="neverforgetyou_notes_top.jpg" crc="3956096800" seo="true" ref="never_forget_you"/>
+    <file name="mineagain_notes_base.jpg" crc="3897019930" seo="true" ref="mine_again"/>
+    <file name="mineagain_notes_mid.jpg" crc="208160362" seo="true" ref="mine_again"/>
+    <file name="mineagain_notes_top.jpg" crc="28973224" seo="true" ref="mine_again"/>
+    <file name="honey_notes_base.jpg" crc="3840165879" seo="true" ref="honey"/>
+    <file name="honey_notes_mid.jpg" crc="195353686" seo="true" ref="honey"/>
+    <file name="honey_notes_top.jpg" crc="523013212" seo="true" ref="honey"/>
+    <file name="thatchick_notes_base.jpg" crc="3762254882" seo="true" ref="that_chick"/>
+    <file name="thatchick_notes_mid.jpg" crc="3841788962" seo="true" ref="that_chick"/>
+    <file name="thatchick_notes_top.jpg" crc="3895710990" seo="true" ref="that_chick"/>
+    <file name="forever_notes_base.jpg" crc="3897019930" seo="true" ref="forever"/>
+    <file name="forever_notes_mid.jpg" crc="261304708" seo="true" ref="forever"/>
+    <file name="forever_notes_top.jpg" crc="4196938484" seo="true" ref="forever"/>
+    <file name="lusciouspink_notes_base.jpg" crc="3825914195" seo="true" ref="luscious_pink"/>
+    <file name="lusciouspink_notes_mid.jpg" crc="243690047" seo="true" ref="luscious_pink"/>
+    <file name="lusciouspink_notes_top.jpg" crc="483683913" seo="true" ref="luscious_pink"/>
+    <file name="ultrapink_notes_base.jpg" crc="3783934295" seo="true" ref="ultra_pink"/>
+    <file name="ultrapink_notes_mid.jpg" crc="3841329391" seo="true" ref="ultra_pink"/>
+    <file name="ultrapink_notes_top.jpg" crc="308045919" seo="true" ref="ultra_pink"/>
+    <file name="m_notes_base.jpg" crc="3783934295" seo="true" ref="m"/>
+    <file name="m_notes_mid.jpg" crc="88466676" seo="true" ref="m"/>
+    <file name="m_notes_top.jpg" crc="3854015143" seo="true" ref="m"/>
+  </folder>
+  <file name="index.html" crc="3984704758" seo="true" mt="1457061404383" redirect="true"/>
+  <file name="dreams.html" crc="258903365" seo="true" mt="1431966788122" redirect="true"/>
+  <file name="ribbon.html" crc="4174512734" seo="true" mt="1431966788123" redirect="true"/>
+  <file name="inseparable.html" crc="4139135344" seo="true" mt="1431967775995" redirect="true"/>
+  <file name="vision_of_love.html" crc="3834540402" seo="true" mt="1457061370941" redirect="true"/>
+  <file name="never_forget_you.html" crc="3845804397" seo="true" mt="1431967778868" redirect="true"/>
+  <file name="mine_again.html" crc="3793098698" seo="true" mt="1431966788125" redirect="true"/>
+  <file name="honey.html" crc="517919464" seo="true" mt="1431966788126" redirect="true"/>
+  <file name="that_chick.html" crc="415028846" seo="true" mt="1431966788126" redirect="true"/>
+  <file name="forever.html" crc="4129183761" seo="true" mt="1431966788127" redirect="true"/>
+  <file name="luscious_pink.html" crc="3872208221" seo="true" mt="1431966788127" redirect="true"/>
+  <file name="ultra_pink.html" crc="4042954263" seo="true" mt="1431966788128" redirect="true"/>
+  <file name="m.html" crc="3990477441" seo="true" mt="1431966788128" redirect="true"/>
+</manifest>

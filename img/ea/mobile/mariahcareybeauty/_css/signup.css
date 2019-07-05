@@ -1,0 +1,89 @@
+#content {
+	height:510px;
+}
+#signup_content {
+	height: 510px;
+	background: url(../_images/forever/mariah_nick.jpg) no-repeat;
+}
+
+#signup_content form {
+	margin-left:470px;
+	padding-top: 61px;
+	width:350px;
+}
+
+#signup_content #text {
+	color: #270337;
+	margin: 10px 0 20px 0;
+	font-size: 13px;
+	white-space: normal;
+	line-height: 20px;
+}
+
+#form_msg {
+	color: #aa0000;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align:center;
+	font-weight:bold;
+}
+
+#signup_content label {
+	font-weight: bold;
+	color: #270337;
+	font-size: 13px;
+	width:90px;
+	display:block;
+	float:left;
+	line-height: 20px;
+	text-align:right;
+	padding-right: 10px;
+}
+
+#signup_content div {
+	margin-bottom: 10px;
+	overflow:hidden;
+}
+.textbox {
+	border: 1px solid #b3b0e4;
+	background: #f3e1f7;
+	width:225px;
+	padding: 2px 1px;
+	color: #270337;
+}
+
+#signup_submit {
+	width:74px;
+	height:21px;
+	cursor: pointer;
+	background: url(../_images/signup_submit_bg.gif);
+	border:0;
+	float:right;
+	margin-top: 12px;
+}
+#follow {
+	float:left;
+	font-weight: bold;
+	color: #270337;
+	font-size: 13px;
+	padding: 6px 0;
+}
+#follow img {
+	position:relative;
+	top: 7px;
+}
+#actions {
+	padding-right: 15px;
+	margin-top: 20px;
+}
+#certify label {
+	font-weight:normal;
+}
+#certify {
+	padding-left: 70px;
+}
+#required {
+	margin-bottom: 10px;
+	padding-left: 80px;
+	color: #270337;
+}

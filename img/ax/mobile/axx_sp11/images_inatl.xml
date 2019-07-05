@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gallery>
+
+	<album id="album01" lgpath="images_inatl/lg/" tnpath="images_inatl/tn/">
+		<img src="slide01.jpg" tn="thumb01.jpg" />
+		<img src="slide02.jpg" tn="thumb02.jpg" />
+		<img src="slide03.jpg" tn="thumb03.jpg" />
+		<img src="slide04.jpg" tn="thumb04.jpg" />
+	</album>
+
+</gallery>

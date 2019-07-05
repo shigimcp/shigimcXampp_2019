@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>A|X DENIM</title>
+
+<!-- ======================================================= -->
+<!-- Meta Tags -->
+<!-- ======================================================= -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!--<meta name="viewport" content="width=device-width; initial-scale=1.0;" />-->
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- Meta Tags - FACEBOOK Open Graph Protocol -->
+<!--
+<meta property="og:title" content="A|XX - Celebrating 20 Years of Style in 2011" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.axx2011.com/mobile.html" />
+<meta property="og:image" content="http://www.axx2011.com/img/AXX_badge.jpg" />
+<meta property="og:site_name" content="A|XX 2011" />
+<meta property="fb:app_id" content="151938061528481" />
+
+<meta property="og:description" content="A|XX - Celebrating 20 Years of Style in 2011"/>
+<meta property="og:video" content="http://www.youtube.com/watch?v=b2wRjPR6Ogs"/>
+-->
+
+<!-- ======================================================= -->
+<!-- IMPORTS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript" src="../javascript/prototype.js"></script>
+<script type="text/javascript" src="../javascript/effects.js"></script>
+<script type="text/javascript" src="../javascript/accordion.js"></script>
+<script type="text/javascript" src="../javascript/code_highlighter.js"></script>
+<script type="text/javascript" src="../javascript/javascript.js"></script>
+<script type="text/javascript" src="../javascript/html.js"></script>
+
+<link rel="stylesheet" type="text/css" href="00site_0318.css" />
+
+<script type="application/x-javascript">
+
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    
+    function hideURLbar(){
+        window.scrollTo(0,0);
+//        document.getElementById("topSlides").className = "slides";
+    }
+
+    function moveMe(newY){
+        window.scrollTo(0,newY);
+    }
+
+</script>
+
+<!-- ======================================================= -->
+<!-- BROWSER SNIFFER -->
+<!-- ======================================================= -->
+
+<!--
+<script language="javascript">
+
+    if (navigator.userAgent && navigator.userAgent.indexOf("iPhone") == -1 && navigator.userAgent.indexOf("Mobile") == -1 && navigator.userAgent.indexOf("BlackBerry") == -1 ) {
+ 		   window.location.replace("http://www.armaniexchange.com/category/denim.do?");
+    }
+
+</script>
+-->
+
+<!-- ======================================================= -->
+<!-- GOOGLE ANALYTICS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21017831-6']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script type="text/javascript">
+function setConfig(configObject) {
+	config = configObject;
+	
+	//get ol list and children
+    var ol = document.body.getElementsByTagName('ol')[0];
+    scenes = ol.children;
+
+	currentSceneIndex = -1;
+}
+
+
+function start() {	
+	goToScene(0);
+}
+
+function goToSceneID(id) {
+	for (var i=0; i < config.length; i++) {
+		if (config[i].id === id) {
+			goToScene(i);
+			return;
+		}
+	}
+}
+
+
+//function to go directly to any scene
+function goToScene(index) {
+    
+    //go to scene
+    startScene(index);
+
+	//set up timer if jumping on done
+	if (config[index].jump !== -1) {
+		applyTimeout(config[index].jump, config[index].duration);
+	}
+	
+}
+
+function startScene(index) {
+    
+	//restart current scene without flicker
+	if (index === currentSceneIndex) {
+		scenes[index].setAttribute('class','run restart');
+		setTimeout(function(){
+	        scenes[index].setAttribute('class','run');
+			},0);
+		return;
+	}
+
+    //add the class "run" to the scene currently running and remove it from anybody else
+    var scene;
+    for (var i=0; i < scenes.length; i++) {
+        scene = scenes[i];
+        if (i === index) {
+            scene.setAttribute('class','run');
+        } else {
+            scene.setAttribute('class','');
+        }
+        
+    }
+
+	currentSceneIndex = index;
+    
+}
+
+//set timeout
+function applyTimeout(index,time) {
+    setTimeout(function(){
+        goToScene(index);
+    },time);
+}
+</script>
+<script type="text/javascript">
+window.onload=setup;
+function setup() {
+setConfig([{"jump":-1,"duration":45250,"id":0}]);
+start();
+}
+</script>
+<style type="text/css">
+.AN-sObj-stage {
+	border: 0px solid #000;
+	position: relative;
+	overflow: hidden;
+	-webkit-perspective: 600;
+	-webkit-transform-style: preserve-3d;
+}
+.AN-sObj-stage div {
+	position: absolute;
+}
+.AN-sObj-stage a {
+	color: inherit;
+	text-decoration: none;
+}
+.AN-sObj-stage * {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+body, .AN-sObj-stage, ol, li {
+	margin: 0;
+	padding: 0;
+}
+ol {
+	list-style: none;
+	position: relative;
+}
+li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+li {
+	display: none;
+}
+li.run {
+	display: block;
+}
+.restart * {
+	-webkit-animation-name: none !important;
+}
+.AN-sObj-stage {
+	height: 415px;
+	width: 320px;
+	background-color: rgba(38,38,38,1);
+	border: 0px solid rgba(38,38,38,0);
+	display: block;
+}
+#AN-sObj-34108 {
+	-webkit-transform: translate3d(0px, 35px, 0px);
+	width: 320px;
+	height: 345px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34109 {
+	-webkit-transform: translate3d(-885px, 180px, 0px);
+	width: 1205px;
+	height: 200px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34110 {
+	-webkit-transform: translate3d(0px, 380px, 0px);
+	width: 320px;
+	height: 35px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34111 {
+	-webkit-transform: translate3d(0px, 210px, 0px);
+	width: 320px;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34112 {
+	-webkit-transform: translate3d(0px, 170px, 0px);
+	width: 320px;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34113 {
+	-webkit-transform: translate3d(0px, 130px, 0px);
+	width: 320px;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34114 {
+	-webkit-transform: translate3d(0px, 90px, 0px);
+	width: 320px;
+	height: 45px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34115 {
+	-webkit-transform: translate3d(160px, 250px, 0px);
+	width: 160px;
+	height: 125px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34116 {
+	-webkit-transform: translate3d(175px, 325px, 0px);
+	width: 145px;
+	height: 20px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34117 {
+	-webkit-transform: translate3d(0px, 250px, 0px);
+	width: 160px;
+	height: 125px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34118 {
+	-webkit-transform: translate3d(0px, 325px, 0px);
+	width: 145px;
+	height: 20px;
+	top: 0;
+	left: 0;
+}
+#AN-sObj-34119 {
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	width: 320px;
+	height: 35px;
+	top: 0;
+	left: 0;
+	border-top: 0px solid rgba(127,127,127,1);
+	border-right: 0px solid rgba(127,127,127,1);
+	border-bottom: 0px solid rgba(127,127,127,1);
+	border-left: 0px solid rgba(127,127,127,1);
+}
+ @-webkit-keyframes AN-ani-34120 {
+0% {
+-webkit-transform: translate3d(-885px, 180px, 0px);
+}
+100% {
+-webkit-transform: translate3d(0px, 180px, 0px);
+}
+}
+.run #AN-sObj-34109 {
+	-webkit-animation-name: AN-ani-34120;
+	-webkit-animation-duration: 45s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34109 {
+	-webkit-transform: translate3d(-885px, 180px, 0px);
+}
+@-webkit-keyframes AN-ani-34121 {
+0% {
+-webkit-transform: translate3d(320px, 210px, 0px);
+ opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(320px, 210px, 0px);
+opacity:1;
+}
+100% {
+-webkit-transform: translate3d(0px, 210px, 0px);
+opacity:1;
+}
+}
+.run #AN-sObj-34111 {
+	-webkit-animation-name: AN-ani-34121;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34111 {
+	-webkit-transform: translate3d(320px, 210px, 0px);
+}
+@-webkit-keyframes AN-ani-34122 {
+0% {
+-webkit-transform: translate3d(320px, 170px, 0px);
+ opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(320px, 170px, 0px);
+opacity:1;
+}
+100% {
+-webkit-transform: translate3d(0px, 170px, 0px);
+opacity:1;
+}
+}
+.run #AN-sObj-34112 {
+	-webkit-animation-name: AN-ani-34122;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0.75s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34112 {
+	-webkit-transform: translate3d(320px, 170px, 0px);
+}
+@-webkit-keyframes AN-ani-34123 {
+0% {
+-webkit-transform: translate3d(-320px, 130px, 0px);
+ opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(-320px, 130px, 0px);
+opacity:1;
+}
+100% {
+-webkit-transform: translate3d(0px, 130px, 0px);
+opacity:1;
+}
+}
+.run #AN-sObj-34113 {
+	-webkit-animation-name: AN-ani-34123;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0.25s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34113 {
+	-webkit-transform: translate3d(-320px, 130px, 0px);
+}
+@-webkit-keyframes AN-ani-34124 {
+0% {
+-webkit-transform: translate3d(-320px, 90px, 0px);
+}
+100% {
+-webkit-transform: translate3d(0px, 90px, 0px);
+}
+}
+.run #AN-sObj-34114 {
+	-webkit-animation-name: AN-ani-34124;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34114 {
+	-webkit-transform: translate3d(-320px, 90px, 0px);
+}
+@-webkit-keyframes AN-ani-34125 {
+0% {
+-webkit-transform: translate3d(320px, 325px, 0px);
+ opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(320px, 325px, 0px);
+opacity:1;
+}
+100% {
+-webkit-transform: translate3d(175px, 325px, 0px);
+opacity:1;
+}
+}
+.run #AN-sObj-34116 {
+	-webkit-animation-name: AN-ani-34125;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34116 {
+	-webkit-transform: translate3d(320px, 325px, 0px);
+}
+@-webkit-keyframes AN-ani-34126 {
+0% {
+-webkit-transform: translate3d(-145px, 325px, 0px);
+ opacity:0;
+}
+0.01% {
+-webkit-transform: translate3d(-145px, 325px, 0px);
+opacity:1;
+}
+100% {
+-webkit-transform: translate3d(0px, 325px, 0px);
+opacity:1;
+}
+}
+.run #AN-sObj-34118 {
+	-webkit-animation-name: AN-ani-34126;
+	-webkit-animation-duration: 0.75s;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation-fill-mode: both;
+}
+.restart #AN-sObj-34118 {
+	-webkit-transform: translate3d(-145px, 325px, 0px);
+}
+</style>
+
+<!-- ======================================================= -->
+<!-- GOOGLE ANALYTICS -->
+<!-- ======================================================= -->
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21017831-6']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</head>
+
+<body>
+
+<ol>
+	<li id="scene-0">
+<!--	<li id="scene-0" class="00site_0318">-->
+<!--	<li id="scene-0 00site_0318">-->
+		<div class="AN-sObj-stage" id="ext-gen904">
+			<div class="AN-Object" id="AN-sObj-34108">
+				<div id="AN-sObj-val-34108"><img src="../assets/bg_dark.jpg"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34109">
+				<div id="AN-sObj-val-34109"><img src="../assets/laydown.png"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34110">
+				<div id="AN-sObj-val-34110"><img src="../assets/ax_bar.jpg"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34111">
+				<div id="AN-sObj-val-34111"><img src="../assets/txt_washes.png"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34112">
+				<div id="AN-sObj-val-34112"><img src="../assets/txt_new.png"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34113">
+				<div id="AN-sObj-val-34113"><img src="../assets/txt_fits.png"></div>
+			</div>
+			<div class="AN-Object" id="AN-sObj-34114">
+				<div id="AN-sObj-val-34114"><img src="../assets/txt_best.png"></div>
+			</div>
+			<a id="AN-sObj-link-34115" href="index_w.html" target="_self">
+			<div class="AN-Object" id="AN-sObj-34115">
+				<div id="AN-sObj-val-34115"><img src="../assets/spacer.gif"></div>
+			</div>
+			</a><a id="AN-sObj-link-34116" href="index_w.html" target="_self">
+			<div class="AN-Object" id="AN-sObj-34116">
+				<div id="AN-sObj-val-34116"><img src="../assets/btn_womens.jpg"></div>
+			</div>
+			</a><a id="AN-sObj-link-34117" href="index_m.html" target="_self">
+			<div class="AN-Object" id="AN-sObj-34117">
+				<div id="AN-sObj-val-34117"><img src="../assets/spacer.gif"></div>
+			</div>
+			</a><a id="AN-sObj-link-34118" href="index_m.html" target="_self">
+			<div class="AN-Object" id="AN-sObj-34118">
+				<div id="AN-sObj-val-34118"><img src="../assets/btn_mens.jpg"></div>
+			</div>
+			</a>
+			<div class="AN-Object" id="AN-sObj-34119">
+				<div id="AN-sObj-val-34119"><img src="../assets/NAV_hed.jpg"></div>
+			</div>
+		</div>
+	</li>
+</ol>
+</body>
+</html>

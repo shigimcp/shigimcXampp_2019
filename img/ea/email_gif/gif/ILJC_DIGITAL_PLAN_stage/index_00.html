@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>JUICY COUTURE - I LOVE JUICY COUTURE</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="scripts/swfobject.js"></script>
+
+    <script type="text/javascript">
+
+		var swapImage;
+
+		function swapMe(thisImage, thisLabel) {
+			swapImage = "img/" + thisImage;
+			console.log("swapImage = " + swapImage);
+
+			$('#image').attr("src", swapImage);
+			$('#dimensions').empty();
+			$('#dimensions').append(thisLabel);
+		}
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="scripts/stage.css">
+</head>
+
+
+<body onload="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_300x250.gif', '300 x 250')">
+
+<navContainer>
+	<hed>
+		JUICY COUTURE<br />
+		I LOVE JUICY COUTURE
+	</hed>
+
+	<nav>
+		<br /><br />
+		<b>ANIMATED GIF</b>
+		<hr />
+		<ul>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_300x250.gif', '300 x 250'); return false;">300 x 250</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_160x600.gif', '160 x 600'); return false;">160 x 600</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_300x600.gif', '300 x 600'); return false;">300 x 600</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_728x90.gif', '728 x 90'); return false;">728 x 90</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_300x50.gif', '300 x 50'); return false;">300 x 50</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_320x50.gif', '320 x 50'); return false;">320 x 50</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_970x250.gif', '970 x 250'); return false;">970 x 250</a></li>
+			<li><a href="#" onclick="swapMe('CR_24130_ILJC_DIGITAL_PLAN_1H16_NZ_760x120.gif', '760 x 120'); return false;">760 x 120</a></li>
+		</ul>
+	</nav>
+
+</navContainer>
+
+<div id="dimensions"></div>
+<div id="imageContainer">
+	<img id="image" src="#">
+    <br /><br />
+    <!--<b>NOTES:</b>-->
+	<div id="notes"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+    <head>
+        <title>A|XX - Celebrating 20 Years of Style in 2011</title>
+    
+    
+    <!-- ======================================================= -->
+    <!-- Meta Tags -->
+    <!-- ======================================================= -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Meta Tags - FACEBOOK Open Graph Protocol -->
+<!--
+        <meta property="og:title" content="A|XX - Celebrating 20 Years of Style in 2011" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.axx2011.com" />
+        <meta property="og:image" content="http://www.axx2011.com/img/AXX_badge.jpg" />
+        <meta property="og:site_name" content="A|XX 2011" />
+        <meta property="fb:app_id" content="151938061528481" />
+
+        <meta property="og:description" content="A|XX - Celebrating 20 Years of Style in 2011"/>
+        <meta property="og:video" content="http://www.youtube.com/watch?v=b2wRjPR6Ogs"/>
+-->    
+    
+    <!-- ======================================================= -->
+    <!-- CSS -->
+    <!-- ======================================================= -->
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+    
+     
+    <!-- ======================================================= -->
+    <!-- SLIDES AT TOP - WEBKIT ANIMATION -->
+    <!-- ======================================================= -->
+    
+        <style>
+            div#box {
+                display:block;
+                width: 320px;
+                height: 200px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                position: absolute;
+                left: -0px;
+                background: #363636;
+                overflow:hidden;
+            }
+    
+            div.slides {
+                width: 640px;
+                position: absolute;
+    
+                -webkit-animation-name: slide;
+                -webkit-animation-duration: .5s;
+                -webkit-animation-delay: 2s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-fill-mode: forwards;
+            }
+    
+            @-webkit-keyframes slide {
+                from {
+                    left: 0px;
+                } to {
+                    left: -320px;
+                }
+            }
+    
+        </style>
+    
+   
+    <!-- ======================================================= -->
+    <!-- JavaScript -->
+    <!-- ======================================================= -->
+        <script type="text/javascript" src="javascript/prototype.js"></script>
+        <script type="text/javascript" src="javascript/effects.js"></script>
+        <script type="text/javascript" src="javascript/accordion.js"></script>
+        <script type="text/javascript" src="javascript/code_highlighter.js"></script>
+        <script type="text/javascript" src="javascript/javascript.js"></script>
+        <script type="text/javascript" src="javascript/html.js"></script>
+    
+        <script type="application/x-javascript">
+    
+    <!-- ========== HIDE URL BAR ========== -->
+
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            
+            function hideURLbar(){
+                window.scrollTo(0,0);
+				document.getElementById("topSlides").className = "slides";
+            }
+    
+            function moveMe(newY){
+                window.scrollTo(0,newY);
+            }
+    
+    <!-- ========== ACCORDION ========== -->
+            // ---------- In my case I want to load them onload, this is how you do it! ----------
+            Event.observe(window, 'load', loadAccordions, false);
+    
+            // ---------- Set up all accordions ----------
+            var topAccordion;
+            var bottomAccordion;
+    
+            function loadAccordions() {
+                topAccordion = new accordion('horizontal_container', {
+                    classNames : {
+                        toggle : 'horizontal_accordion_toggle',
+                        toggleActive : 'horizontal_accordion_toggle_active',
+                        content : 'horizontal_accordion_content'
+                    },
+    
+                    defaultSize : {
+                        width : 320
+                    },
+    
+                    direction : 'horizontal'
+                });
+                
+                bottomAccordion = new accordion('vertical_container');
+                
+                var nestedVerticalAccordion = new accordion('vertical_nested_container', {
+                    classNames : {
+                        toggle : 'vertical_accordion_toggle',
+                        toggleActive : 'vertical_accordion_toggle_active',
+                        content : 'vertical_accordion_content'
+                    }
+                });
+    
+                // ---------- Open first one ----------
+//    			bottomAccordion.activate($$('#vertical_container .accordion_toggle')[0]);
+                
+                // ---------- Open second (sub) one ----------
+//              topAccordion.activate($$('#horizontal_container .horizontal_accordion_toggle')[2]);
+    
+                window.scrollTo(0,0);
+           }
+    
+	<!-- ========== SLIDES AT TOP ========== -->
+	<!-- ========== this waits for the slide(s) at the top of the page to horizontally scroll to the end(slide) ========== -->
+	<!-- ========== THEN expands the accordion that corresponds to said end(slide) ========== -->
+	<!-- ========== NOTE: MUST be the last slide of horizontal scroll ========== -->
+
+            function attachEventHandler() {
+                box.addEventListener( 'webkitAnimationEnd', function( event ) { 
+//    				alert( "Finished animation!" );
+					window.scrollTo(0,0);
+                    bottomAccordion.activate($$('#vertical_container .accordion_toggle')[0]);
+                }, false );
+            }
+    
+	<!-- ========== OPEN ACCORDION FROM MENU ========== -->
+	<!-- ========== this waits for a trigger from a menu item ========== -->
+
+            function openAccordion(thisAccordion) {
+                bottomAccordion.activate($$('#vertical_container .accordion_toggle')[thisAccordion]);
+            }
+    
+        </script>
+    
+    
+    <!-- ======================================================= -->
+    <!-- YOUTUBE VIDEO - DETECT iPHONE/iPAD -->
+    <!-- ======================================================= -->
+    <!--
+        <script type="text/javascript">
+        
+            var agent = navigator.userAgent.toLowerCase();
+            var useHTML5 = (agent.indexOf('iphone')!=1 || agent.indexOf('ipad')!=1);
+            
+            if (useHTML5) {
+                document.write("");
+            } else {
+                document.write("");
+            }
+        
+        </script>
+    -->
+
+
+    <!-- ======================================================= -->
+    <!-- BROWSER SNIFFER -->
+    <!-- ======================================================= -->
+    
+        <script language="javascript">
+
+			if (navigator.userAgent && navigator.userAgent.indexOf("iPhone") == -1 && navigator.userAgent.indexOf("Mobile") == -1 && navigator.userAgent.indexOf("BlackBerry") == -1 ) {
+                window.location.replace("kr_ld.html");
+			}
+
+        </script>
+
+
+
+    <!-- ======================================================= -->
+    <!-- GOOGLE ANALYTICS -->
+    <!-- ======================================================= -->
+    
+        <script type="text/javascript">
+        
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-21017831-2']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        
+        </script>
+    
+    </head>
+    
+    
+    <body onload="attachEventHandler()"> 
+    <!--<body>--> 
+    
+    <!-- ==================== DON'T YOU FORGET ABOUT ME ==================== -->
+    <img src="img/NAV_hed.jpg" style="position:fixed; left:0px; top:0px; border:0; margin:0px; padding:0px; z-index:2;">	
+    <!-- ==================== DON'T YOU FORGET ABOUT ME ==================== -->
+    
+    <div id="container">
+    
+        <table>
+            <tr>
+                <td>
+                    <img src="img/NAV_hed.jpg" border="0">
+                </td>
+            </tr>
+        </table>
+    
+        <div id="vertical_container" >
+    
+            <h1 class="accordion_toggle" style="background: url(img/AXX_hed.jpg) no-repeat top left; height:200;">
+                <div id="box">
+                   <!-- <div id="topSlides" class="slides">-->
+                    <div id="topSlides">
+                        <a onClick="window.scrollTo(0,0)"><img src="img/slide01.jpg"><img src="img/slide02_kr.jpg"></a>
+                    </div>
+                </div>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td width="320" height="500" align="left" style="background: url(img/KOREAN_APP_hed.jpg) no-repeat top left; text-align:left; padding-left:25px; padding-right:40px; padding-top:55px; padding-bottom:50px;">
+                            <img src="img/spacer.gif" height="150" width="280" border="0" /><br />
+                            <a href="http://itunes.apple.com/us/app/a-x-stylepad/id415994498?mt=8&uo=4" target="itunes_store">
+                                <img src="img/spacer.gif" height="175" width="280" border="0" /><br />
+                            </a>
+                            <font style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#40d9fa; font-weight: bold; font-style: italic; letter-spacing:.25px;">
+                                <i>COMING SOON</i><br />
+                                THE A|X STYLEPAD&trade; FOR iPAD
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+            
+            <h1 class="accordion_toggle" style="background: url(img/ax_bar.jpg) no-repeat top left; height:35;">&nbsp;</h1>
+            <div class="accordion_content"></div>
+            
+            <h1 class="accordion_toggle" style="background: url(img/NAV_createad_kr.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,0); openAccordion(0)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,0); openAccordion(0)">A|X APPS<img src="img/spacer.gif" width="105" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content"></div>
+    
+            <h1 class="accordion_toggle" style="background: url(img/NAV_aboutaxx.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,400)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,400)">ABOUT A|XX<img src="img/spacer.gif" width="210" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <div id="vertical_nested_container" >
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/AXX_hed_ext.jpg" border="0"><br>
+                                <img src="img/ABOUTAXX_hed_ext.jpg" border="0">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+            </div>
+    
+            <h1 class="accordion_toggle" style="background: url(img/NAV_womens.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,465)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,465)">A|XX WOMENS 20TH STYLES<img src="img/spacer.gif" width="80" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/COLLECTION_hed_w.jpg" border="0">
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+            
+            <h1 class="accordion_toggle" style="background: url(img/NAV_mens.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,530)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,530)">A|XX MENS 20TH STYLES<img src="img/spacer.gif" width="110" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/COLLECTION_hed_m.jpg" border="0">
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+    
+            <h1 class="accordion_toggle" style="background: url(img/NAV_20years.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,595)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,595)">EXCLUSIVE A|XX VIDEO<img src="img/spacer.gif" width="80" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/NAV_hed.jpg" border="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <object width="320" height="190" border="0">
+                                <param name="movie" value="http://www.youtube.com/v/b2wRjPR6Ogs" />
+                                <param name="allowFullScreen" value="true" />
+                                <param name="allowscriptaccess" value="always" />
+                                <embed src="http://www.youtube.com/v/b2wRjPR6Ogs" type="application/x-shockwave-flash" allowscriptaccess="always" allowFullScreen="true" width="320" height="190" border="0" wmode="opaque" />
+                            </object>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <h1 class="accordion_toggle" style="background: url(img/NAV_qrcodes.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,660)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,660)">ABOUT QR CODES<img src="img/spacer.gif" width="110" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td background="img/QR_hed.jpg" width="320" height="500" align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; text-align:left; line-height:18px; padding-left:50px; padding-right:30px; padding-top:170px; padding-bottom:30px;">
+                            <img src="img/QR_code.gif" style="vertical-align:top; float:left; padding: 0px 10px 0px 0px;" />You may have noticed that Armani Exchange has started to use QR codes in our Spring 2011 promotional material.  A QR (quick response) code is your fastest way to fashion. This QR code is a specially designed matrix barcode that is readable by dedicated QR barcode readers for camera phone users to display text, contact information, connect to a wireless network, or open a web page in the phone's browser.
+                            <br /><br />
+    
+                            <font style="color:#CCCCCC; font-size:14px; font-weight:bold; font-style:italic; line-height:15px; text-align:left;">
+                                SCAN IT<br />
+                            </font>
+    
+                            <font style="color:#CCCCCC; font-size:14px; font-weight:bold; font-style:italic; line-height:15px; padding-left:40px;">
+                                DOWNLOAD IT<br />
+                            </font>
+    
+                            <font style="color:#CCCCCC; font-size:14px; font-weight:bold; font-style:italic; line-height:15px; padding-left:125px;">
+                                EXPERIENCE IT.<br /><br>
+                            </font>
+    
+                            <font style="font-size:11px; line-height:15px;">
+                                <b>NEED A QR CODE READER?</b><br />
+                                <a href="http://itunes.apple.com/us/app/i-nigma-4-qr-datamatrix-barcode/id388923203?mt=8&uo=4" target="itunes_store" style="color:#CCCCCC; text-decoration:underline;">TAP TO DOWNLOAD THE I-NIGMA READER</a>*
+                            </font>
+    
+                            <br /><br />
+                            <font style="font-size:10px; line-height:12px; text-indent:-10px;">
+                                * 3GVision and i-nigma is an independent company and is not affiliated with, sponsored by, or sponsor of Armani Exchange
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+    
+            <h1 class="accordion_toggle" style="background: url(img/NAV_share.jpg) no-repeat top left;">
+                <a onClick="window.scrollTo(0,725)"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a onClick="window.scrollTo(0,725)">SHARE<img src="img/spacer.gif" width="255" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td style="background: url(img/SHARE_hed.jpg) no-repeat top left; line-height:20px; text-align:left; text-indent:30px;">
+                            <img src="img/spacer.gif" width="1" height="300" border="0"><br />
+    
+        <!-- ========== FACEBOOK ========== -->
+                            <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.axx2011.com" layout="button_count" show_faces="false" width="100" font="verdana"></fb:like><br />
+                            <img src="img/spacer.gif" width="1" height="20" border="0"><br />
+    
+        <!-- ========== TWITTER ========== -->
+                            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                            <div>
+                                <a 
+                                    href="http://twitter.com/share" 
+                                    class="twitter-share-button"
+    
+                                    data-url="http://www.axx2011.com"
+                                    data-via="ArmaniExchange"
+                                    data-text="A|XX - Celebrating 20 Years of Style in 2011"
+                                    data-related="ArmaniExchange: A|XX - Celebrating 20 Years of Style in 2011"
+                                    data-count="horizontal"
+                                    data-lang="English"
+                                    data-counturl="http://www.axx2011.com">
+                                    Tweet
+                                </a>
+                            </div>
+                            
+                            <img src="img/spacer.gif" width="1" height="50" border="0"><br />
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+    
+            <h1 style="background: url(img/NAV_blank.jpg) no-repeat top left;">
+                <a href="http://www.armaniexchange.com/category/mobile/a%7Cx+life.do"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a href="http://www.armaniexchange.com/category/mobile/a%7Cx+life.do">A|X LIFE<img src="img/spacer.gif" width="110" height="20" border="0"></a>
+            </h1>
+            <div class="accordion_content">
+    
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/spacer.gif" border="0">	
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+    
+            <h1 style="background: url(img/NAV_blank.jpg) no-repeat top left;">
+                <a href="http://www.armaniexchange.com/category/mobile.do"><img src="img/spacer.gif" width="310" height="30" border="0"></a>
+                <a href="http://www.armaniexchange.com/category/mobile.do">SHOP ARMANIEXCHANGE.COM<img src="img/spacer.gif" width="255" height="20" border="0"></a>
+            </h1>
+    
+            <div class="accordion_content">
+            
+                <div id="horizontal_container" >
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/spacer.gif " border="0">	
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            
+            </div>
+      
+    
+        </div>
+    
+        <div class="page-footer">
+            <br><br>
+            <p>Privacy and Security</p>
+            <p>&copy;2011 Armani Exchange</p>
+            <br><br>
+        </div>
+        
+    </div>
+    
+    <script type="text/javascript" >
+      
+        // You can hide the accordions on page load like this, it maintains accessibility
+        // Special thanks go out to Will Shaver @ http://primedigit.com/
+    
+        var verticalAccordions = $$('.accordion_toggle');
+        verticalAccordions.each(function(accordion) {
+            $(accordion.next(0)).setStyle({
+              height: '0px'
+            });
+        });
+    
+    </script>
+        
+    <script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+    <script type="text/javascript">_uacct = "UA-624845-2";urchinTracker();</script>
+    
+    </body>
+</html>

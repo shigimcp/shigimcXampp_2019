@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# Version 1.5.21
+# 2014-05-21
+# This is a comment
+
+CACHE:
+
+
+FALLBACK:
+index.html
+
+
+
+NETWORK:
+*

@@ -1,0 +1,58 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Benjamin Havrilak - Art Director</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+
+
+<!-- ========== META TAGS ========== -->
+
+<!--<meta name="description" content="Benjamin Havrilak - Art Director" />-->
+<!--<meta name="robots" content="index, follow" />-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+<!-- ========== JAVASCRIPT INCLUDES ========== -->
+
+<script type="application/x-javascript">
+
+<!-- ========================= maximize browser window ========================= -->
+
+    document.addEventListener('DOMContentLoaded', function() {
+        /*alert( "DOMContentLoaded!" );*/
+        moveTo(0,0);
+        resizeTo(window.screen.width, window.screen.height);
+    }, false);
+
+
+<!-- ========================= resize images with browser window ========================= -->
+
+    $(window).resize(function() {
+        $('body img').css({
+            maxHeight: $('body').height() * 0.8,
+            maxWidth: $('body').width() * 0.8
+        });
+    });
+
+
+<!-- ========================= hide address bar ========================= -->
+
+	function hideAddressBar() {
+		if(!window.location.hash) { 
+			if(document.height <= window.outerHeight + 10) {
+				document.body.style.height = (window.outerHeight + 50) +'px';
+				setTimeout( function() { window.scrollTo(0, 1); }, 50 );
+			} else {
+				setTimeout( function() { window.scrollTo(0, 1); }, 0 ); 
+			}
+		}
+	} 
+/*
+	window.addEventListener("load", hideAddressBar );
+*/
+	window.addEventListener("orientationchange", hideAddressBar ); 
+
+
+</script>

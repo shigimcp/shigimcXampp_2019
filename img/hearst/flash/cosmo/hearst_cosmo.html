@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+	<title>shigeru mcpherson - hearst communications - cosmo.com banners</title>
+
+	<script src="../scripts/swfobject.js" language="javascript"></script>
+
+	<style type="text/css">
+
+		html, body {
+/*			border: 5px #FF0000 inset !important;*/
+			background-color: transparent;
+
+			font-family: ChaleParNinSix, Arial, Helvetica, sans-serif;
+			color: #FFFFFF;
+			font-weight: normal;
+			font-size: 1.0625em;
+			letter-spacing: 0.05em;
+			line-height: 0;
+
+			position: relative;
+			margin: auto;
+			padding: 0;
+		}
+
+		td {
+			text-align: center;
+		}
+
+		@font-face {
+			font-family: 'ChaleParNinSix';
+			src: url('../../../../fonts/ChaleParNinSix.otf') format("opentype");
+			src: url('../../../../fonts/ChaleParNinSix.eot');
+			src: url('../../../../fonts/ChaleParNinSix.woff') format('woff'),
+			url('../../../../fonts/ChaleParNinSix.svg#-GothaBoo') format('svg');
+		}
+
+	</style>
+
+
+<!-- ========== AS3/JAVASCRIPT COMMUNICATION (ExternalInterface) - REF: http://www.permadi.com/tutorial/flashjscommand/ ========== -->
+
+	<script type="application/x-javascript">
+
+		function getFlashMovieObject(movieName) {
+			if (window.document[movieName]) {
+				return window.document[movieName];
+			}
+
+			if (navigator.appName.indexOf("Microsoft Internet")==-1) {
+				if (document.embeds && document.embeds[movieName])
+				return document.embeds[movieName]; 
+			} else {
+				return document.getElementById(movieName);
+			}
+		}
+
+		function StopOTHERFlashMovies(playThisMovie) {
+
+//			console.log('PING!!! FUNCTION StopOTHERFlashMovies triggered!     playThisMovie = ' + playThisMovie);
+
+			var flashMovie01 = getFlashMovieObject("COSMO_EC_InstantHottie01");
+			var flashMovie02 = getFlashMovieObject("COSMO_EC_Bachelors01");
+			var flashMovie03 = getFlashMovieObject("COSMO_EC_24Pack01");
+
+//			flashMovie01.stopAll();
+//			flashMovie02.stopAll();
+//			flashMovie03.stopAll();
+
+			switch(playThisMovie) {
+				case "COSMO_EC_InstantHottie01":
+//					flashMovie01.stopAll();
+					flashMovie02.stopAll();
+					flashMovie03.stopAll();
+					break;
+				case "COSMO_EC_Bachelors01":
+					flashMovie01.stopAll();
+//					flashMovie02.stopAll();
+					flashMovie03.stopAll();
+					break;
+				case "COSMO_EC_24Pack01":
+					flashMovie01.stopAll();
+					flashMovie02.stopAll();
+//					flashMovie03.stopAll();
+					break;
+				default:
+					flashMovie01.stopAll();
+					flashMovie02.stopAll();
+					flashMovie03.stopAll();
+			}
+		}
+
+//		function PlayFlashMovie(){
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			flashMovie.Play();
+//			//embed.nativeProperty.anotherNativeMethod();
+//		}
+//
+//		function RewindFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			flashMovie.Rewind();
+//		}
+//
+//		function NextFrameFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			// 4 is the index of the property for _currentFrame
+//			var currentFrame=flashMovie.TGetProperty("/", 4);
+//			var nextFrame=parseInt(currentFrame);
+//			if (nextFrame>=10)
+//			nextFrame=0;
+//			flashMovie.GotoFrame(nextFrame);		
+//		}
+//
+//		function ZoominFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			flashMovie.Zoom(90);
+//		}
+//
+//		function ZoomoutFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			flashMovie.Zoom(110);
+//		}
+//
+//		function SendDataToFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			flashMovie.SetVariable("/:message", document.controller.Data.value);
+//		}
+//
+//		function ReceiveDataFromFlashMovie() {
+////			var flashMovie=getFlashMovieObject("COSMO_EC_InstantHottie01");
+//			var message=flashMovie.GetVariable("/:message");
+//			document.controller.Data.value=message;
+//		}
+
+	</script>
+
+</head>
+
+<body bgcolor="#ffffff" align="center" leftmargin="0" rightmargin="0" topmargin="100">
+
+	<table border="0" cellspacing="0" cellpadding="20" align="center">
+		<tr>
+			<td colspan="2">
+<!--				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_InstantHottie01" align="middle">-->
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_InstantHottie01" align="middle" onClick="StopOTHERFlashMovies('COSMO_EC_InstantHottie01');">
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="false" />
+					<param name="movie" value="COSMO_EC_InstantHottie01.swf" />
+					<param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />
+					<embed src="COSMO_EC_InstantHottie01.swf" quality="high" bgcolor="#ffffff" width="450" height="360" name="COSMO_EC_InstantHottie01" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+<!--				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_Bachelors01" align="middle">-->
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_Bachelors01" align="middle" onClick="StopOTHERFlashMovies('COSMO_EC_Bachelors01');">
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="false" />
+					<param name="movie" value="COSMO_EC_Bachelors01.swf" />
+					<param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />
+					<embed src="COSMO_EC_Bachelors01.swf" quality="high" bgcolor="#ffffff" width="450" height="360" name="COSMO_EC_Bachelors01" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+			</td>
+
+			<td>
+<!--				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_24Pack01" align="middle">-->
+				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="450" height="360" id="COSMO_EC_24Pack01" align="middle" onClick="StopOTHERFlashMovies('COSMO_EC_24Pack01');">
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="false" />
+					<param name="movie" value="COSMO_EC_24Pack01.swf" />
+					<param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />
+					<embed src="COSMO_EC_24Pack01.swf" quality="high" bgcolor="#ffffff" width="450" height="360" name="COSMO_EC_24Pack01" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">click banners to play/stop</td>
+		</tr>
+	</table>
+
+</body>
+</html>

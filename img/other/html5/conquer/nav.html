@@ -1,0 +1,93 @@
+<a href="index.html"><img src="img/nav/nav_logo.png" id="navLogo" /></a>
+
+<nav>
+    <a href="index.html">home</a>
+    <a href="conquer.html">the collection</a>
+    <a href="regimen.html">regimen</a>
+    <!--<a href="testimonials.html">testimonials</a>-->
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+    <!--<a href="http://pwstyle.myshopify.com" target="_blank">shop</a>-->
+    <a href="shop.html">shop</a>
+
+
+<!-- /* ---------- FACEBOOK ---------- */ -->
+<!--
+    <a href="#"><img src="img/nav/share_fb.png" class="share" alt="share this" /></a>
+    <a class="facebook" target="_blank" onClick="return !window.open(this.href, 'Facebook', 'width=640,height=300')" href="http://www.facebook.com/sharer/sharer.php?u=YOUR_URL"><img src="img/nav/share_fb.png" class="share" alt="share this" /></a>
+-->    
+
+    <script type="text/javascript">
+        function fb_click(width, height) {
+
+            var leftPosition, topPosition;
+
+            leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+            topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+            var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+            u=document.URL;
+            /*u='http://www.conquerbeauty.com';*/
+            t=document.title;
+            d=document.description;
+            i=document.images;
+
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u) + '&?t=' + encodeURIComponent(t) + '&?d=' + encodeURIComponent(d),'facebook', windowFeatures);
+
+            return false;
+        }
+    </script>
+
+    <a href="http://www.facebook.com/sharer/sharer.php?u=http://conquerbeauty.com" id="tw" onClick="return fb_click(550, 275)"><img src="img/nav/share_fb.png" class="share" alt="share CONQUER Beauty" /></a>
+
+
+<!-- /* ---------- TWITTER ---------- */ -->
+<!--
+    <a href="#"><img src="img/nav/share_tw.png" class="share" alt="tweet this" /></a>
+-->
+
+    <script type="text/javascript">
+        function tw_click(width, height) {
+
+            var leftPosition, topPosition;
+
+            //Allow for borders.
+            leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+            //Allow for title and status bars.
+            topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+            var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+
+            u='http://www.conquerbeauty.com';
+            t=document.title;
+
+            <!--/*window.open('http://twitter.com/intent/tweet?status=CONQUER%20Beauty!%20' + encodeURIComponent(t) + '%20' + encodeURIComponent(u),'twitter', windowFeatures);*/-->
+            window.open('http://twitter.com/intent/tweet?status=CONQUER%20Beauty!%0A' + encodeURIComponent(u),'twitter', windowFeatures);
+
+            return false;
+        }
+    </script>
+
+    <a href="https://twitter.com/share?u=http://www.conquerbeauty.com" id="tw" onClick="return tw_click(550, 275)" target="_blank"><img src="img/nav/share_tw.png" class="share" alt="tweet CONQUER Beauty" /></a>
+
+
+<!-- /* ---------- PINTEREST ---------- */ -->
+<!--
+    <a href="#"><img src="img/nav/share_pn.png" class="share" alt="pin CONQUER Beauty" /></a>
+-->
+	<script type="text/javascript">
+		(function(d){
+			var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+			p.type = 'text/javascript';
+			p.async = true;
+			p.src = '//assets.pinterest.com/js/pinit.js';
+			f.parentNode.insertBefore(p, f);
+		}(document));
+    </script>
+<!--
+	<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.conquerbeauty.com&media=http%3A%2F%2Fwww.shigimcp.com%2FXstage%2Fpaulwharton%2F091313%2Fimg%2Fnav%2Fnav_logo.png&description=CONQUER%20Beauty%20at%20http://www.conquerbeauty.com" data-pin-do="buttonPin" data-pin-config="none" target="_blank"><img src="img/nav/share_pn.png" class="share" alt="pin CONQUER Beauty" /></a>
+-->
+	<a href="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.conquerbeauty.com&media=http%3A%2F%2Fwww.shigimcp.com%2FXstage%2Fpaulwharton%2Fimg%2Fnav%2Fnav_logo.png&description=CONQUER%20Beauty%20at%20http://www.conquerbeauty.com" data-pin-do="buttonPin" data-pin-config="none" target="_blank" class="pinnit"><img src="img/nav/share_pn.png" class="share" alt="pin CONQUER Beauty" /></a>
+ 
+</nav>

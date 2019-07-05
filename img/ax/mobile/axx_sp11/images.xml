@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gallery>
+
+	<album lgpath="images/lg/" tnpath="images/tn/">
+		<img src="slide01.jpg" tn="thumb01.jpg" />
+		<img src="slide02.jpg" tn="thumb02.jpg" link="http://itunes.apple.com/us/app/a-x-stylepad/id415994498?mt=8&uo=4" target="_blank" />
+		<img src="slide03.jpg" tn="thumb03.jpg" link="http://www.armaniexchange.com/category/womens/a%7Cxx+20th+styles.do" target="_blank" />
+		<img src="slide04.jpg" tn="thumb04.jpg" link="http://itunes.apple.com/us/app/i-nigma-4-qr-datamatrix-barcode/id388923203?mt=8&uo=4" target="_blank" />
+	</album>
+
+</gallery>

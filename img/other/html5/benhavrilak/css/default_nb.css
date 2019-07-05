@@ -1,0 +1,546 @@
+/* ========== REF: MICRO-CLEARFIX (ref: http://themergency.com/css-clearfix-demystified/) ========== */
+
+.clearFix:before, .clearFix:after {
+	content: "";
+	display: table;
+	}
+
+.clearFix:after {
+	clear: both;
+}
+
+.clearFix {
+	zoom: 1;
+}
+
+
+
+/* ========== FONTS ========== */
+
+@font-face {
+	font-family: 'AGaramond-Regular';
+	src: url("../fonts/AdobeGaramondRegular.otf") format("opentype");
+	src: url('../fonts/AGarReg.eot');
+	src: url('../fonts/AGarReg.woff') format('woff'),
+	url('../fonts/AGarReg.svg#AGaramond-Regular') format('svg');
+	
+}
+
+@font-face {
+	font-family: 'AGaramond-Italic';
+	src: url("../fonts/AdobeGaramondItalic.otf") format("opentype");
+	src: url('../fonts/AGarIta.eot');
+	src: url('../fonts/AGarIta.woff') format('woff'),
+	url('../fonts/AGarIta.svg#AGaramond-Italic') format('svg');
+}
+
+@font-face {
+	font-family: 'FranklinGothic-Demi';
+	src: url("../fonts/FranklinGothicDemi.otf") format("opentype");
+	src: url('../fonts/FrankGotDem.eot');
+	src: url('../fonts/FrankGotDem.woff') format('woff'),
+	url('../fonts/FrankGotDem.svg#FranklinGothic-Demi') format('svg');
+}
+
+
+
+/* ========== GLOBAL / GENERIC ========== */
+
+html, body {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+	background-color: #FFFFFF;
+/*
+	font-family: CenturyGothic, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: .5px;
+*/
+	width: 100%;
+	height: 100%;
+
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+
+/*
+.inactive {
+	border: 02px solid #0000FF;
+	border-style: inset;
+
+	opacity: .1;
+}
+*/
+
+
+/* ---------- TABLE ---------- */
+
+table {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	vertical-align: top;
+
+	width: 100%;
+	height: 11.111111111111%;
+
+	margin: 0px;
+	padding: 0px;
+
+	border-collapse: collapse;
+	border-spacing: 0px;
+
+	/*position: relative;
+	top: 55%;*/
+}
+
+td {
+	/*border: 01px solid #FF00FF;
+	border-style: inset;*/
+
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* ---------- TEXT FORMATTING ---------- */
+/*
+ul, li {
+	border: 01px solid #00FFFF;
+	border-style: inset;
+
+	list-style: none;
+	list-style-position: inside;
+	list-style-type: disc;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+blockquote {
+	font-family: CenturyGothic-BoldItalic, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+
+	margin: 0px 65px 0px 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: CenturyGothic, sans-serif;
+	font-size: 13px;
+	line-height: 16px;
+
+	margin: 0px 65px 10px 0px;
+}
+
+b {
+	font-family: CenturyGothic-Bold, sans-serif;
+}
+
+i {
+	font-family: CenturyGothic-Italic, sans-serif;
+}
+
+b i, i b {
+	font-family: CenturyGothic-BoldItalic, sans-serif;
+}
+*/
+
+
+/* ---------- CREDIT ---------- */
+
+credit {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	color: #CCCCCC;
+
+	font-family: CenturyGothic, sans-serif;
+	font-size: 75%;
+	letter-spacing: 2.5%;
+
+	position: absolute;
+	bottom: 1.25%;
+	left: 2.5%;
+}
+
+credit a {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	color: #CCCCCC;
+}
+
+
+
+/* ========== NAV ========== */
+/*
+nav {
+	border: 02px solid #FF00FF;
+	border-style: inset;
+}
+*/
+nav a {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	color: #FFFFFF;
+	background-color: #000000;
+
+	font-family: FranklinGothic-Demi, sans-serif;
+	/*font-size: 12.5px;*/
+	/*font-size: .75vw;*/
+	font-size: .75em;
+	line-height: 15px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	margin: 0px;
+	/*padding: .5% 5% 1% 5%;*/
+	padding: .5% 7.3125% 1% 7.3125%;
+
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+	transition: 0.25s;
+}
+
+nav a:hover {
+	background: #999999;
+}
+
+/*
+nav a:link, nav a:visited {
+	background-color: #CCCCCC;
+}
+
+nav a:hover {
+	background-color: #000000;
+}
+
+nav a:active {
+	background-color: #000000;
+}
+*/
+
+
+/* ---------- WORK ---------- */
+
+work {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #FFFFFF;
+
+	font-family: FranklinGothic-Demi, sans-serif;
+	/*font-size: 12.5px;*/
+	/*font-size: .75vw;*/
+	/*font-size: .75em;*/
+	font-size: 60%;
+	/*line-height: 15px;*/
+	line-height: 55%;
+	letter-spacing: .5px;
+
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+
+	/*width: 9.125%;*/
+	width: 10.625%;
+	/*width: 10%;*/
+	/*height: 5%;*/
+	/*height: 100%;*/
+	height: auto;
+
+	opacity: 0;
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	top: 11.25%;
+	right: 0px;
+
+	z-index: 999;
+}
+
+work ul {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	list-style: none;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+work li {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	background-color: #666666;
+
+	width: auto;
+	/*height: 100%;*/
+	height: 15%;
+
+	list-style: none;
+
+	margin: 1.25% 0px 0px 0px;
+	padding: 5% 0% 5% 10%;
+
+	cursor: pointer;
+}
+
+
+
+/* ========== HEADER ========== */
+
+#header {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	margin: 0px;
+	padding: 0px;
+
+	position: relative;
+	top: 0px;
+}
+
+
+
+/* ========== HOME ========== */
+
+#splash {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	background-image: url(../img/home/home_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home_nav {
+	position: relative;
+	top: 55%;
+}
+
+a img {
+	border: none;
+}
+
+#ben {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+/*
+	background-image: url(../img/home/home_ben.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+*/
+	height: 100%;
+	width: auto;
+
+	position: absolute;
+	top: 0;
+	right: 40%;
+}
+
+#ben img {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+}
+
+
+
+/* ========== CONTAINER - albumContainer ========== */
+
+albumContainer {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	/*width: 79.6875%;*/
+	width: 100%;
+	height: 86.111111111111%;
+
+	opacity: 0;
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	top: 13.888888888889%;
+	left: 0px;
+}
+
+
+
+/* ========== CONTAINER - slideContainer ========== */
+
+slideContainer {
+	/*border: 02px solid #FF00FF;
+	border-style: inset;*/
+
+	/*width: 79.6875%;*/
+	width: 78.75%;
+	height: 100%;
+
+	margin: 0 auto;
+	padding: 0 auto;
+
+	position: absolute;
+}
+
+slide {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 100%;
+	height: 100%;
+	/*width: 99.375%;*/
+	/*height: 100%;*/
+
+	opacity: 0;
+
+	position: inherit;
+
+	margin: 0;
+	padding: 0;
+}
+
+slide img {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	max-width: 100%;
+	max-height: 100%;
+
+	display: block;
+
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+
+
+/* ========== CONTAINER - infoContainer ========== */
+
+infoContainer {
+	/*border: 02px solid #00FFFF;
+	border-style: inset;*/
+
+	color: #AAAAAA;
+
+	width: 17.5%;
+	/*height: 42.592592592593%;*/
+	height: 42.5%;
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	/*top: 17.592592592593%;*/
+	right: 2.5%;
+
+	overflow-y: auto;
+
+	/*float: right;*/
+}
+
+#employer, #dates, #mytitle {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	font-family: AGaramond-Italic;
+	/*line-height: 27.5px;*/
+	line-height: 65%;
+	letter-spacing: .5px;
+
+	padding-top: 10px;
+}
+
+#employer {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*font-size: 40px;*/
+	font-size: 190%;
+	text-align: right;
+
+	/*padding-top: 40px;*/
+	padding-top: 20%;
+	padding-bottom: 2.5%;
+}
+
+#dates, #mytitle {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	/*font-size: 25px;*/
+	font-size: 125%;
+	text-align: right;
+}
+
+#descr {
+	/*border: 02px solid #0000FF;
+	border-style: inset;*/
+
+	font-family: AGaramond-Regular;
+	/*font-size: 17.5px;*/
+	font-size: 100%;
+	line-height: 25px;
+	letter-spacing: .5px;
+
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+
+
+/* ========== CONTAINER - thumbContainer ========== */
+
+thumbContainer {
+	/*border: 02px solid #FF0000;
+	border-style: inset;*/
+
+	width: 17.5%;
+	/*height: 50%;*/
+	/*height: 75%;*/
+	height: auto;
+
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	/*top: 60.185185185185%;*/
+	/*top: 45%;*/
+	top: 22.5%;
+	right: 2.5%;
+
+	overflow-y: auto;
+}
+
+thumb {
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	margin: 0px;
+	padding: 0px;
+}
+
+thumb img{
+	/*border: 02px solid #00FF00;
+	border-style: inset;*/
+
+	width: 50%;
+}
