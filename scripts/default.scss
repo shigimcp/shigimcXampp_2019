@@ -2565,6 +2565,7 @@ body * {
 	// border: 02px solid #FF0000;
 
 	visibility: hidden;
+	// z-index: 0;
 }
 
 .mezCTA {
@@ -2605,6 +2606,7 @@ body * {
 
 .mezContent {
 	// border: 02px solid #FF0000;
+
 	background-color: #000000;
 	// background-color: #FFFF00;
 
@@ -2657,15 +2659,15 @@ body * {
 			// }
 		}
 	}
+}
 
-	.mezLogo {
-		// border: 02px solid #00FF00;
-	
-		position: absolute;
-		z-index: 100;
-	
-		visibility: hidden;
-	}
+.mezLogo {
+	// border: 02px solid #00FF00;
+
+	position: absolute;
+	z-index: 100;
+
+	visibility: hidden;
 }
 
 

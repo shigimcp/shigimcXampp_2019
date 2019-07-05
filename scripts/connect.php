@@ -8,10 +8,10 @@
 //	$con = mysqli_connect("localhost","root","3ukQ02oM#o#m","shigimcpDB");
 
 	// $dbname = 'shigimcpDB_2019';
-	// $dbname = 'shigimcpDB_2019_02';
-	// $dbuser = 'root';
-	$dbname = 'shigimcpDB_2019_0719';
-	$dbuser = 'shigimcp';
+	$dbname = 'shigimcpDB_2019_02';
+	$dbuser = 'root';
+	// $dbname = 'shigimcpDB_2019_0719';
+	// $dbuser = 'shigimcp';
 	$dbpass = 'sh1g1mcp';
 	$dbhost = 'localhost';
 

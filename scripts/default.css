@@ -1633,7 +1633,7 @@ body * {
   }
 }
 
-.mezContent .mezLogo {
+.mezLogo {
   position: absolute;
   z-index: 100;
   visibility: hidden;
